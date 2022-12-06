@@ -1,0 +1,19 @@
+#ps-section-3{
+    padding-block: var(--universal-padding-heavy);
+}
+
+#ps-section-5{
+    padding-block: var(--universal-padding-heavy);
+    padding-bottom:6em;
+}
+
+@media (max-width: 900px) {
+     
+    #ps-section-3 {
+        padding-block: 1em;
+    }
+
+    #ps-section-5{
+        padding-block: 2em;
+    }
+}

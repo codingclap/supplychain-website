@@ -1,0 +1,31 @@
+.info-container {
+    padding-block: 2em;
+    width: min(90%, 1080px);
+    margin: auto;
+}
+
+.info-container h2 {
+    padding-bottom: 0.75em;
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+}
+
+/* .info-container p {
+    font-size: 1.5rem;
+} */
+
+.info-container .sep-para {
+    margin-top: 0.5em;
+}
+
+.info-container ul {
+    padding-left: 1em;
+}
+
+.info-container ul>li {
+    font-family: 'Visuelt-Regular';
+    font-weight: 400;
+    color: var(--text-color);
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+}

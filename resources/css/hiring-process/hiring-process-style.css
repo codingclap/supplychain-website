@@ -1,0 +1,83 @@
+
+/*********** Hp-Promo-section Section ***********/
+#hp-section-3 .icon-boxes-type-2 {
+    gap: min(15vw, 5em);
+}
+
+#hp-section-3 .icon-boxes-type-2 .icon-box[data-sep="before"]:before {
+    left: calc(-1 * min(15vw, 5em) / 2);
+}
+
+#hp-section-3 {
+    padding-bottom: 2em;
+}
+
+/*********** Hp-Promo-section Section ***********/
+
+
+/*********** Hp-Promo-section Section ***********/
+.items-section h2.items-heading {
+    font-size: 2.5em;
+    letter-spacing: 0px;
+    color: var(--heading-secondary);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/*********** Hp-Promo-section Section ***********/
+
+/*********** Hp-Four-Section ***********/
+.hp-four-section {
+    padding-block: var(--universal-padding-heavy);
+}
+
+/*********** Hp-Four-Section ***********/
+
+
+/*********** Hp-testimonial Section ***********/
+.hp-testimonial {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: min(90%, 1080px);
+    margin-inline: auto;
+}
+
+.hp-testimonial p {
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.hp-testimonial .quote {
+    position: relative;
+}
+
+.hp-testimonial .quote::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    left: -60px;
+    bottom: 0.5em;
+    background-image: url(../../images/hiring-process/comma-new-01.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/*********** Hp-testimonial Section ***********/
+
+
+
+
+
+@media (max-width:1024px) {
+    br {
+        display: none;
+    }
+}
+#hp-section-6{
+    padding: 4em 0em;
+}

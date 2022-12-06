@@ -1,0 +1,87 @@
+.widget-tab-addon-type-1 {
+    --active-color: var(--secondary-color);
+    --inactive-color: #ADADAD;
+    --underline-highlight-color: var(--highlight-color);
+    --tab-content-height: 80vh;
+}
+
+.widget-tab-addon-type-1 .tab-heading-container,
+.widget-tab-addon-type-1 .tab-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.widget-tab-addon-type-1 .tab-heading-container {
+    margin-bottom: 3em;
+}
+
+.widget-tab-addon-type-1 .tab-heading-container .tab {
+    cursor: pointer;
+    color: var(--inactive-color);
+    position: relative;
+}
+
+.widget-tab-addon-type-1 .tab-heading-container .tab::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-bottom-width: 2px;
+    border-bottom-color: var(--inactive-color);
+    border-bottom-style: solid;
+}
+
+.widget-tab-addon-type-1 .tab-heading-container .tab[data-status="active"] {
+    color: var(--active-color);
+}
+
+.widget-tab-addon-type-1 .tab-heading-container .tab[data-status="active"]::after {
+    border-bottom-color: transparent;
+    background: url(../../images/about/pointing-line.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15px;
+    bottom: -20px;
+    width: 110%;
+    left: -5%;
+}
+
+.widget-tab-addon-type-1 .tab-content-container {
+    position: relative;
+    min-height: var(--tab-content-height, 60vh);
+}
+
+.widget-tab-addon-type-1 .tab-content-container .tab-content {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.widget-tab-addon-type-1 .tab-content-container .tab-content[data-status="active"] {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+
+    .widget-tab-addon-type-1 .tab-heading-container {
+        display: none;
+    }
+
+    .widget-tab-addon-type-1 .tab-heading-container,
+    .widget-tab-addon-type-1 .tab-content-container {
+        flex-direction: column;
+    }
+
+    .widget-tab-addon-type-1 .tab-content-container .tab-content {
+        position: relative;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,64 @@
+.widget-team-info-type-1 {
+    --main-container-width: min(1380px, 80vw);
+    --widget-skew-height: 10vh;
+    --widget-skew-height-mobile: 5vh;
+    --odd-box-bg-color: rgb(255, 255, 255);
+    --even-box-bg-color: #f7f7f7;
+}
+
+.widget-team-info-type-1 .main-container {
+    width: var(--main-container-width);
+    margin: auto;
+    position: relative;
+}
+
+.widget-team-info-type-1 .main-container .member-info {
+    min-height: 30vh;
+}
+
+.widget-team-info-type-1 .main-container .member-info:nth-of-type(2n + 1) {
+    background-color: var(--odd-box-bg-color);
+    padding-block: 2em;
+}
+
+.widget-team-info-type-1 .main-container .member-info:nth-of-type(2n) {
+    background-color: var(--even-box-bg-color);
+    position: relative;
+    padding-block: var(--widget-skew-height, 10vh);
+    box-sizing: content-box;
+}
+
+.widget-team-info-type-1 .main-container .member-info:nth-of-type(2n)::before,
+.widget-team-info-type-1 .main-container .member-info:nth-of-type(2n)::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+}
+
+.widget-team-info-type-1 .main-container .member-info:nth-of-type(2n)::before {
+    top: 0;
+    border-bottom: var(--widget-skew-height, 10vh) solid var(--even-box-bg-color);
+    border-right: var(--main-container-width) solid var(--odd-box-bg-color);
+}
+
+.widget-team-info-type-1 .main-container .member-info:nth-of-type(2n)::after {
+    bottom: 0;
+    border-top: var(--widget-skew-height, 10vh) solid var(--even-box-bg-color);
+    border-left: var(--main-container-width) solid var(--odd-box-bg-color);
+}
+
+.widget-team-info-type-1 .main-container .member-cross-bar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 70px;
+}
+
+@media (max-width: 500px) {
+    .widget-team-info-type-1 {
+        --widget-skew-height: var(--widget-skew-height-mobile) !important;
+    }
+}

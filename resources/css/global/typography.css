@@ -1,0 +1,109 @@
+/* Desktop */
+@media (min-width: 1150px) {
+    :root {
+        --font-size-p: 1.134em;
+        --font-size-p2: 1.3em;
+        --font-size-h1: 3.25em;
+        --font-size-h2: 2.8em;
+        --font-size-h3: 1.33em;
+        --font-size-h4: 1.35em;
+        --font-size-blockquote: 1.5em;
+        --font-size-button: 0.9375em;
+        --font-size-popup-button: 1.125em;
+        --font-size-input: 1.25em;
+
+        --line-height-p: 1.555em;
+        --line-height-h1: 1.05em;
+        --line-height-h2: 1.25em;
+        --line-height-h3: 1.25em;
+        --line-height-h4: 1.222em;
+        --line-height-blockquote: 1.458em;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 550px) and (max-width: 1150px) {
+    :root {
+        --font-size-p: 1.134em;
+        --font-size-p2: 1em;
+        --font-size-h1: 3em;
+        --font-size-h2: 2.5em;
+        --font-size-h3: 1.5em;
+        --font-size-h4: 1.125em;
+        --font-size-blockquote: 1.5em;
+        --font-size-button: 0.9375em;
+        --font-size-popup-button: 1.125em;
+        --font-size-input: 1.25em;
+
+        --line-height-p: 1.555em;
+        --line-height-h1: 1.125em;
+        --line-height-h2: 1.25em;
+        --line-height-h3: 1.25em;
+        --line-height-h4: 1.222em;
+        --line-height-blockquote: 1.458em;
+    }
+}
+
+/* Mobile */
+@media (max-width: 550px) {
+    :root {
+        --font-size-p: 1em;
+        --font-size-p2: 1em;
+        --font-size-h1: 2.5em;
+        --font-size-h2: 1.625em;
+        --font-size-h3: 1.375em;
+        --font-size-h4: 1.125em;
+        --font-size-blockquote: 1.25em;
+        --font-size-button: 0.9375em;
+        --font-size-popup-button: 1.125em;
+        --font-size-input: 1.25em;
+
+        --line-height-p: 1.25em;
+        --line-height-h1: 1.25em;
+        --line-height-h2: 1.1538em;
+        --line-height-h3: 1.13636em;
+        --line-height-h4: 1.111em;
+        --line-height-blockquote: 1.25em;
+    }
+}
+
+p {
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    line-height: var(--line-height-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h2);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-h3);
+}
+
+h4 {
+    font-size: var(--font-size-h4);
+    line-height: var(--line-height-h4);
+}
+
+blockquote {
+    font-size: var(--font-size-blockquote);
+    line-height: var(--line-height-blockquote);
+}
+
+
+button {
+    font-size: var(--font-size-button);
+}
+
+h1 {
+    margin-block: 0.25em;
+}
+

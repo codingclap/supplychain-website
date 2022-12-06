@@ -1,0 +1,198 @@
+.ps-rectangle-tiles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+    width: min(90%, var(--container-max-width));
+}
+
+.ps-tiles-left {
+    max-width: 490px;
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
+    min-height: 580px; 
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden; 
+    cursor: pointer;
+    
+}
+
+.ps-tiles-right {
+    max-width: 490px;
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
+    min-height: 580px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden; 
+    cursor: pointer;
+}
+
+.ps-tiles-left::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../../images/permanent-staffing/sector-bg-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    transition: all .5s;
+}
+
+.ps-tiles-left:hover::before{
+    transform:scale(1.2); 
+    transition: all .5s;
+}
+
+.ps-tiles-right::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../../images/permanent-staffing/position-bg-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    transition: all .5s;
+}
+.ps-tiles-right:hover::before{
+    transform:scale(1.2); 
+    transition: all .5s;
+}
+.ps-rectangle-tiles .ps-tiles-left::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #024778;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    transition: transform 0.1s ease-in-out;
+    border-radius: 12px;
+    opacity: 0.86;
+    transition: all .5s;
+}
+.ps-tiles-left:hover::after{
+    opacity: 0.92;
+    transition: all .5s;
+}
+.ps-rectangle-tiles .ps-tiles-right::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #024778;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    transition: transform 0.1s ease-in-out;
+    border-radius: 12px;
+    opacity: 0.86;
+    transition: all .5s; 
+}
+.ps-tiles-right:hover::after{
+    opacity: 0.92;
+    transition: all .5s;
+}
+
+.ps-tiles-desc {
+    width: 350px;
+    margin: 50px auto;
+}
+
+.ps-tiles-desc ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.ps-tiles-desc ul {
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+.ps-tiles-desc ul li {
+    margin-bottom: 12px;
+    margin-left: -10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: left;
+}
+
+.ps-tiles-desc ul li::before {
+    font-size: 1px;
+    content: " ";
+    margin-left: -1.3em;
+    margin-right: 15px;
+    padding: 10px;
+    background-image: url('../../images/permanent-staffing/check-mark.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+
+.ps-rectangle-tiles .ps-tiles-left .ps-tiles-desc {
+    position: relative;
+    z-index: +222;
+    color: #fff;
+}
+
+.ps-rectangle-tiles .ps-tiles-right .ps-tiles-desc {
+    position: relative;
+    z-index: +222;
+    color: #fff;
+}
+.ps-rectangle-tiles .ps-tiles-desc img{
+    width: 100px; 
+}
+.ps-rectangle-tiles .ps-tiles-desc h2 {
+    font-size: 50px;
+    margin: 15px 0px;
+    text-align: left;
+}
+
+@media (max-width:900px){
+    .ps-rectangle-tiles{
+        gap:35px;
+    }
+}
+
+@media (max-width:768px){
+    .ps-tiles-left{
+        max-width: 400px;
+    }
+    .ps-tiles-right{
+        max-width: 400px;
+    }
+
+    .ps-tiles-desc {
+        width: 280px;
+        margin: 50px auto;
+    }
+    .ps-tiles-desc ul li{
+        font-size: 18px;
+    }
+    .ps-rectangle-tiles .ps-tiles-desc h2 {
+        font-size: 40px;
+        margin: 15px 0px;
+        text-align: left;
+    }
+}

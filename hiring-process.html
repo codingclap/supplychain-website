@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>GodSpeed</title>
+  <link rel="shortcut icon" href="resources/images/fav-icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="resources/css/global/basic.css">
+  <link rel="stylesheet" href="resources/css/global/typography.css">
+  <link rel="stylesheet" href="resources/css/global/typography-specific.css">
+  <link rel="stylesheet" href="resources/css/global/nav-style.css">
+  <link rel="stylesheet" href="resources/css/global/universal-style.css">
+  <link rel="stylesheet" href="resources/css/global/footer.css">
+
+  <link rel="stylesheet" href="resources/css/hiring-process/hiring-process-style.css">
+
+  <script src="resources/js/basic-func.js"></script>
+
+</head>
+
+<body>
+
+  <!--------------- Navbar Section ----------------------------->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggler" data-toggle="open-navbar1">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a href="#">
+            <img src="resources/images/logo-white.png" alt="" width="170px">
+          </a>
+        </div>
+        <div class="nav-menu-container">
+          <div class="navbar-menu" id="open-navbar1">
+            <ul class="navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li class="navbar-dropdown">
+                <a href="javascript:void(0)" class="dropdown-toggler" data-dropdown="my-dropdown-id">
+                  About <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown" id="my-dropdown-id">
+                  <!-- <li class="separator"></li>  -->
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="leadership.html">
+                      The Team
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="active"><a href="hiring-process.html">
+                  Hiring Process
+                </a></li>
+              <li class="navbar-dropdown">
+                <a href="#" class="dropdown-toggler" data-dropdown="blog">
+                  Staffing <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown" id="blog">
+                  <li><a href="contingent-staffing.html">Contingent Staffing</a></li>
+                  <li><a href="permanent-staffing.html">Permanent Staffing</a></li>
+                </ul>
+              </li>
+
+              <!-- <li><a href="#">Permanent<br> Staffing</a></li> -->
+              <li><a href="payroll-outsourcing.html">Payroll Outsourcing</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--------------- Navbar Section ----------------------------->
+
+
+  <main>
+    <!------------ Header ---------------->
+    <section class="" id="hp-section-1">
+      <div class="banner-content-style-1" id="banner-content-1">
+        <link rel="stylesheet" href="resources/css/widgets/widget-banner-content-1.css">
+        <style>
+          #banner-content-1 {
+            --banner-content-max-width: 900px;
+          }
+
+          .banner-content-style-1 .banner-title {
+            line-height: 1.11em;
+            margin: 0px;
+          }
+
+          .banner-content-style-1 .banner-para {
+            font-size: clamp(1.3em, calc(2vw + 1.5rem), 1.5em);
+          }
+        </style>
+
+        <h2 class="banner-subtitle p-b10" data-font-family="Poppin-Bold">
+          <span>
+            Enhanced experiential service quality
+          </span>
+        </h2>
+
+        <h1 class="banner-title" data-hover-color='hover-color' data-font-family="VisueltPro-Black">
+          Exceptional Hiring Experiences Lead To Customer Success
+        </h1>
+
+        <!-- <p class="banner-para" data-hover-color='hover-color' data-font-family="OpenSans-Regular">
+          <span>
+            With more then...recruiting.
+          </span>
+        </p> -->
+      </div>
+    </section>
+    <!------------ Header ---------------->
+
+
+    <!------------ Divider ---------------->
+    <section class="divider-section" id="hp-section-2">
+      <div class="divider-img-container">
+        <img src="resources/images/hiring-process/divider-1.svg" alt="divider">
+      </div>
+    </section>
+    <!------------ Divider ---------------->
+
+    <section class="" id="hp-section-3">
+      <!------------ Complimentary Section ---------------->
+      <div class="hp-complimentary-section">
+        <div class="complimentary-container-type-1" id="complimentary-1">
+          <link rel="stylesheet" href="resources/css/widgets/widget-complimentary-type-1.css">
+          <style>
+            #complimentary-1 {
+              --flex-direction: row-reverse;
+              --image-column-max-width: 900px;
+              --content-column-max-width: 600px;
+              --image-column-width: 50%;
+              --content-column-width: 50%;
+              --container-max-width: 1580px;
+              margin-right: 0;
+            }
+
+            #complimentary-1 .column-2 h2 {
+              font-size: clamp(2.5em, calc(5vw + 0.5rem), 3em);
+            }
+
+            #complimentary-1 .column-2 p {
+              font-size: 1.2em;
+              color: var(--text-secondary);
+            }
+
+            #complimentary-1 strong {
+              font-size: 1.2em;
+            }
+          </style>
+
+          <div class="column-1">
+            <picture>
+              <source media="(min-width: 700px)" srcset="resources/images/hiring-process/hand-shake.png">
+              <img src="resources/images/hiring-process/hand-shake.png" alt="dummy image" width="100%">
+            </picture>
+          </div>
+          <div class="column-2">
+            <h2 data-font-family="Poppin-Bold" data-color='secondary-color' class="p-tb10">
+              The Godspeed<br>
+              Assurance
+            </h2>
+            <p data-font-family="Visuelt-Light" class="p-tb10">With
+              more than 45 in-house recruiters, trust us for a dedicated <strong data-font-family="Visuelt-Bold"
+                data-text-color='emphasis'>2,500+ hours</strong> of weekly screening, vetting,
+              and recruiting.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!------------ Complimentary Section ---------------->
+
+      <!------------ Promo Section ---------------->
+      <div class="icon-boxes-type-2" id="hp-icon-boxes-1">
+        <link rel="stylesheet" href="resources/css/widgets/widget-icon-boxes-type-2.css">
+        <style>
+          #hp-icon-boxes-1 {
+            margin-top: 2em;
+          }
+
+          .icon-boxes-type-2 .icon-box .promo-icon img {
+            width: 90%;
+            height: 90%;
+          }
+        </style>
+        <div class="icon-box">
+          <div class="promo-icon">
+            <img src="resources/images/hiring-process/icons/provide-icon.svg" alt="icon">
+          </div>
+
+          <div class="promo-icon-content">
+            <p data-font-family="OpenSans-Regular">
+              We <strong data-color='secondary-color'>provide</strong> the right talent, thus,
+              saving time and increasing productivity for our
+              clients.
+            </p>
+          </div>
+        </div>
+
+        <div class="icon-box" data-sep="before">
+          <div class="promo-icon">
+            <img src="resources/images/hiring-process/icons/add-icon.svg" alt="icon">
+          </div>
+
+          <div class="promo-icon-content">
+            <p data-font-family="OpenSans-Regular">
+              We <strong data-color='secondary-color'>add</strong> value by ensuring timely
+              replacements, implementing cost controls and
+              compliance.
+            </p>
+          </div>
+        </div>
+
+        <div class="icon-box" data-sep="before">
+          <div class="promo-icon">
+            <img src="resources/images/hiring-process/icons/pride-icon.svg" alt="icon">
+          </div>
+
+          <div class="promo-icon-content">
+            <p data-font-family="OpenSans-Regular">
+              We <strong data-color='secondary-color'>pride</strong> ourselves in creating rich,
+              innovative, seamless and beyond satisfactory
+              recruitment experience.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!------------ Promo Section ---------------->
+    </section>
+
+    <!------------ Divider ---------------->
+    <section class="divider-section" id="hp-section-4" data-display-mobile="hidden">
+      <div class="divider-img-container">
+        <img src="resources/images/hiring-process/divider-2.svg" alt="divider">
+      </div>
+    </section>
+    <!------------ Divider ---------------->
+
+    <!------------ Hiring Process ---------------->
+    <section class="items-section" id="hp-section-5">
+      <div class="items-container">
+        <h2 class="items-heading p-b60" data-font-family="Visuelt-Bold">
+          Our Hiring Process
+        </h2>
+      </div>
+
+      <div class="promo-area-sequence">
+        <link rel="stylesheet" href="resources/css/widgets/widget-promo-area-sequence.css">
+        <div class="upper hp-process">
+          <div class="hp-part" data-sequence="1">
+            <h2 data-font-family="Visuelt-Bold">Screen</h2>
+            <p data-font-family="OpenSans-Regular">Hiring the right fit for your team is the key to its success. To help
+              you make the right decision, we
+              thoroughly review the minimum qualifications, references, and skill sets of all our candidates. We also
+              verify legal documentation like work visas and social insurance numbers.</p>
+          </div>
+          <div class="hp-part" data-sequence="2">
+            <h2 data-font-family="Visuelt-Bold">Source & Recruit</h2>
+            <p data-font-family="OpenSans-Regular">Our recruiters have extensive backgrounds in finding the best
+              candidates on the market. By maximizing our
+              wide network of professionals, we align our associates exactly with your staffing needs.</p>
+          </div>
+        </div>
+
+        <div class="middle">
+          <img src="resources/images/hiring-process/cyclic/cyclic-middle-struggle.svg" alt="">
+        </div>
+
+        <div class="bottom hp-process">
+          <div class="hp-part" data-sequence="4">
+            <h2 data-font-family="Visuelt-Bold">After Hire Services</h2>
+            <p data-font-family="OpenSans-Regular">
+              Just because the hiring needs are met, it doesn't mean that our partnership has ended. We specialise in
+              'no show' management by maintaining a high percentage of fulfillment in case of no shows. Our team also
+              reviews specific KPI metrics to determine how much your business has grown, as well as identifying areas
+              of improvement.
+            </p>
+          </div>
+          <div class="hp-part" data-sequence="3">
+            <h2 data-font-family="Visuelt-Bold">Present</h2>
+            <p data-font-family="OpenSans-Regular">
+              Our clients never have to worry about meeting dozens of candidates only to find out that none are the
+              right fit for the job. Once we have established the expectations and goals of our clients, we send over
+              the most qualified candiddates for the position. We also schedule and coordinate all the interviews,
+              saving them time and resources.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!------------ Hiring Process ---------------->
+
+    <!------------ Testimonials ---------------->
+    <section id="hp-section-6">
+      <div class="hp-testimonial">
+        <p data-color='secondary-color' data-font-family="Poppin-Medium">
+          <span class="quote"></span> Unrivaled speed of fulfillment, a vast
+          talent pool, and scalability make Godspeed Workforce a high-performance partner.
+        </p>
+      </div>
+    </section>
+    <!------------ Testimonials ---------------->
+
+  </main>
+  <!-------------------------------------- Main Closed ----------------------------->
+
+
+
+  <footer>
+    <section class="footer" id="footer-section-2">
+        <div class="content-container">
+            <div class="content">
+                <div class="two-column-container">
+                    <div class="column-left">
+                        <ul>
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="about-us.html">
+                                    About
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="hiring-process.html">
+                                    Hiring Process
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="resources.html">
+                                    Resources
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="contingent-staffing.html">
+                                    Contingent Staffing
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="permanent-staffing.html">
+                                    Permanent Staffing
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="payroll-outsourcing.html">
+                                    Payroll Outsourcing
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column-middle">
+                        <h5 onclick="toggleElementsState('footer-menu-1')" id="footer-title">
+                            Policies
+                            <span data-toggle-state="footer-menu-1" data-toggle-action="rotate-90">
+                                >
+                            </span>
+                        </h5>
+
+                        <ul data-toggle-state="footer-menu-1" data-toggle-action="show-hide" data-status="passive">
+                            <li style="order: 1;">
+                                <a href="policies.html#info1">
+                                    Health & Safety Policy
+                                </a>
+                            </li>
+
+                            <li style="order: 3;">
+                                <a href="policies.html#info2">
+                                    Anti Harassment Policy
+                                </a>
+                            </li>
+
+                            <li style="order: 5;">
+                                <a href="policies.html#info3">
+                                    Privacy Policy
+                                </a>
+                            </li>
+
+                            <li style="order: 7;">
+                                <a href="policies.html#info4">
+                                    Personal Information
+                                </a>
+                            </li>
+
+                            <li style="order: 2;">
+                                <a href="policies.html#info5">
+                                    Personal Information Collected
+                                </a>
+                            </li>
+
+                            <li style="order: 4;">
+                                <a href="policies.html#info6">
+                                    Use Of Personal Information
+                                </a>
+                            </li>
+
+                            <li style="order: 6;">
+                                <a href="policies.html#info7">
+                                    Your Rights To Limit Use Of Personal Information
+                                </a>
+                            </li>
+
+                            <li style="order: 8;">
+                                <a href="policies.html#info8">
+                                    Verifying The Accuracy Of Your Information
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="one-column-container">
+                    <div class="site-logo">
+                        <img src="resources/images/logo.png" width="220px" />
+                    </div>
+
+                    <div class="contact-info">
+                        <a class="social-info" href="mailto:info@godspeedgroup.ca">
+                            <span class="icon">
+                                <img src="resources/images/social-icons/email-footer.svg" alt="Mail">
+                            </span>
+                            <span>
+                                info@godspeedgroup.ca
+                            </span>
+                        </a>
+                        <a class="social-info" href="phone:(905)956-9525">
+                            <span class="icon">
+                                <img src="resources/images/social-icons/phone-footer.svg" alt="phone">
+                            </span>
+                            <span>(905) 956-9525</span>
+                        </a>
+                    </div>
+                    <div class="copy-write">
+                        <a href="https://ca.linkedin.com/company/godspeedgroup" target="_blank"><img
+                                src="resources/images/linkedIn-logo.png" width="150px" /></a>
+                        <!-- <p>Copyright © Godspeed Group 2022<br> Powered By Kreatipedia Inc.</p> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
+  <script src="resources/js/nav.js"></script>
+  <script src="resources/js/shape-design.js"></script>
+
+  <script>
+    // observe height of the wedge shape section and update the css variable
+    const section14 = document.querySelector('#footer-section-1 .content-container');
+
+    heightObserver.observe(section14);
+  </script>
+
+</body>
+
+</html>

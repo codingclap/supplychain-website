@@ -1,0 +1,52 @@
+.banner-container-type-folloze {
+    --banner-bg: url(../../../resources/images/hiring-process/hand\ shake.svg);
+    --banner-bg-alignment-x: right; /* left | center | right */
+    --banner-bg-alignment-y: center; /* left | center | right */
+    --banner-bg-size: min(100%, 800px);
+    --banner-padding-top: 2em;
+    --banner-padding-bottom: 4em;
+
+    --banner-bg-repeat: no-repeat;
+
+    --banner-inner-bg: transparent;
+    --banner-content-bg: transparent;
+
+    --banner-content-alignment: flex-start; /* flex-start | center | flex-end */
+    --banner-text-alignment: left; /* left | center | right */
+    --banner-content-max-width: 400px;
+}
+
+.banner-container-type-folloze {
+    background: var(--banner-bg);
+    background-repeat: var(--banner-bg-repeat);
+    background-position-x: var(--banner-bg-alignment-x);
+    background-position-y: var(--banner-bg-alignment-y);
+    background-size: var(--banner-bg-size);
+    padding-top: var(--banner-padding-top);
+    padding-bottom: var(--banner-padding-bottom);
+}
+
+.banner-container-type-folloze .banner-inner-container {
+    width: min(90%, 1380px);
+    margin: auto;
+    display: flex;
+    justify-content: var(--banner-content-alignment);
+    background: var(--banner-inner-bg);
+}
+
+.banner-container-type-folloze .banner-inner-container .banner-content {
+    width: min(100%, var(--banner-content-max-width));
+    text-align: var(--banner-text-alignment);
+    background: var(--banner-content-bg);
+}
+
+.banner-container-type-folloze .banner-inner-container .banner-content h2 {
+    font-size: clamp(2.5em, calc(5vw + 0.5rem), 3em);
+    color: var(--secondary-color, black);
+    line-height: 1.25em;
+}
+
+.banner-container-type-folloze .banner-inner-container .banner-content p {
+    font-size: 1.2em;
+    color: var(--text-secondary, grey);
+}

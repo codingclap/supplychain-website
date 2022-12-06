@@ -1,0 +1,197 @@
+:root {
+    --black: #000000;
+    --highlight-color: #FFD729;
+    --highlight-color-dark: #e3bb0b;
+    --primary-color: #fff;
+    --secondary-color: #024778;
+    --heading-color: #333;
+    --heading-secondary: #080808;
+    --text-color: #454545;
+    --hover-text-color: #2F2F2F;
+    --highlight-footer: #FFD729;
+}
+
+p {
+    color: var(--text-color);
+}
+
+[data-color='primary-color'] {
+    color: var(--primary-color);
+}
+
+[data-color='secondary-color'] {
+    color: var(--secondary-color);
+}
+
+[data-text-color='primary'] {
+    color: var(--text-color);
+}
+
+[data-text-color='emphasis'] {
+    color: var(--text-color);
+}
+
+[data-hover-color='hover-color'] {
+    color: var(--hover-text-color);
+}
+
+/************* OpenSans Font ***********/
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url(../../fonts/OpenSans-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url(../../fonts/OpenSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-Medium';
+    src: url(../../fonts/OpenSans-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url(../../fonts/OpenSans-Bold.ttf) format('truetype');
+}
+
+/************* Visuelt Font ***********/
+@font-face {
+    font-family: 'Visuelt-Light';
+    src: url(../../fonts/VisueltPro-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Visuelt-Regular';
+    src: url(../../fonts/VisueltPro-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Visuelt-Medium';
+    src: url(../../fonts/VisueltPro-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Visuelt-Bold';
+    src: url(../../fonts/VisueltPro-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'VisueltPro-Black';
+    src: url(../../fonts/VisueltPro-Black.ttf) format('truetype');
+}
+
+/************* Poppin Font ***********/
+@font-face {
+    font-family: 'Poppin-Regular';
+    src: url(../../fonts/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppin-Medium';
+    src: url(../../fonts/Poppins-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppin-Bold';
+    src: url(../../fonts/Poppins-Bold.ttf) format('truetype');
+}
+
+
+[data-font-family="Poppin-Regular"] {
+    font-family: 'Poppin-Regular';
+    font-weight: 400;
+}
+
+[data-font-family="Poppin-Medium"] {
+    font-family: 'Poppin-Medium';
+    font-weight: 500;
+}
+
+[data-font-family="Poppin-Bold"] {
+    font-family: 'Poppin-Bold';
+    font-weight: 600;
+}
+
+
+[data-font-family="OpenSans-Light"] {
+    font-family: 'OpenSans-Light';
+    font-weight: 100;
+}
+
+[data-font-family="OpenSans-Regular"] {
+    font-family: 'OpenSans-Regular';
+    font-weight: 400;
+}
+
+[data-font_family="OpenSans-Regular"] {
+    font-family: 'OpenSans-Regular';
+    font-weight: 400;
+}
+
+[data-font-family="OpenSans-Medium"] {
+    font-family: 'OpenSans-Medium';
+    font-weight: 600;
+}
+[data-font_family="OpenSans-Medium"] {
+    font-family: 'OpenSans-Medium';
+    font-weight: 600;
+}
+[data-font-family="OpenSans-Bold"] {
+    font-family: 'OpenSans-Bold';
+    font-weight: bold;
+}
+
+[data-font_family="OpenSans-Bold"] {
+    font-family: 'OpenSans-Bold';
+    font-weight: bold;
+}
+
+
+
+
+[data-font-family="Visuelt-Light"] {
+    font-family: 'Visuelt-Light';
+    font-weight: 100;
+}
+
+[data-font-family="Visuelt-Regular"] {
+    font-family: 'Visuelt-Regular';
+    font-weight: 400;
+}
+
+[data-font-family="Visuelt-Medium"] {
+    font-family: 'Visuelt-Medium';
+    font-weight: 500;
+}
+
+[data-font-family="Visuelt-Bold"] {
+    font-family: 'Visuelt-Bold';
+    font-weight: 600;
+}
+[data-font_family="Visuelt-Bold"] {
+    font-family: 'Visuelt-Bold';
+    font-weight: 600;
+}
+
+[data-font-family="VisueltPro-Black"] {
+    font-family: 'VisueltPro-Black';
+}
+
+[text-center="text-center"] {
+    text-align: center;
+}
+
+[text-left="text-left"] {
+    text-align: left;
+}
+
+[paragraph-big="paragraph-big"] {
+    font-size: 1.1em;
+    line-height: 1.9em;
+}
+
+[paragraph-small="paragraph-small"] {
+    font-size: 0.9em;
+    line-height: 1.6em;
+}

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GodSpeed</title>
+    <link rel="shortcut icon" href="resources/images/fav-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="resources/css/widgets/venobox.css">
+    <link rel="stylesheet" href="resources/css/widgets/splide.min.css">
+    <link rel="stylesheet" href="resources/css/global/basic.css">
+    <link rel="stylesheet" href="resources/css/global/typography.css">
+    <link rel="stylesheet" href="resources/css/global/typography-specific.css">
+    <link rel="stylesheet" href="resources/css/global/nav-style.css">
+    <link rel="stylesheet" href="resources/css/global/universal-style.css">
+    <link rel="stylesheet" href="resources/css/global/footer.css">
+
+    <link rel="stylesheet" href="resources/css/resource/resource.css">
+
+    <script src="resources/js/basic-func.js"></script>
+
+</head>
+
+<body>
+
+    <!--------------- Navbar Section ----------------------------->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggler" data-toggle="open-navbar1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <a href="#">
+                        <img src="resources/images/logo-white.png" alt="" width="170px">
+                    </a>
+                </div>
+                <div class="nav-menu-container">
+                    <div class="navbar-menu" id="open-navbar1">
+                        <ul class="navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="navbar-dropdown">
+                                <a href="javascript:void(0)" class="dropdown-toggler" data-dropdown="my-dropdown-id">
+                                    About <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown" id="my-dropdown-id">
+                                    <!-- <li class="separator"></li>  -->
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="leadership.html">
+                                            The Team
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="hiring-process.html">
+                                    Hiring Process
+                                </a></li>
+                            <li class="navbar-dropdown">
+                                <a href="#" class="dropdown-toggler" data-dropdown="blog">
+                                    Staffing <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown" id="blog">
+                                    <li><a href="contingent-staffing.html">Contingent Staffing</a></li>
+                                    <li><a href="permanent-staffing.html">Permanent Staffing</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- <li><a href="#">Permanent<br> Staffing</a></li> -->
+                            <li><a href="payroll-outsourcing.html">Payroll Outsourcing</a></li>
+                            <li class="active"><a href="resources.html">Resources</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--------------- Navbar Section ----------------------------->
+
+    <main>
+        <!------------ Banner ---------------->
+        <section class="" id="res-section-1">
+            <div class="banner-content-style-1" id="po-banner-content-1">
+                <link rel="stylesheet" href="resources/css/widgets/widget-banner-content-1.css">
+                <style>
+                    #po-banner-content-1 {
+                        --banner-content-max-width: 1150px;
+                    }
+
+                    .banner-content-style-1 .banner-title {
+                        margin: 0px;
+                    }
+
+                    /* .banner-content-style-1 .banner-subtitle {
+                        font-size: clamp(1.8em, calc(5vw + 0.25rem), 1.5em);
+                    } */
+                </style>
+                <h2 class="banner-subtitle p-b10" data-font-family="Poppin-Bold">
+                    <span>
+                        Resources
+                    </span>
+                </h2>
+
+                <h1 class="banner-title" data-hover-color='hover-color' data-font-family="VisueltPro-Black">
+                    Learn More About Us
+                </h1>
+
+                <p class="banner-para" data-hover-color='hover-color' data-font-family="OpenSans-Regular">
+                    <span>
+                        <em>Knowledge is power. Information is liberating.</em>
+                    </span>
+                </p>
+                <p data-hover-color='hover-color' data-font-family="OpenSans-Regular">
+                    <span>
+                        <em> - Kofi Annan</em>
+                    </span>
+                </p>
+            </div>
+        </section>
+        <!------------ Banner ---------------->
+
+        <section id="res-section-2">
+            <div class="banner-container-type-folloze" id="banner-folloze-1">
+                <link rel="stylesheet" href="resources/css/widgets/widget-banner-type-folloze.css">
+                <style>
+                    #banner-folloze-1 {
+                        --banner-bg: url(../../../resources/images/resources/faq-bg.svg);
+                        --banner-bg-alignment-x: right;
+                        /* left | center | right */
+                        --banner-bg-alignment-y: center;
+                        /* left | center | right */
+                        --banner-bg-size: min(100%, 1920px) 100%;
+                        /* min(100%, 1920px) */
+                        --banner-padding-top: 5em;
+                        --banner-padding-bottom: 5em;
+
+                        --banner-bg-repeat: no-repeat;
+
+                        --banner-inner-bg: transparent;
+                        --banner-content-bg: transparent;
+
+                        --banner-content-alignment: flex-start;
+                        /* flex-start | center | flex-end */
+                        --banner-text-alignment: left;
+                        /* left | center | right */
+                        --banner-content-max-width: 900px;
+                    }
+
+                    @media(max-width:1442px) {
+                        #banner-folloze-1 {
+                            --banner-content-max-width: 700px;
+                        }
+                    }
+
+                    @media(max-width:700px) {
+                        #banner-folloze-1 {
+                            --banner-content-max-width: 900px;
+                        }
+                    }
+                </style>
+
+                <div class="banner-inner-container">
+                    <div class="banner-content">
+                        <h2 data-font-family="Poppin-Bold" data-secondary-color='secondary-color' class="p-tb10">
+                            Frequently
+                            <br>
+                            Asked Questions
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="res-section-3">
+            <link rel="stylesheet" href="resources/css/widgets/widgets-accordion.css">
+            <style>
+                .accordion-content .res-accordion .content a {
+                    text-decoration: underline;
+                }
+            </style>
+            <div class="accordion-content" data-width="limited">
+                <div class="res-accordion">
+                    <input type="checkbox" name="collapse" id="handle1">
+                    <h3 class="handle" data-font-family="Visuelt-Bold">
+                        <label for="handle1">Who is Godspeed Group?</label>
+                    </h3>
+                    <div class="content">
+                        <p data-font-family="OpenSans-Regular">Godspeed Group is a leading staffing (Godspeed Workforce)
+                            and logistics (Godspeed Supply Chain) solutions provider. It was founded in 2014 in Ontario
+                            and has since expanded to multiple offices with hundreds of clients across Canada. For more,
+                            <a href="about-us.html" target="_blank">click here</a>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="res-accordion">
+                    <input type="checkbox" name="collapse" id="handle2">
+                    <h3 class="handle" data-font-family="Visuelt-Bold">
+                        <label for="handle2">What services does Godspeed Workforce offer?</label>
+                    </h3>
+                    <div class="content">
+                        <p data-font-family="OpenSans-Regular">At Godspeed Workforce, we take all the pain points of
+                            hiring and resolve them by finding qualified candidates to do the job. We service the
+                            following industries:</p>
+                        <ul style="padding:10px 0px 10px 20px;">
+                            <li data-font-family="OpenSans-Regular">Transportation/Warehouse</li>
+                            <li data-font-family="OpenSans-Regular">Food Processing and Delivery</li>
+                            <li data-font-family="OpenSans-Regular">E-Commerce</li>
+                            <li data-font-family="OpenSans-Regular">Light Industrial Manufacturers</li>
+                            <li data-font-family="OpenSans-Regular">Large Retail Brands</li>
+
+                        </ul>
+                        <p data-font-family="OpenSans-Regular">We specialize in both <a href="contingent-staffing.html"
+                                target="_blank">contingent</a> and <a href="permanent-staffing.html"
+                                target="_blank">permanent staffing</a>. </p>
+                    </div>
+                </div>
+                <div class="res-accordion">
+                    <input type="checkbox" name="collapse" id="handle3">
+                    <h3 class="handle" data-font-family="Visuelt-Bold">
+                        <label for="handle3">We’ve been handling our staffing by ourselves for years. Why should we work
+                            with you?</label>
+                    </h3>
+                    <div class="content">
+                        <p data-font-family="OpenSans-Regular">We understand that going through hundreds - if not
+                            thousands - of resumes is time consuming. Plus, you might not even find the right candidate
+                            after a series of interviews, and as a result, would need to restart the entire hiring
+                            process.</p>
+
+                        <p data-font-family="OpenSans-Regular" class="p-tb10">By working with Godspeed Workforce, you
+                            can rest assured that you will only interview the most qualified candidates for the job. Our
+                            team of 45 in-house recruiters are experienced in identifying the strengths and weaknesses
+                            of each candidate, and therefore, placing them in the most appropriate role based on their
+                            skills.</p>
+
+                        <p data-font-family="OpenSans-Regular">We are powered by more than 2,500 hours of recruiting
+                            every single week with 45 in-house recruiters working 8 hours per day, every day of the
+                            week. By providing the right talent, we save time
+                            and increase productivity. We add value by ensuring timely replacements, implementing cost
+                            controls and compliance. We pride ourselves in creating rich, innovative, seamless and
+                            beyond satisfactory recruitment experience. <a href="contact.html" target="_blank">Click
+                                here</a> to start a
+                            conversation with us.</p>
+                    </div>
+                </div>
+                <div class="res-accordion">
+                    <input type="checkbox" name="collapse" id="handle4">
+                    <h3 class="handle" data-font-family="Visuelt-Bold">
+                        <label for="handle4">Can you help us with payroll?</label>
+                    </h3>
+                    <div class="content">
+                        <p data-font-family="OpenSans-Regular">Yes! Godspeed Workforce has all the right tools and
+                            resources to manage your payroll operations. We take care of tax slips, payslips, direct
+                            deposit, and everything in between. <a href="contact.html" target="_blank">Click here</a> to
+                            know more.</p>
+
+                    </div>
+                </div>
+                <div class="res-accordion">
+                    <input type="checkbox" name="collapse" id="handle5">
+                    <h3 class="handle" data-font-family="Visuelt-Bold">
+                        <label for="handle5">How many candidates do you have in your database?</label>
+                    </h3>
+                    <div class="content">
+                        <p data-font-family="OpenSans-Regular">We have more than 3,300 employable associates and
+                            counting.</p>
+
+                    </div>
+                </div>
+                <div class="res-accordion">
+                    <input type="checkbox" name="collapse" id="handle6">
+                    <h3 class="handle" data-font-family="Visuelt-Bold">
+                        <label for="handle6">How much do you charge?</label>
+                    </h3>
+                    <div class="content">
+                        <p data-font-family="OpenSans-Regular">Our pricing is very competitive and varies depending on
+                            your company’s needs. Please contact us at <a href='contact.html'
+                                target="_blank">info@godspeedgroup.ca</a>
+                            and one of our sales
+                            managers would be happy to provide you with a customized quote. </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="res-section-4">
+            <div class="heading-container" data-width="limited">
+                <h2 class="pt30" data-font-family="Visuelt-Medium">Linkedin Articles</h2>
+            </div>
+
+            <div class="widget-blog-type-1" id="blog-type-1">
+                <link rel="stylesheet" href="resources/css/widgets/widget-blog-type-1.css">
+                <script src="resources/js/widgets/widget-blog-type-1.js"></script>
+                <style>
+                    /* @media(max-width:680px) {
+                        .widget-blog-type-1 {
+                            flex-direction: column;
+                        }
+                    } */
+                </style>
+                <script>
+                    const articlesData = [
+                        {
+                            src: 'resources/images/resources/linkedin-article/1.png',
+                            date: '26 July, 2022',
+                            heading: 'Biggest Mistakes I Made as a CEO',
+                            description: 'I launched Godspeed Group in 2014 along with my brother Abhishek Tandon…',
+                            url: 'https://www.linkedin.com/pulse/biggest-mistakes-i-made-ceo-ash-ashish-tandon/'
+                        },
+                        {
+                            src: 'resources/images/resources/linkedin-article/2.png',
+                            date: '26 July, 2022',
+                            heading: 'Every Client Should Read This!',
+                            description: 'Not all days are same. I see my sales person working the phones and doing the follow ups…',
+                            url: 'https://www.linkedin.com/pulse/every-client-should-read-ash-ashish-tandon/'
+                        },
+                        {
+                            src: 'resources/images/resources/linkedin-article/3.png',
+                            date: '26 July, 2022',
+                            heading: 'Struggling With Staffing Issues? ',
+                            description: 'Your existing partners lack the recruitment power to fulfill your staffing in a timely…',
+                            url: 'https://www.linkedin.com/posts/godspeedgroup_revolutionize-your-hiring-with-godspeed-workforce-activity-6940395242999201793-V-oW/?utm_source=share&utm_medium=member_desktop'
+                        },
+
+                    ]
+
+                    addPosts('#blog-type-1', articlesData)
+                </script>
+            </div>
+        </section>
+
+        <section id="res-section-5">
+            <div class="heading-container" data-width="limited">
+                <h2 class="pt30" data-font-family="Visuelt-Medium">Industry Insight Reports</h2>
+            </div>
+
+            <div class="widget-blog-type-1" id="blog-type-2">
+                <link rel="stylesheet" href="resources/css/widgets/widget-blog-type-1.css">
+                <script src="resources/js/widgets/widget-blog-type-1.js"></script>
+                <script>
+                    const reportsData = [
+                        {
+                            src: 'resources/images/resources/industry-insight-report/4.png',
+                            date: '26 July, 2022',
+                            heading: 'Canada’s Labour Shortages',
+                            description: 'Canada’s labour shortages will outlive a recession: RBC',
+                            url: 'resources/pdf/Canada-Labour-Shortages.pdf'
+                        },
+                        {
+                            src: 'resources/images/resources/industry-insight-report/5.png',
+                            date: '26 July, 2022',
+                            heading: 'Labour Force Survey 2',
+                            description: 'StatCan: Labour Force Survey, June 202.',
+                            url: 'resources/pdf/Labour-Force-Survey.pdf'
+                        },
+                        {
+                            src: 'resources/images/resources/industry-insight-report/6.png',
+                            date: '26 July, 2022',
+                            heading: 'Labour Market Bulletin',
+                            description: 'Labour Market Bulletin, Ontario June 2022.',
+                            url: 'resources/pdf/Labour-Market-Bulletin.pdf'
+                        },
+                        {
+                            src: 'resources/images/resources/industry-insight-report/7.png',
+                            date: '26 July, 2022',
+                            heading: 'Staffing Trends 2022',
+                            description: 'Staffing Trends 2022',
+                            url: 'resources/pdf/Staffing-Trends-2022.pdf'
+                        },
+                        {
+                            src: 'resources/images/resources/industry-insight-report/8.png',
+                            date: '26 July, 2022',
+                            heading: 'State of Staffing 2022',
+                            description: '2022 State of Staffing report.',
+                            url: 'resources/pdf/State-of-staffing-2022.pdf'
+                        },
+
+
+                    ]
+
+                    addPosts('#blog-type-2', reportsData)
+                </script>
+            </div>
+        </section>
+
+    </main>
+
+    <!-------------------------------------- Main Closed ----------------------------->
+
+
+
+    <footer>
+        <section class="footer" id="footer-section-2">
+            <div class="content-container">
+                <div class="content">
+                    <div class="two-column-container">
+                        <div class="column-left">
+                            <ul>
+                                <li>
+                                    <a href="index.html">
+                                        Home
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="about-us.html">
+                                        About
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="hiring-process.html">
+                                        Hiring Process
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="resources.html">
+                                        Resources
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="contact.html">
+                                        Contact
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="contingent-staffing.html">
+                                        Contingent Staffing
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="permanent-staffing.html">
+                                        Permanent Staffing
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="payroll-outsourcing.html">
+                                        Payroll Outsourcing
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column-middle">
+                            <h5 onclick="toggleElementsState('footer-menu-1')" id="footer-title">
+                                Policies
+                                <span data-toggle-state="footer-menu-1" data-toggle-action="rotate-90">
+                                    >
+                                </span>
+                            </h5>
+
+                            <ul data-toggle-state="footer-menu-1" data-toggle-action="show-hide" data-status="passive">
+                                <li style="order: 1;">
+                                    <a href="policies.html#info1">
+                                        Health & Safety Policy
+                                    </a>
+                                </li>
+
+                                <li style="order: 3;">
+                                    <a href="policies.html#info2">
+                                        Anti Harassment Policy
+                                    </a>
+                                </li>
+
+                                <li style="order: 5;">
+                                    <a href="policies.html#info3">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+
+                                <li style="order: 7;">
+                                    <a href="policies.html#info4">
+                                        Personal Information
+                                    </a>
+                                </li>
+
+                                <li style="order: 2;">
+                                    <a href="policies.html#info5">
+                                        Personal Information Collected
+                                    </a>
+                                </li>
+
+                                <li style="order: 4;">
+                                    <a href="policies.html#info6">
+                                        Use Of Personal Information
+                                    </a>
+                                </li>
+
+                                <li style="order: 6;">
+                                    <a href="policies.html#info7">
+                                        Your Rights To Limit Use Of Personal Information
+                                    </a>
+                                </li>
+
+                                <li style="order: 8;">
+                                    <a href="policies.html#info8">
+                                        Verifying The Accuracy Of Your Information
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one-column-container">
+                        <div class="site-logo">
+                            <img src="resources/images/logo.png" width="220px" />
+                        </div>
+
+                        <div class="contact-info">
+                            <a class="social-info" href="mailto:info@godspeedgroup.ca">
+                                <span class="icon">
+                                    <img src="resources/images/social-icons/email-footer.svg" alt="Mail">
+                                </span>
+                                <span>
+                                    info@godspeedgroup.ca
+                                </span>
+                            </a>
+                            <a class="social-info" href="phone:(905)956-9525">
+                                <span class="icon">
+                                    <img src="resources/images/social-icons/phone-footer.svg" alt="phone">
+                                </span>
+                                <span>(905) 956-9525</span>
+                            </a>
+                        </div>
+                        <div class="copy-write">
+                            <a href="https://ca.linkedin.com/company/godspeedgroup" target="_blank"><img
+                                    src="resources/images/linkedIn-logo.png" width="150px" /></a>
+                            <!-- <p>Copyright © Godspeed Group 2022<br> Powered By Kreatipedia Inc.</p> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="resources/js/nav.js"></script>
+
+</body>
+
+</html>

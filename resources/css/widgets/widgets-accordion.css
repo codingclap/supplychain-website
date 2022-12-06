@@ -1,0 +1,142 @@
+/*
+ CSS for the main interaction
+*/
+.res-accordion>input[name="collapse"] {
+  display: none;
+
+  /*position: absolute;
+  left: -100vw;*/
+}
+
+.res-accordion label,
+.res-accordion .content {
+  margin: 0 auto;
+}
+
+
+.res-accordion .content {
+  background: #fff;
+  overflow: hidden;
+  height: 0; 
+  box-shadow: 3px 3px 15px #00000029;
+  border-radius: 0px 0px 42px 42px;
+  padding: 0px 100px 0px 35px;
+  text-align: left;
+}
+
+.res-accordion>input[name="collapse"]:checked~.content {
+  height: auto;
+  transition: 0.5s;
+  
+}
+
+.res-accordion label {
+  display: block;
+  text-align: left;
+  border-radius: 42px;
+}
+
+ 
+.res-accordion {
+  margin-bottom: 2em;
+  box-shadow: 3px 3px 15px #00000029;
+  border-radius: 42px;
+}
+
+.res-accordion>input[name="collapse"]:checked~.content {
+  border-top: 0;
+  transition: 0.3s;
+  
+}
+
+.res-accordion .handle {
+  margin: 0;
+  /* font-size: 16px; */
+
+}
+
+.res-accordion label {
+  color: #024778;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 20px 110px 20px 35px;
+  background: #fff;
+  user-select: none;
+  /* box-shadow: 3px 3px 15px #00000029; */
+  position: relative;
+}
+
+.res-accordion label:hover,
+.res-accordion label:focus {
+  background: #fff;
+}
+
+.res-accordion .handle label:before {
+  content: " ";
+  background-image: url('../../images/resources/plus-btn.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 1em;
+  line-height: 1.556em;
+  vertical-align: middle;
+  transition: 0.4s;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 0px; 
+}
+
+.res-accordion>input[name="collapse"]:checked~.handle label {
+  border-radius: 42px 42px 0px 0px;
+  box-shadow: 0px 0px 0px #00000029;
+  transition: 0.5s;
+}
+.res-accordion>input[name="collapse"]:checked~.content{ 
+  box-shadow: 0px 0px 0px #00000029;
+  padding-bottom: 1.5em; 
+    overflow: auto;
+    transition: 0.5s;
+}
+
+.res-accordion>input[name="collapse"]:checked~.handle label:before {
+  background-image: url('../../images/resources/minus-btn.svg');
+  transform: rotate(180deg);
+  transform-origin: center;
+  transition: 0.4s;
+}
+
+
+/*
+ Demo purposes only
+*/
+.res-accordion p:last-child {
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+
+/* For Desktop */
+@media (max-width:720px){
+  .res-accordion .content {
+    padding: 0px 35px 0px 35px;
+  }
+
+  .res-accordion label  {
+    padding: 20px 80px 20px 35px;
+  }
+}
+@media only screen and (min-width: 620px) { 
+
+  .res-accordion>input[name="collapse"]:checked~.content {
+    height: auto;
+    padding-bottom: 1.5em; 
+     
+  }
+
+}

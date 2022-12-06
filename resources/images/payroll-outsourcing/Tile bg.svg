@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="425.671" height="430" viewBox="0 0 425.671 430">
+  <defs>
+    <filter id="Path_3827" x="0" y="0" width="425.671" height="430" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_5813" x="0" y="374.442" width="425.671" height="55.558" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1360" data-name="Group 1360" transform="translate(19.5 19.5)">
+    <g transform="matrix(1, 0, 0, 1, -19.5, -19.5)" filter="url(#Path_3827)">
+      <path id="Path_3827-2" data-name="Path 3827" d="M0,0H380.671V385H0Z" transform="translate(19.5 19.5)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -19.5, -19.5)" filter="url(#Path_5813)">
+      <path id="Path_5813-2" data-name="Path 5813" d="M0,0H380.671V10.558H0Z" transform="translate(19.5 393.94)" fill="#024778"/>
+    </g>
+  </g>
+</svg>

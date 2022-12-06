@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GodSpeed</title>
+    <link rel="shortcut icon" href="resources/images/fav-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="resources/css/global/basic.css">
+    <link rel="stylesheet" href="resources/css/global/typography.css">
+    <link rel="stylesheet" href="resources/css/global/typography-specific.css">
+    <link rel="stylesheet" href="resources/css/global/nav-style.css">
+    <link rel="stylesheet" href="resources/css/global/universal-style.css">
+    <link rel="stylesheet" href="resources/css/global/footer.css">
+
+    <script src="resources/js/basic-func.js"></script>
+
+    <style>
+        section {
+            padding-block: unset;
+        }
+
+        #contact-section-1 {
+            padding-block: var(--universal-padding-heavy);
+            padding-bottom: 7em;
+        }
+
+        #contact-section-6 {
+            padding: var(--universal-padding-heavy) 1.75em;
+        }
+
+        #contact-section-3,
+        #contact-section-4,
+        #contact-section-7 {
+            padding-block: var(--universal-padding-light);
+        }
+
+        #contact-section-4 {
+            padding-bottom: 2em;
+        }
+
+        #contact-section-7 {
+            padding: 4em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--------------- Navbar Section ----------------------------->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggler" data-toggle="open-navbar1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <a href="#">
+                        <img src="resources/images/logo-white.png" alt="" width="170px">
+                    </a>
+                </div>
+                <div class="nav-menu-container">
+                    <div class="navbar-menu" id="open-navbar1">
+                        <ul class="navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="navbar-dropdown">
+                                <a href="javascript:void(0)" class="dropdown-toggler" data-dropdown="my-dropdown-id">
+                                    About <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown" id="my-dropdown-id">
+                                    <!-- <li class="separator"></li>  -->
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="leadership.html">
+                                            The Team
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="hiring-process.html">
+                                    Hiring Process
+                                </a></li>
+                            <li class="navbar-dropdown">
+                                <a href="#" class="dropdown-toggler" data-dropdown="blog">
+                                    Staffing <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown" id="blog">
+                                    <li><a href="contingent-staffing.html">Contingent Staffing</a></li>
+                                    <li><a href="permanent-staffing.html">Permanent Staffing</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- <li><a href="#">Permanent<br> Staffing</a></li> -->
+                            <li><a href="payroll-outsourcing.html">Payroll Outsourcing</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                            <li class="active"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--------------- Navbar Section ----------------------------->
+
+
+    <main>
+        <!------------ Header ---------------->
+        <section class="" id="contact-section-1">
+            <div class="banner-content-style-1" id="banner-content-1">
+                <link rel="stylesheet" href="resources/css/widgets/widget-banner-content-1.css">
+                <style>
+                    #banner-content-1 {
+                        --banner-content-max-width: 900px;
+                    }
+
+                    #contact-section-1 {
+                        /* background-image: url(resources/images/contact-us/background-shape.svg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: bottom; */
+                        padding: 3em 0 0em 0;
+                    }
+
+                    .banner-content-style-1 .banner-subtitle {
+                        font-size: clamp(2em, calc(10vw + 0.5rem), 2.5em);
+                    }
+
+                    .banner-content-style-1 .banner-title {
+                        margin: 0px;
+                    }
+                </style>
+
+                <h2 class="banner-subtitle p-b10" data-font-family="Poppin-Bold">
+                    <span>
+                        24/7/365
+                    </span>
+                </h2>
+
+                <h1 class="banner-title" data-hover-color="hover-color" data-font-family="VisueltPro-Black"
+                    style="color: var(--secondary-color);">
+                    Support from Real People
+                </h1>
+
+            </div>
+        </section>
+        <!------------ Header ---------------->
+
+        <!------------ Section 3 ---------------->
+        <section class="" id="contact-section-3">
+            <!------------ Complimentary Section ---------------->
+            <div class="complimentary-container-type-1" id="complimentary-2">
+                <link rel="stylesheet" href="resources/css/widgets/widget-complimentary-type-1.css">
+                <style>
+                    #complimentary-2 {
+                        --flex-direction: row-reverse;
+                        --image-column-max-width: 100%;
+                        --content-column-max-width: 500px;
+                        --image-column-width: 50%;
+                        --content-column-width: 50%;
+                        --container-max-width: 1280px;
+                        margin-block: 5em;
+                        --gap: 5em;
+                    }
+
+                    @media (max-width: 900px) {
+                        #complimentary-2 {
+                            --content-column-max-width: 600px;
+                            margin-block: 2em;
+                        }
+
+                        .complimentary-container-type-1 {
+                            flex-direction: column;
+                            max-width: 90%;
+                            font-size: 0.9em;
+                        }
+
+                        .complimentary-container-type-1 .column-2 {
+                            text-align: center;
+                        }
+
+                        .complimentary-container-type-1 {
+                            gap: 4em;
+                        }
+                    }
+
+                    p {
+                        font-size: var(--font-size-p2);
+                    }
+                </style>
+                <div class="column-1">
+                    <picture>
+                        <source media="(min-width: 700px)" srcset="resources/images/contact-us/illustration.svg">
+                        <img src="resources/images/contact-us/illustration.svg" alt="dummy image" width="100%">
+                    </picture>
+                </div>
+                <div class="column-2">
+                    <p data-font-family="Visuelt-Light" class="p-tb10">
+                        Our support team is staffed by real recruiters, dispatchers, and account managers; not
+                        call-center script readers. Get support 24/7 from people who have solved dozens of problems just
+                        like yours and know the solutions to your problems inside and out.
+                    </p>
+
+                    <div class="btn-container">
+                        <a href="javascript:void(0)" id="myBtn" class="btn btn-primary"
+                            data-font-family="OpenSans-Bold">
+                            <span class="btn-content">Work With Us</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!------------ Complimentary Section ---------------->
+        </section>
+        <!------------ Section 3 ---------------->
+
+        <!------------ Section 4 ---------------->
+        <section id="contact-section-4">
+            <!------------ Promo Section ---------------->
+            <div class="icon-boxes-type-2" id="hp-icon-boxes-1">
+                <link rel="stylesheet" href="resources/css/widgets/widget-icon-boxes-type-2.css">
+                <style>
+                    #hp-icon-boxes-1 {
+                        --separator-bg-color: #70707088;
+                        --icon-box-max-width: 380px;
+                        --gap: min(5vw, 2em);
+                        --icon-box-heading-font-size: 1.4em;
+                        --icon-box-para-font-size: 1em;
+                        --icon-box-para-middle-font-size: 0.8em;
+                    }
+
+                    #hp-icon-boxes-1 .icon-box {
+                        width: var(--icon-box-max-width);
+                    }
+
+                    #hp-icon-boxes-1 {
+                        margin-top: 1em;
+                    }
+
+                    #hp-icon-boxes-1 .icon-box .promo-icon img {
+                        width: 93%;
+                        height: 93%;
+                    }
+
+                    #hp-icon-boxes-1 .icon-box .promo-icon-content h3 {
+                        padding: 20px 0px;
+                    }
+
+                    #hp-icon-boxes-1 .icon-box[data-sep="before"]:before {
+                        width: 360px;
+                        height: 1.72px;
+                        top: 45px;
+                        left: calc(-10 * var(--gap) / 2);
+                        background-color: #707070;
+                        z-index: -1;
+                    }
+
+                    .location-btn {
+                        padding: 0.5em 1.5em;
+                        border: 1px solid #707070;
+                        font-size: 16px;
+                        margin-top: 1.5em;
+                        color: #454545;
+                        position: relative;
+                        transition: color 0.25s ease-in-out;
+                        overflow: hidden;
+                        display: inline-block;
+                    }
+
+                    .location-btn::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 110%;
+                        height: 110%;
+                        background: #000000;
+                        z-index: -1;
+                        transform: translateY(110%);
+                        transition: transform 0.25s ease-in-out;
+                    }
+
+                    .location-btn:hover::before {
+                        transform: translateY(0);
+                    }
+
+                    .location-btn:hover {
+                        color: #fff;
+                    }
+                </style>
+                <div class="icon-box">
+                    <div class="promo-icon">
+                        <img src="resources/images/contact-us/location-icon.svg" alt="icon">
+                    </div>
+
+                    <div class="promo-icon-content">
+                        <h3 data-font-family="Visuelt-Medium" style="color: var(--text-color);">Location</h3>
+                        <p data-font-family="Visuelt-Light" style="color: var(--text-color);" class="p-b10">
+                            <b>Corp Office :</b> 2795 Slough St.,<br> Mississauga, ON L4T 1G2
+                        </p>
+
+                        <div>
+                            <a href="javascript:void(0);" onclick="hyperlinkTo('https\://goo.gl/maps/m6pQJHW1nKDNYpeP7', false)" data-font-family="Visuelt-Light" class="location-btn">Find us
+                                on
+                                google maps</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="icon-box" data-sep="before">
+                    <div class="promo-icon">
+                        <img src="resources/images/contact-us/drop-us-icon.svg" alt="icon">
+                    </div>
+
+                    <div class="promo-icon-content">
+                        <h3 data-font-family="Visuelt-Medium" style="color: var(--text-color);">Drop us a line</h3>
+                        <p data-font-family="Visuelt-Light"
+                            style="color: var(--text-color);font-size: var(--icon-box-para-middle-font-size);"
+                            class="p-b10">
+                            If you need to inquire about any<br> information, whether it is for our<br> logistics
+                            division,
+                            workforce solutions<br> or about finding you a job.
+                        </p>
+                        <div class="p-t10">
+                            <a href="mailto:info@godspeedgroup.ca" style="color: var(--text-color);"
+                                data-font-family="Visuelt-Light">(905) 956-9525</a>
+                        </div>
+                        <div class="p-t10">
+                            <a href="mailto:info@godspeedgroup.ca" style="color: var(--text-color);"
+                                data-font-family="Visuelt-Light">info@godspeedgroup.ca</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="icon-box" data-sep="before">
+                    <div class="promo-icon">
+                        <img src="resources/images/contact-us/social-icon.svg" alt="icon">
+                    </div>
+
+                    <div class="promo-icon-content">
+                        <h3 data-font-family="Visuelt-Medium" style="color: var(--text-color);">Social profiles</h3>
+                        <span data-font-family="Visuelt-Light"
+                            style="color: var(--text-color);display: flex;align-items: center;gap:20px;">
+                            <a href="https://www.linkedin.com/company/godspeedgroup/" target="_blank"><img
+                                    src="resources/images/social-icons/linkedin-color.svg" alt="" width="45px"></a>
+                            <a href="https://www.youtube.com/channel/UCMz2hvOgF0a0Fj52O8Ae5Rw" target="_blank"><img
+                                    src="resources/images/social-icons/youtube-color.svg" alt="" width="45px"></a>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!------------ Promo Section ---------------->
+        </section>
+        <!------------ Section 4 ---------------->
+
+        <!------------ Section 5 ---------------->
+        <section id="contact-section-5">
+            <link rel="stylesheet" href="resources/css/global/poup-window.css">
+
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="poup-header">
+                        <span class="close"><img src="resources/images/cross-icon.png" alt=""></span>
+                        <h2 data-font-family="Visuelt-Medium">
+                            Connect With Godspeed Team
+                        </h2>
+                    </div>
+                    <div class="popup-form">
+                        <form action="">
+                            <div class="subject input-field">
+                                <input type="text" name="name" id="subject" placeholder="Subject">
+                            </div>
+
+                            <div class="username input-field">
+                                <input type="text" name="fname" id="fname" placeholder="First Name">
+                                <input type="text" name="lname" id="lname" placeholder="Last Name">
+                            </div>
+
+                            <div class="user-contact input-field">
+                                <input type="text" name="email" id="email" placeholder="Example@gmail.com">
+                                <input type="text" name="phone" id="phone" placeholder="(000)000-000-0000">
+                            </div>
+
+                            <div class="description input-field">
+                                <textarea name="desc" id="" cols="30" rows="10"
+                                    placeholder="Enter your message here..."></textarea>
+                            </div>
+
+                            <div class="btn-container">
+                                <a href="javascript:void(0)" class="btn btn-primary2 form-btn"
+                                    data-font-family="OpenSans-Medium">
+                                    <span class="btn-content">Submit</span>
+                                </a>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <script>
+                var modal = document.getElementById("myModal");
+                var btn = document.getElementById("myBtn");
+                var span = document.getElementsByClassName("close")[0];
+                btn.onclick = function () {
+                    modal.style.display = "flex";
+                }
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        // modal.style.display = "none";
+                    }
+                }
+            </script>
+            <!-- The Modal -->
+        </section>
+
+        <!------------ Section 5 ---------------->
+
+        <section id="contact-section-6">
+            <div class="widget-center-tabs-type-1" id="contact-center-tabs-container-id">
+                <link rel="stylesheet" href="resources/css/widgets/widget-center-tabs-type-1.css">
+
+                <div class="widget-main-container">
+
+                </div>
+
+                <script src="resources/js/widgets/widget-center-tabs-type-1.js"></script>
+                <script>
+                    const centersData = [{
+                            name: 'toronto',
+                            members: [{
+                                    name: 'John Mageau',
+                                    vocation: 'designation',
+                                    description: '',
+                                    social: {
+                                        linkedin: 'https://www.linkedin.com/in/john-mageau-62632b6/',
+                                        facebook: '',
+                                        youtube: '',
+                                        gmail: '',
+                                        reddit: '',
+                                        twitter: '',
+                                        number: '',
+                                        email: ''
+                                    },
+                                    socialIcons: {
+                                        linkedin: 'resources/images/social-icons/linkedin-nofill-highlight.svg',
+                                        facebook: 'resources/images/social-icons/facebook-connect.svg',
+                                        youtube: 'resources/images/social-icons/youtube-color.svg',
+                                        gmail: 'resources/images/social-icons/gmail-connect.svg',
+                                        reddit: 'resources/images/social-icons/reddit-connect.svg',
+                                        twitter: 'resources/images/social-icons/twitter-connect.svg',
+                                        number: 'resources/images/social-icons/phone-connect.svg',
+                                        email: 'resources/images/social-icons/email-connect.svg'
+                                    }
+                                },
+                                {
+                                    name: 'Denise Kinsman',
+                                    vocation: 'designation',
+                                    description: '',
+                                    social: {
+                                        linkedin: 'https://www.linkedin.com/in/denise-marie-kinsman/?originalSubdomain=ca',
+                                        facebook: '',
+                                        youtube: '',
+                                        gmail: '',
+                                        reddit: '',
+                                        twitter: '',
+                                        number: '',
+                                        email: ''
+                                    },
+                                    socialIcons: {
+                                        linkedin: 'resources/images/social-icons/linkedin-nofill-highlight.svg',
+                                        facebook: 'resources/images/social-icons/facebook-connect.svg',
+                                        youtube: 'resources/images/social-icons/youtube-color.svg',
+                                        gmail: 'resources/images/social-icons/gmail-connect.svg',
+                                        reddit: 'resources/images/social-icons/reddit-connect.svg',
+                                        twitter: 'resources/images/social-icons/twitter-connect.svg',
+                                        number: 'resources/images/social-icons/phone-connect.svg',
+                                        email: 'resources/images/social-icons/email-connect.svg'
+                                    }
+                                },
+                                {
+                                    name: 'Iman Thanvi',
+                                    vocation: 'designation',
+                                    description: '',
+                                    social: {
+                                        linkedin: 'https://www.linkedin.com/in/iman-thanvi-0aa7721ba/?originalSubdomain=ca',
+                                        facebook: '',
+                                        youtube: '',
+                                        gmail: '',
+                                        reddit: '',
+                                        twitter: '',
+                                        number: '',
+                                        email: ''
+                                    },
+                                    socialIcons: {
+                                        linkedin: 'resources/images/social-icons/linkedin-nofill-highlight.svg',
+                                        facebook: 'resources/images/social-icons/facebook-connect.svg',
+                                        youtube: 'resources/images/social-icons/youtube-color.svg',
+                                        gmail: 'resources/images/social-icons/gmail-connect.svg',
+                                        reddit: 'resources/images/social-icons/reddit-connect.svg',
+                                        twitter: 'resources/images/social-icons/twitter-connect.svg',
+                                        number: 'resources/images/social-icons/phone-connect.svg',
+                                        email: 'resources/images/social-icons/email-connect.svg'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            name: 'Cambridge',
+                            members: [{
+                                    name: "Michael O'Toole",
+                                    vocation: 'designation',
+                                    description: '',
+                                    social: {
+                                        linkedin: 'https://www.linkedin.com/in/mike-o-toole-a0598995/',
+                                        facebook: '',
+                                        youtube: '',
+                                        gmail: '',
+                                        reddit: '',
+                                        twitter: '',
+                                        number: '',
+                                        email: ''
+                                    },
+                                    socialIcons: {
+                                        linkedin: 'resources/images/social-icons/linkedin-nofill-highlight.svg',
+                                        facebook: 'resources/images/social-icons/facebook-connect.svg',
+                                        youtube: 'resources/images/social-icons/youtube-color.svg',
+                                        gmail: 'resources/images/social-icons/gmail-connect.svg',
+                                        reddit: 'resources/images/social-icons/reddit-connect.svg',
+                                        twitter: 'resources/images/social-icons/twitter-connect.svg',
+                                        number: 'resources/images/social-icons/phone-connect.svg',
+                                        email: 'resources/images/social-icons/email-connect.svg'
+                                    }
+                                },
+                                {
+                                    name: 'Susan Ricketts',
+                                    vocation: 'designation',
+                                    description: '',
+                                    social: {
+                                        linkedin: 'https://www.linkedin.com/in/susan-ricketts-01313022/',
+                                        facebook: '',
+                                        youtube: '',
+                                        gmail: '',
+                                        reddit: '',
+                                        twitter: '',
+                                        number: '',
+                                        email: ''
+                                    },
+                                    socialIcons: {
+                                        linkedin: 'resources/images/social-icons/linkedin-nofill-highlight.svg',
+                                        facebook: 'resources/images/social-icons/facebook-connect.svg',
+                                        youtube: 'resources/images/social-icons/youtube-color.svg',
+                                        gmail: 'resources/images/social-icons/gmail-connect.svg',
+                                        reddit: 'resources/images/social-icons/reddit-connect.svg',
+                                        twitter: 'resources/images/social-icons/twitter-connect.svg',
+                                        number: 'resources/images/social-icons/phone-connect.svg',
+                                        email: 'resources/images/social-icons/email-connect.svg'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            name: 'London',
+                            members: [{
+                                    name: 'Ryan Marchello',
+                                    vocation: 'designation',
+                                    description: '',
+                                    social: {
+                                        linkedin: 'https://www.linkedin.com/in/ryan-marchello-16197988/',
+                                        facebook: '',
+                                        youtube: '',
+                                        gmail: '',
+                                        reddit: '',
+                                        twitter: '',
+                                        number: '',
+                                        email: ''
+                                    },
+                                    socialIcons: {
+                                        linkedin: 'resources/images/social-icons/linkedin-nofill-highlight.svg',
+                                        facebook: 'resources/images/social-icons/facebook-connect.svg',
+                                        youtube: 'resources/images/social-icons/youtube-color.svg',
+                                        gmail: 'resources/images/social-icons/gmail-connect.svg',
+                                        reddit: 'resources/images/social-icons/reddit-connect.svg',
+                                        twitter: 'resources/images/social-icons/twitter-connect.svg',
+                                        number: 'resources/images/social-icons/phone-connect.svg',
+                                        email: 'resources/images/social-icons/email-connect.svg'
+                                    }
+                                },
+                                {
+                                    name: 'Helen Sobh',
+                                    vocation: 'designation',
+                                    description: '',
+                                    social: {
+                                        linkedin: 'https://www.linkedin.com/in/ahlam-helen-sobh-636916181/',
+                                        facebook: '',
+                                        youtube: '',
+                                        gmail: '',
+                                        reddit: '',
+                                        twitter: '',
+                                        number: '',
+                                        email: ''
+                                    },
+                                    socialIcons: {
+                                        linkedin: 'resources/images/social-icons/linkedin-nofill-highlight.svg',
+                                        facebook: 'resources/images/social-icons/facebook-connect.svg',
+                                        youtube: 'resources/images/social-icons/youtube-color.svg',
+                                        gmail: 'resources/images/social-icons/gmail-connect.svg',
+                                        reddit: 'resources/images/social-icons/reddit-connect.svg',
+                                        twitter: 'resources/images/social-icons/twitter-connect.svg',
+                                        number: 'resources/images/social-icons/phone-connect.svg',
+                                        email: 'resources/images/social-icons/email-connect.svg'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            name: 'Calgary',
+                            members: [{
+                                name: 'Stephanie Gardeski',
+                                vocation: 'designation',
+                                description: '',
+                                social: {
+                                    linkedin: 'https://www.linkedin.com/in/stephanie-gardeski-95290163/',
+                                    facebook: '',
+                                    youtube: '',
+                                    gmail: '',
+                                    reddit: '',
+                                    twitter: '',
+                                    number: '',
+                                    email: ''
+                                },
+                                socialIcons: {
+                                    linkedin: 'resources/images/social-icons/linkedin-nofill-highlight.svg',
+                                    facebook: 'resources/images/social-icons/facebook-connect.svg',
+                                    youtube: 'resources/images/social-icons/youtube-color.svg',
+                                    gmail: 'resources/images/social-icons/gmail-connect.svg',
+                                    reddit: 'resources/images/social-icons/reddit-connect.svg',
+                                    twitter: 'resources/images/social-icons/twitter-connect.svg',
+                                    number: 'resources/images/social-icons/phone-connect.svg',
+                                    email: 'resources/images/social-icons/email-connect.svg'
+                                }
+                            }]
+                        },
+                        {
+                            name: 'Vancouver',
+                            members: [{
+                                name: 'Ted Hermano',
+                                vocation: 'designation',
+                                description: '',
+                                social: {
+                                    linkedin: 'https://www.linkedin.com/in/ted-hermano-b01641244/',
+                                    facebook: '',
+                                    youtube: '',
+                                    gmail: '',
+                                    reddit: '',
+                                    twitter: '',
+                                    number: '',
+                                    email: ''
+                                },
+                                socialIcons: {
+                                    linkedin: 'resources/images/social-icons/linkedin-nofill-highlight.svg',
+                                    facebook: 'resources/images/social-icons/facebook-connect.svg',
+                                    youtube: 'resources/images/social-icons/youtube-color.svg',
+                                    gmail: 'resources/images/social-icons/gmail-connect.svg',
+                                    reddit: 'resources/images/social-icons/reddit-connect.svg',
+                                    twitter: 'resources/images/social-icons/twitter-connect.svg',
+                                    number: 'resources/images/social-icons/phone-connect.svg',
+                                    email: 'resources/images/social-icons/email-connect.svg'
+                                }
+                            }]
+                        },
+                        {
+                            name: 'Winnipeg',
+                            members: [{
+                                name: 'Vince Styke',
+                                vocation: 'designation',
+                                description: '',
+                                social: {
+                                    linkedin: 'https://www.linkedin.com/in/vincestycke/',
+                                    facebook: '',
+                                    youtube: '',
+                                    gmail: '',
+                                    reddit: '',
+                                    twitter: '',
+                                    number: '',
+                                    email: ''
+                                },
+                                socialIcons: {
+                                    linkedin: 'resources/images/social-icons/linkedin-nofill-highlight.svg',
+                                    facebook: 'resources/images/social-icons/facebook-connect.svg',
+                                    youtube: 'resources/images/social-icons/youtube-color.svg',
+                                    gmail: 'resources/images/social-icons/gmail-connect.svg',
+                                    reddit: 'resources/images/social-icons/reddit-connect.svg',
+                                    twitter: 'resources/images/social-icons/twitter-connect.svg',
+                                    number: 'resources/images/social-icons/phone-connect.svg',
+                                    email: 'resources/images/social-icons/email-connect.svg'
+                                }
+                            }]
+                        },
+                    ]
+
+                    const tabsMainContainerSelector = '#contact-center-tabs-container-id .widget-main-container';
+
+                    addCenterTabs(tabsMainContainerSelector, centersData);
+                </script>
+            </div>
+        </section>
+
+        <!------------ Section 7 ---------------->
+        <section id="contact-section-7">
+            <div class="heading-container" data-width="limited" id="map-section">
+                <h2 class="pt30" style="text-align: center;" data-font-family="Visuelt-Bold">
+                    Our Offices
+                </h2>
+            </div>
+
+            <div id="address-container">
+                <link rel="stylesheet" href="resources/css/widgets/widget-icon-boxes-type-2.css">
+                <div class="icon-box-container">
+                    <div class="icon-boxes-type-2" id="icons-container-1">
+                        <style>
+                            #icons-container-1 {
+                                --separator-bg-color: #70707088;
+                                --icon-box-max-width: 250px;
+                                font-size: 18px;
+                                --gap: min(15vw, 5em);
+                                margin-bottom: 0em;
+                                --secondary-color: var(--heading-color);
+                            }
+                        </style>
+
+                        <div class="icon-box">
+                            <div class="promo-icon-content">
+                                <h3 data-font-family="Visuelt-Bold">
+                                    Toronto
+                                </h3>
+                                <p data-font-family="OpenSans-Regular">
+                                    2795 Slough St., Mississauga, ON L4T 1G2
+                                </p>
+
+                                <div class="arrow-btn-container" data-font-family="Visuelt-Bold" onclick="hyperlinkTo('https\://goo.gl/maps/m6pQJHW1nKDNYpeP7', false)">
+                                    <span class="arrow-button">Find us on map</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="icon-box" data-sep="before">
+                            <div class="promo-icon-content">
+                                <h3 data-font-family="Visuelt-Bold">
+                                    Cambridge
+                                </h3>
+                                <p data-font-family="OpenSans-Regular">
+                                    2795 Slough St., Mississauga, ON L4T 1G2
+                                </p>
+                                <div class="arrow-btn-container" data-font-family="Visuelt-Bold" onclick="hyperlinkTo('https\://goo.gl/maps/m6pQJHW1nKDNYpeP7', false)">
+                                    <span class="arrow-button">Find us on map</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="icon-box" data-sep="before">
+                            <div class="promo-icon-content">
+                                <h3 data-font-family="Visuelt-Bold">
+                                    London
+                                </h3>
+                                <p data-font-family="OpenSans-Regular">
+                                    2795 Slough St., Mississauga, ON L4T 1G2
+                                </p>
+                                <div class="arrow-btn-container" data-font-family="Visuelt-Bold" onclick="hyperlinkTo('https\://goo.gl/maps/m6pQJHW1nKDNYpeP7', false)">
+                                    <span class="arrow-button">Find us on map</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon-box-container">
+                    <div class="icon-boxes-type-2" id="icons-container-2">
+                        <style>
+                            #icons-container-2 {
+                                --separator-bg-color: #70707088;
+                                --icon-box-max-width: 250px;
+                                font-size: 18px;
+                                --gap: min(15vw, 5em);
+                                --secondary-color: var(--heading-color);
+                            }
+                        </style>
+
+                        <div class="icon-box">
+                            <div class="promo-icon-content">
+                                <h3 data-font-family="Visuelt-Bold">
+                                    Vancouver
+                                </h3>
+                                <p data-font-family="OpenSans-Regular">
+                                    2795 Slough St., Mississauga, ON L4T 1G2
+                                </p>
+                                <div class="arrow-btn-container" data-font-family="Visuelt-Bold" onclick="hyperlinkTo('https\://goo.gl/maps/m6pQJHW1nKDNYpeP7', false)">
+                                    <span class="arrow-button">Find us on map</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="icon-box" data-sep="before">
+                            <div class="promo-icon-content">
+                                <h3 data-font-family="Visuelt-Bold">
+                                    Calgary
+                                </h3>
+                                <p data-font-family="OpenSans-Regular">
+                                    2795 Slough St., Mississauga, ON L4T 1G2
+                                </p>
+                                <div class="arrow-btn-container" data-font-family="Visuelt-Bold" onclick="hyperlinkTo('https\://goo.gl/maps/m6pQJHW1nKDNYpeP7', false)">
+                                    <span class="arrow-button">Find us on map</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="icon-box" data-sep="before">
+                            <div class="promo-icon-content">
+                                <h3 data-font-family="Visuelt-Bold">
+                                    Winnipeg
+                                </h3>
+                                <p data-font-family="OpenSans-Regular">
+                                    2795 Slough St., Mississauga, ON L4T 1G2
+                                </p>
+                                <div class="arrow-btn-container" data-font-family="Visuelt-Bold" onclick="hyperlinkTo('https\://goo.gl/maps/m6pQJHW1nKDNYpeP7', false)">
+                                    <span class="arrow-button">Find us on map</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!------------ Section 7 ---------------->
+
+    </main>
+    <!-------------------------------------- Main Closed ----------------------------->
+
+
+    <footer>
+        <section class="footer" id="footer-section-2">
+            <div class="content-container">
+                <div class="content">
+                    <div class="two-column-container">
+                        <div class="column-left">
+                            <ul>
+                                <li>
+                                    <a href="index.html">
+                                        Home
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="about-us.html">
+                                        About
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="hiring-process.html">
+                                        Hiring Process
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="resources.html">
+                                        Resources
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="contact.html">
+                                        Contact
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="contingent-staffing.html">
+                                        Contingent Staffing
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="permanent-staffing.html">
+                                        Permanent Staffing
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="payroll-outsourcing.html">
+                                        Payroll Outsourcing
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column-middle">
+                            <h5 onclick="toggleElementsState('footer-menu-1')" id="footer-title">
+                                Policies
+                                <span data-toggle-state="footer-menu-1" data-toggle-action="rotate-90">
+                                    >
+                                </span>
+                            </h5>
+
+                            <ul data-toggle-state="footer-menu-1" data-toggle-action="show-hide" data-status="passive">
+                                <li style="order: 1;">
+                                    <a href="policies.html#info1">
+                                        Health & Safety Policy
+                                    </a>
+                                </li>
+
+                                <li style="order: 3;">
+                                    <a href="policies.html#info2">
+                                        Anti Harassment Policy
+                                    </a>
+                                </li>
+
+                                <li style="order: 5;">
+                                    <a href="policies.html#info3">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+
+                                <li style="order: 7;">
+                                    <a href="policies.html#info4">
+                                        Personal Information
+                                    </a>
+                                </li>
+
+                                <li style="order: 2;">
+                                    <a href="policies.html#info5">
+                                        Personal Information Collected
+                                    </a>
+                                </li>
+
+                                <li style="order: 4;">
+                                    <a href="policies.html#info6">
+                                        Use Of Personal Information
+                                    </a>
+                                </li>
+
+                                <li style="order: 6;">
+                                    <a href="policies.html#info7">
+                                        Your Rights To Limit Use Of Personal Information
+                                    </a>
+                                </li>
+
+                                <li style="order: 8;">
+                                    <a href="policies.html#info8">
+                                        Verifying The Accuracy Of Your Information
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one-column-container">
+                        <div class="site-logo">
+                            <img src="resources/images/logo.png" width="220px" />
+                        </div>
+
+                        <div class="contact-info">
+                            <a class="social-info" href="mailto:info@godspeedgroup.ca">
+                                <span class="icon">
+                                    <img src="resources/images/social-icons/email-footer.svg" alt="Mail">
+                                </span>
+                                <span>
+                                    info@godspeedgroup.ca
+                                </span>
+                            </a>
+                            <a class="social-info" href="phone:(905)956-9525">
+                                <span class="icon">
+                                    <img src="resources/images/social-icons/phone-footer.svg" alt="phone">
+                                </span>
+                                <span>(905) 956-9525</span>
+                            </a>
+                        </div>
+                        <div class="copy-write">
+                            <a href="https://ca.linkedin.com/company/godspeedgroup" target="_blank"><img
+                                    src="resources/images/linkedIn-logo.png" width="150px" /></a>
+                            <!-- <p>Copyright © Godspeed Group 2022<br> Powered By Kreatipedia Inc.</p> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="resources/js/nav.js"></script>
+
+</body>
+
+</html>

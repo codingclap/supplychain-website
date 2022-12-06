@@ -1,0 +1,7 @@
+@media (max-width:1024px) {
+
+    #complimentary-1 {
+        flex-direction: column-reverse!important;
+        gap:20px;
+    }
+}
