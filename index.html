@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>GodSpeed</title>
@@ -18,10 +19,11 @@
   <link rel="stylesheet" href="resources/css/home/home-style.css">
   <script src="resources/js/basic-func.js"></script>
 </head>
+
 <body>
 
   <!--------------- Navbar Section ----------------------------->
-  <header id="header">
+  <header style="position:sticky;top:0;z-index:999999;">
     <nav class="navbar">
       <div class="container">
         <div class="navbar-header">
@@ -30,44 +32,48 @@
             <span></span>
             <span></span>
           </button>
-          <a href="#">
-            <img src="resources/images/logo-white.png" alt="" width="170px">
+          <a href="https://workforce.godspeedgroup.ca">
+            <img src="https://workforce.godspeedgroup.ca/wp-content/uploads/2022/11/godspeed-workforce.png"
+              alt="Godspeed Workforce" width="170px">
           </a>
         </div>
+
         <div class="nav-menu-container">
           <div class="navbar-menu" id="open-navbar1">
             <ul class="navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li class="navbar-dropdown">
+              <li class=""><a href="https://workforce.godspeedgroup.ca">Home</a></li>
+              <li class="navbar-dropdown ">
                 <a href="javascript:void(0)" class="dropdown-toggler" data-dropdown="my-dropdown-id">
                   About <i class="fa fa-angle-down"></i>
                 </a>
                 <ul class="dropdown" id="my-dropdown-id">
                   <!-- <li class="separator"></li>  -->
-                  <li><a href="about-us.html">About Us</a></li>
-                  <li><a href="leadership.html">
+                  <li id="nav-about-us"><a href="https://workforce.godspeedgroup.ca/about-us">About Us</a></li>
+                  <li id="nav-the-team"><a href="https://workforce.godspeedgroup.ca/leadership">
                       The Team
                     </a>
                   </li>
                 </ul>
               </li>
-              <li><a href="hiring-process.html">
+              <li class=""><a href="https://workforce.godspeedgroup.ca/hiring-process">
                   Hiring Process
                 </a></li>
-              <li class="navbar-dropdown">
+              <li class="navbar-dropdown ">
                 <a href="#" class="dropdown-toggler" data-dropdown="blog">
                   Staffing <i class="fa fa-angle-down"></i>
                 </a>
                 <ul class="dropdown" id="blog">
-                  <li><a href="contingent-staffing.html">Contingent Staffing</a></li>
-                  <li><a href="permanent-staffing.html">Permanent Staffing</a></li>
+                  <li id="nav-contingent-staffing"><a
+                      href="https://workforce.godspeedgroup.ca/contingent-staffing">Contingent Staffing</a></li>
+                  <li id="nav-permanent-staffing"><a
+                      href="https://workforce.godspeedgroup.ca/permanent-staffing">Permanent Staffing</a></li>
                 </ul>
               </li>
 
               <!-- <li><a href="#">Permanent<br> Staffing</a></li> -->
-              <li><a href="payroll-outsourcing.html">Payroll Outsourcing</a></li>
-              <li><a href="resources.html">Resources</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li class=""><a href="https://workforce.godspeedgroup.ca/payroll-outsourcing">Payroll Outsourcing</a></li>
+              <li class=""><a href="https://workforce.godspeedgroup.ca/resources">Resources</a></li>
+              <li class=""><a href="https://workforce.godspeedgroup.ca/contact">Contact</a></li>
             </ul>
           </div>
 
@@ -77,27 +83,50 @@
   </header>
   <!--------------- Navbar Section ----------------------------->
 
+  <script src="resources/js/splide.min.js"></script>
+  <link rel="stylesheet" href="resources/css/home/home-style.css">
+
   <main>
     <!--------------- Header Section ----------------------------->
     <!-- 33 - 66 section -->
-    <section class="section-40-60" id="section-1">
-      <div class="container-40-60">
+    <section id="section-1">
+      <div class="complimentary-container-type-1" id="complimentary-home-1">
+        <link rel="stylesheet" href="resources/css/widgets/widget-complimentary-type-1.css">
+        <style>
+          #complimentary-home-1 {
+            --flex-direction: row;
+            --image-column-max-width: 700px;
+            --content-column-max-width: 800px;
+            --image-column-width: 50%;
+            --content-column-width: 50%;
+            --container-max-width: 1380px;
+
+            --mobi-flex-direction: column;
+          }
+
+          @media (max-width:900px) {
+            #complimentary-home-1 {
+              gap: 0;
+            }
+          }
+        </style>
+
         <div class="column-1">
           <picture>
-            <source srcset="resources/images/rocket.webp">
-            <img src="resources/images/rocket.gif" alt="dummy image" width="100%">
+            <source srcset="resources/images/home/hero-image.png">
+            <img src="resources/images/home/hero-image.png" loading="lazy" alt="Godspeed_unicon" width="100%">
           </picture>
         </div>
         <div class="column-2">
-          <h1 data-font-family="VisueltPro-Black">Unrivaled <span class="text-shadow">Speed</span><br> Of Fulfillment
+          <h1 data-font-family="VisueltPro-Black">Be a <span class="text-shadow">Unicorn</span> In<br> The Field of
+            Horses
           </h1>
-          <p data-font-family="OpenSans-Medium">Powered by Passion.<span class="home-br"> Driven by Talent.</span><span
-              class="home-br">
-              Revolutionise the way you hire.</span>
+          <p data-font-family="OpenSans-Medium">When time is of the essence, <span class="home-br"> Godspeed is the
+              speed you trust.</span>
           </p>
           <div class="btn-container">
-            <a href="contact.html" class="btn btn-primary" data-font-family="OpenSans-Medium"
-              data-content="Contact Us"><span class="btn-content">Contact Us</span></a>
+            <a href="contact" class="btn btn-primary" data-font-family="OpenSans-Medium" data-content="Contact Us"><span
+                class="btn-content">Get a Quote</span></a>
           </div>
         </div>
       </div>
@@ -106,14 +135,9 @@
 
     <!--------------- Item Section ----------------------------->
     <section class="items-section" id="section-2">
-      <style>
-        #section-2 {
-          height: 25vh;
-        }
-      </style>
       <div class="items-container">
         <h2 class="items-heading" data-font-family="Visuelt-Bold">
-          Providing Workforce Solutions Since 2014
+          Providing Dedicated Freight Solutions Worldwide
         </h2>
       </div>
     </section>
@@ -127,299 +151,414 @@
             What we do
           </h2>
           <p data-font-family="Visuelt-Light">
-            Our staffing services allow you to move seamlessly<br> from requirement to fulfillment
+            Our multi mode, end-to-end logistic solutions allow your loads to move seamlessly locally and across borders
           </p>
         </div>
 
         <div class="icon-boxes-type-2" id="icon-box-t2-1">
-          <link rel="stylesheet" href="resources/css/widgets/widget-icon-boxes-type-2.css">
+          <link rel="stylesheet"
+            href="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/css/widgets/widget-icon-boxes-type-2.css">
           <style>
             #icon-box-t2-1 {
               --icon-box-max-width: 360px;
               --gap: min(15vw, 5em);
 
-              --icon-box-heading-font-size: 1.4em;
-              --icon-box-para-font-size: 1em;
+              --icon-box-heading-font-size: clamp(0.75em, calc(4.5vw + 0.35rem), 1.4em);
+              --icon-box-para-font-size: clamp(0.9em, calc(4vw + 0.35rem), 1em);
             }
           </style>
 
-          <a href="contingent-staffing.html" target="_blank">
-            <div class="icon-box">
-
-              <div class="promo-icon">
-                <img src="resources/images/promo/contingent-staffing.svg" alt="icon">
-              </div>
-
-              <div class="promo-icon-content">
-                <h3 data-font-family="Visuelt-Bold">CONTINGENT STAFFING</h3>
-                <p data-font-family="OpenSans-Regular">
-                  Easily hire seasonal and contract workers
-                </p>
-              </div>
-
+          <div class="icon-box"
+            onclick="hyperlinkTo('https://workforce.godspeedgroup.ca/contingent-staffing/', false, false)"
+            style="cursor:pointer;">
+            <div class="promo-icon">
+              <img src="resources/images/home/what_we_do/GROUND-TRANSPORTATION.svg" loading="lazy" alt="icon">
             </div>
-          </a>
 
-          <a href="permanent-staffing.html" target="_blank">
-            <div class="icon-box" data-sep="before">
-              <div class="promo-icon">
-                <img src="resources/images/promo/permanent-staff.svg" alt="icon">
-              </div>
-
-              <div class="promo-icon-content">
-                <h3 data-font-family="Visuelt-Bold">PERMANENT STAFFING</h3>
-                <p data-font-family="OpenSans-Regular">
-                  Have the most skilled workers join your team
-                </p>
-              </div>
+            <div class="promo-icon-content">
+              <h3 data-font-family="Visuelt-Bold">GROUND<br> TRANSPORTATION</h3>
+              <!-- <p data-font-family="OpenSans-Regular">
+                Easily hire seasonal and contract workers
+              </p> -->
             </div>
-          </a>
+          </div>
 
-          <a href="payroll-outsourcing.html" target="_blank">
-            <div class="icon-box" data-sep="before">
-              <div class="promo-icon">
-                <img src="resources/images/promo/payroll-outsourcing.svg" alt="icon">
-              </div>
-
-              <div class="promo-icon-content">
-                <h3 data-font-family="Visuelt-Bold">PAYROLL OUTSOURCING</h3>
-                <p data-font-family="OpenSans-Regular">
-                  Manage payroll tasks hassle-free
-                </p>
-              </div>
+          <div class="icon-box" data-sep="before"
+            onclick="hyperlinkTo('https://workforce.godspeedgroup.ca/permanent-staffing/', false, false)"
+            style="cursor:pointer;">
+            <div class="promo-icon">
+              <img src="resources/images/home/what_we_do/RAIL-LOGISTICS.svg" loading="lazy" alt="icon">
             </div>
-          </a>
+
+            <div class="promo-icon-content">
+              <h3 data-font-family="Visuelt-Bold">RAIL<br> LOGISTICS</h3>
+              <!-- <p data-font-family="OpenSans-Regular">
+                Have the most skilled workers join your team
+              </p> -->
+            </div>
+          </div>
+
+          <div class="icon-box" data-sep="before"
+            onclick="hyperlinkTo('https://workforce.godspeedgroup.ca/payroll-outsourcing/', false, false)"
+            style="cursor:pointer;">
+            <div class="promo-icon">
+              <img src="resources/images/home/what_we_do/AIR-FREIGHT.svg" loading="lazy" alt="icon">
+            </div>
+
+            <div class="promo-icon-content">
+              <h3 data-font-family="Visuelt-Bold">AIR<br> FREIGHT</h3>
+              <!-- <p data-font-family="OpenSans-Regular">
+                Manage payroll tasks hassle-free
+              </p> -->
+            </div>
+          </div>
+          <div class="icon-box" data-sep="before"
+            onclick="hyperlinkTo('https://workforce.godspeedgroup.ca/payroll-outsourcing/', false, false)"
+            style="cursor:pointer;">
+            <div class="promo-icon">
+              <img src="resources/images/home/what_we_do/OCEAN-FREIGHT.svg" loading="lazy" alt="icon">
+            </div>
+
+            <div class="promo-icon-content">
+              <h3 data-font-family="Visuelt-Bold">OCEAN<br> FREIGHT</h3>
+              <!-- <p data-font-family="OpenSans-Regular">
+                Manage payroll tasks hassle-free
+              </p> -->
+            </div>
+          </div>
+          <div class="icon-box" data-sep="before"
+            onclick="hyperlinkTo('https://workforce.godspeedgroup.ca/payroll-outsourcing/', false, false)"
+            style="cursor:pointer;">
+            <div class="promo-icon">
+              <img src="resources/images/home/what_we_do/INDUSTRIAL-PROJECTS.svg" loading="lazy" alt="icon">
+            </div>
+
+            <div class="promo-icon-content">
+              <h3 data-font-family="Visuelt-Bold">INDUSTRIAL<br> PROJECTS</h3>
+              <!-- <p data-font-family="OpenSans-Regular">
+                Manage payroll tasks hassle-free
+              </p> -->
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!--------------- Promo Section ----------------------------->
 
-
-    <!--------------- Complimentary Section ----------------------------->
-    <section class="content-heading-section" id="section-4">
-      <div class="content-heading-container center-width section-spacing">
+    <!--------------- Partner Section ----------------------------->
+    
+    <section class="partners-section" id="section-12">
+      <div class="content-heading-container center-width" style="width: min(90%, 1080px);">
         <div class="complimentary-heading">
           <h2 data-font-family="Visuelt-Bold">
-            What Makes us Canada's Best <span class="home-br">Workforce Solutions Provider</span>
+            Partners We Work With
           </h2>
-          <p class="pt30" data-font-family="Visuelt-Light">
-            The fastest, most reliable workforce solutions provider <span class="home-br">with enterprise-grade
-              assurance and 24/7/365 customer support</span>
-          </p>
-
+          <!-- <p class="pt30" data-font-family="Visuelt-Light">
+             The fastest coast-to-coast most reliable workforce solutions provider <span class="home-br">with enterprise-grade
+               assurance and 24/7/365 customer support</span>
+           </p> --> 
+        </div>
+      </div>
+      <div class="partners-container">
+        <div class="icon-box">
+          <picture>
+            <source
+              srcset="resources/images/home/partner-logo/c-trat.png">
+            <img
+              src="resources/images/home/partner-logo/c-trat.png"
+              alt="partner" loading="lazy">
+          </picture>
+        </div>
+    
+        <div class="icon-box">
+          <picture>
+            <source
+              srcset="resources/images/home/partner-logo/Hazmat.png">
+            <img
+              src="resources/images/home/partner-logo/Hazmat.png"
+              alt="partner" loading="lazy">
+          </picture>
+        </div>
+    
+        <div class="icon-box">
+          <picture>
+            <source
+              srcset="resources/images/home/partner-logo/ace.png">
+            <img
+              src="resources/images/home/partner-logo/ace.png"
+              alt="partner" loading="lazy">
+          </picture>
+        </div>
+    
+        <div class="icon-box">
+          <picture>
+            <source
+              srcset="resources/images/home/partner-logo/aci.png">
+            <img
+              src="resources/images/home/partner-logo/aci.png"
+              alt="partner" loading="lazy">
+          </picture>
         </div>
 
-        <!-- <div class="complimentary-subcontent">
-           <h3 data-font-family="Visuelt-Bold">9 Reason to<br> choose us</h3> -->
-        <!-- <p data-font-family="Visuelt-Light">
-            The fastest, most reliable workforce<br> solutions provider with enterprise-grade<br> assurance and 24/7/365
-            customer support
-          </p>  
-        </div> -->
+        <div class="icon-box">
+          <picture>
+            <source
+              srcset="resources/images/home/partner-logo/Fast.png">
+            <img
+              src="resources/images/home/partner-logo/Fast.png"
+              alt="partner" loading="lazy">
+          </picture>
+        </div>
+
+        <div class="icon-box">
+          <picture>
+            <source
+              srcset="resources/images/home/partner-logo/PIP.png">
+            <img
+              src="resources/images/home/partner-logo/PIP.png"
+              alt="partner" loading="lazy">
+          </picture>
+        </div>
+
+        <div class="icon-box">
+          <picture>
+            <source
+              srcset="resources/images/home/partner-logo/csa.png">
+            <img
+              src="resources/images/home/partner-logo/csa.png"
+              alt="partner" loading="lazy">
+          </picture>
+        </div>
+
+        <div class="icon-box">
+          <picture>
+            <source
+              srcset="resources/images/home/partner-logo/smartway-transport-partnership-vector-logo.png">
+            <img
+              src="resources/images/home/partner-logo/smartway-transport-partnership-vector-logo.png"
+              alt="partner" loading="lazy">
+          </picture>
+        </div>
+
+        
+        
       </div>
     </section>
+ <!--------------- Partner Section ----------------------------->
+
     <!--------------- Complimentary Section ----------------------------->
+    <section class="content-heading-section building-illustration-bg-container" id="section-4">
+      <div class="content-heading-container center-width" style="width: min(90%, 1280px);">
+        <div class="complimentary-heading">
+          <h2 data-font-family="Visuelt-Bold">
+            We Are North America’s Trusted Supply Chain Partner
+          </h2>
+          <!-- <p class="pt30" data-font-family="Visuelt-Light">
+            The fastest coast-to-coast most reliable workforce solutions provider <span class="home-br">with
+              enterprise-grade
+              assurance and 24/7/365 customer support</span>
+          </p> -->
 
-    <!--------------- Content Section ----------------------------->
-    <section class="content-section" id="section-5">
-      <div class="widget-hover-card-promo-type-1">
-        <link rel="stylesheet" href="resources/css/widgets/widget-hover-card-promo-type-1.css">
+        </div>
+      </div>
+
+      <div class="widget-hover-card-promo-type-1" id="hover-card-pt1-1">
+        <link rel="stylesheet"
+          href="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/css/widgets/widget-hover-card-promo-type-1.css">
         <style>
-          .widget-hover-card-promo-type-1 .main-container .card {
-            width: 260px;
-          }
-
-          @media (max-width:1211px) {
-            .widget-hover-card-promo-type-1 .main-container .card {
-              width: 240px;
-            }
+          #hover-card-pt1-1 {
+            --widget-max-width: 1280px;
           }
         </style>
         <div class="main-container">
           <div class="card" tabindex="0">
             <div class="front-face">
               <div class="icon">
-                <img src="resources/images/card-icons/recruit-with-fastest.svg" alt="icon">
+                <img
+                  src="resources/images/home/supply-chain-partner/time.svg"
+                  loading="lazy" alt="icon">
               </div>
 
               <div class="card-heading">
                 <h4 data-font-family="OpenSans-Medium">
-                  Fastest & Most<br> Reliable Partners
+                  Expedited, time-sensitive freight
                 </h4>
               </div>
             </div>
 
-            <div class="front-back">
+            <!-- <div class="front-back">
               <p data-font-family="Visuelt-Light">Unrivaled speed of fulfillment, vast talent pool, and scalability make
                 Godspeed a high-
                 performance partner</p>
-            </div>
+            </div> -->
           </div>
 
           <div class="card" tabindex="1">
             <div class="front-face">
               <div class="icon">
-                <img src="resources/images/card-icons/multi-industry.svg" alt="icon">
+                <img
+                  src="resources/images/home/supply-chain-partner/temperature-sensitive-freight.svg"
+                  loading="lazy" alt="icon">
               </div>
 
               <div class="card-heading">
                 <h4 data-font-family="OpenSans-Medium">
-                  Multi-Industry<br> Footprint
+                  Temperature-sensitive freight
                 </h4>
               </div>
             </div>
-            <div class="front-back">
+            <!-- <div class="front-back">
               <p data-font-family="Visuelt-Light">Retail, food, manufacturing, warehousing, transportation – we’ve
                 covered it all!</p>
-            </div>
+            </div> -->
           </div>
 
           <div class="card" tabindex="2">
             <div class="front-face">
               <div class="icon">
-                <img src="resources/images/card-icons/centrally-managed.svg" alt="icon">
+                <img
+                  src="resources/images/home/supply-chain-partner/experienced-dispatchers.svg"
+                  loading="lazy" alt="icon">
               </div>
 
               <div class="card-heading">
                 <h4 data-font-family="OpenSans-Medium">
-                  Central<br> Recruitment<br> Management
+                  Experienced dispatchers
                 </h4>
               </div>
             </div>
-            <div class="front-back">
+            <!-- <div class="front-back">
               <p data-font-family="Visuelt-Light">Execute your recruitment goals at any scale with a
                 single vendor.</p>
-            </div>
+            </div> -->
           </div>
 
           <div class="card" tabindex="3">
             <div class="front-face">
               <div class="icon">
-                <img src="resources/images/card-icons/assured-rec.svg" alt="icon">
+                <img
+                  src="resources/images/home/supply-chain-partner/true-24_7_365-support.svg"
+                  loading="lazy" alt="icon">
               </div>
 
               <div class="card-heading">
                 <h4 data-font-family="OpenSans-Medium">
-                  Assured<br> Recruitment
+                  True 24/7/365 support
                 </h4>
               </div>
             </div>
-            <div class="front-back">
+            <!-- <div class="front-back">
               <p data-font-family="Visuelt-Light">Automate screening, vetting, hiring and payroll duties. Reallocate
                 resources from the tedious task of running recruitment-related activities towards more strategic
                 business initiatives.</p>
-            </div>
+            </div> -->
           </div>
 
           <div class="card" tabindex="4">
             <div class="front-face">
               <div class="icon">
-                <img src="resources/images/card-icons/modern-comp.svg" alt="icon">
+                <img
+                  src="resources/images/home/supply-chain-partner/proven-carrier-compliance.svg"
+                  loading="lazy" alt="icon">
               </div>
 
               <div class="card-heading">
                 <h4 data-font-family="OpenSans-Medium">
-                  100%<br> Compliance
+                  Proven carrier compliance
                 </h4>
               </div>
             </div>
-            <div class="front-back">
+            <!-- <div class="front-back">
               <p data-font-family="Visuelt-Light">Always be compliant with the rules and regulations and leave no room
                 for the fraud or misconduct.
               </p>
-            </div>
+            </div> -->
           </div>
           <div class="card" tabindex="5">
             <div class="front-face">
               <div class="icon">
-                <img src="resources/images/card-icons/training-and-upskilling.svg" alt="icon">
+                <img
+                  src="resources/images/home/supply-chain-partner/competitive-pricing.svg"
+                  loading="lazy" alt="icon">
               </div>
 
               <div class="card-heading">
                 <h4 data-font-family="OpenSans-Medium">
-                  Training and<br> Upskilling
+                  Competitive pricing
                 </h4>
               </div>
             </div>
-            <div class="front-back">
+            <!-- <div class="front-back">
               <p data-font-family="Visuelt-Light">Orchestrate patterns of activity related to training and upskilling to
                 enable a systematic
                 organization of resources into processes that transform into more productive outcomes.</p>
-            </div>
+            </div> -->
           </div>
 
           <div class="card" tabindex="6">
             <div class="front-face">
               <div class="icon">
-                <img src="resources/images/card-icons/no-show-managment.svg" alt="icon">
+                <img
+                  src="resources/images/home/supply-chain-partner/dedicated-account-managers.svg"
+                  loading="lazy" alt="icon">
               </div>
 
               <div class="card-heading">
                 <h4 data-font-family="OpenSans-Medium">
-                  No Shows<br> Management
+                  Dedicated Account Managers
                 </h4>
               </div>
             </div>
-            <div class="front-back">
+            <!-- <div class="front-back">
               <p data-font-family="Visuelt-Light">Maintain a high percentage of fulfillment in case of no shows and
                 minimize loss of time and
                 productivity.</p>
-            </div>
+            </div> -->
           </div>
-
-          <!-- <div class="card" tabindex="7">
-            <div class="front-face">
-              <div class="icon">
-                <img src="resources/images/card-icons/more-then-just.svg" alt="icon">
-              </div>
-
-              <div class="card-heading">
-                <h4 data-font-family="OpenSans-Medium">
-                  More Than Just<br> Resources
-                </h4>
-              </div>
-            </div>
-            <div class="front-back">
-              <p data-font-family="Visuelt-Light">We deliver guaranteed success of your business; with ongoing
-                recruiting and account
-                management you can always trust.</p>
-            </div>
-          </div> -->
 
           <div class="card" tabindex="7">
             <div class="front-face">
               <div class="icon">
-                <img src="resources/images/card-icons/expert-support-staff.svg" alt="icon">
+                <img
+                  src="resources/images/home/supply-chain-partner/100%-accountability.svg"
+                  alt="icon" loading="lazy">
               </div>
 
               <div class="card-heading">
                 <h4 data-font-family="OpenSans-Medium">
-                  Expert<br> Support Staff
+                  100% Accountability
                 </h4>
               </div>
             </div>
-            <div class="front-back">
+            <!-- <div class="front-back">
               <p data-font-family="Visuelt-Light">No robots, no canned responses. Real recruiters, dispatchers and
                 account managers staff our
                 support team. Our experts are always on deck to quickly identify the problems and recommend
                 solutions. Our client support is second to none.</p>
-            </div>
+            </div> -->
           </div>
-        </div>
-      </div>
-    </section>
-    <!--------------- Content Section ----------------------------->
 
-    <!--------------- Content Section ----------------------------->
-    <section class="content-section" id="section-6">
-      <div class="content-container">
-        <div class="content-heading">
-          <h2 data-font-family="Visuelt-Bold">
-            Process Pipeline
-          </h2>
-        </div>
-        <div class="content-image">
-          <img src="resources/images/process-pipeline.gif" width="100%" alt="pipeline">
+          <div class="card" tabindex="8">
+            <div class="front-face">
+              <div class="icon">
+                <img
+                  src="resources/images/home/supply-chain-partner/worldwide-coverage.svg"
+                  alt="icon" loading="lazy">
+              </div>
+
+              <div class="card-heading">
+                <h4 data-font-family="OpenSans-Medium">
+                  Worldwide coverage
+                </h4>
+              </div>
+            </div>
+            <!-- <div class="front-back">
+              <p data-font-family="Visuelt-Light">No robots, no canned responses. Real recruiters, dispatchers and
+                account managers staff our
+                support team. Our experts are always on deck to quickly identify the problems and recommend
+                solutions. Our client support is second to none.</p>
+            </div> -->
+          </div>
         </div>
       </div>
     </section>
@@ -430,37 +569,39 @@
       <div class="stat-box-container">
         <div class="stat-box-heading">
           <h2 data-font-family="Visuelt-Bold">
-            Success in Numbers
+            Measuring Success
           </h2>
         </div>
         <div class="stat-box-content">
           <div class="stat-box">
             <h3>
-              <span data-font-family="Poppin-Bold" data-counter-value="330" data-run="false"> 0 </span>+
+              <span data-font-family="Poppin-Bold"  data-run="false"> 120 </span>
             </h3>
             <p data-font-family="Poppin-Regular">Clients</p>
           </div>
 
           <div class="stat-box">
             <h3>
-              <span data-font-family="Poppin-Bold" data-counter-value="45" data-run="false"> 0 </span>
+              <span data-font-family="Poppin-Bold"  data-run="false"> 95-97% </span>
             </h3>
-            <p data-font-family="Poppin-Regular">Recruiters</p>
+            <p data-font-family="Poppin-Regular">Time Delivery Rate</p>
           </div>
 
           <div class="stat-box">
             <h3>
-              <span data-font-family="Poppin-Bold" data-counter-value="5" data-run="false">0</span>
+              <span data-font-family="Poppin-Bold"  data-run="false">.001%</span>
             </h3>
-            <p data-font-family="Poppin-Regular">Offices</p>
+            <p data-font-family="Poppin-Regular">Claims Rate</p>
           </div>
 
           <div class="stat-box">
             <h3>
-              <span data-font-family="Poppin-Bold" data-counter-value="3300" data-run="false">0</span>+
+              <span data-font-family="Poppin-Bold"  data-run="false">1,000</span>+
             </h3>
-            <p data-font-family="Poppin-Regular">Resources</p>
+            <p data-font-family="Poppin-Regular">Validated Carriers</p>
           </div>
+
+          
         </div>
       </div>
     </section>
@@ -471,15 +612,15 @@
       <div class="complimentary-container full-width">
         <div class="column-1">
           <picture>
-            <source media="(min-width: 700px)" srcset="resources/images/running-man.jpg">
-            <img src="resources/images/running-man.jpg" alt="dummy image" width="100%">
+            <source
+              srcset="resources/images/home/how-business-scuess-image.png">
+            <img src="resources/images/home/how-business-scuess-image.png"
+              alt="Godspeed_superfast" width="100%" loading="lazy">
           </picture>
         </div>
         <div class="column-2">
-          <h1 data-font-family="Visuelt-Bold">How Businesses<br> Succeed With<br> Godspeed Workforce</h1>
-          <p data-font-family="Visuelt-Light">Businesses that work with us benefit from our custom workforce solutions,
-            faster turnaround time, and dedicated account manager to streamline their contingent and permanent staffing
-            needs.
+          <h1 data-font-family="Visuelt-Bold">How Businesses<br> Succeed With<br> Godspeed Supply Chain</h1>
+          <p data-font-family="Visuelt-Light">Businesses that work with us benefit from our custom logistic solutions, proactive communication, GPS-enabled shipment tracking, control over shipment and dedicated 24/7/365 support.
           </p>
         </div>
       </div>
@@ -487,84 +628,194 @@
     <!--------------- Complimentary Section ----------------------------->
 
     <!--------------- Promo Section ----------------------------->
-    <section class="promo-section" id="section-9">
+    <section class="promo-section" id="section-9" >
       <!-- WIDGET -->
-      <div class="icon-boxes-type-1">
-        <link rel="stylesheet" href="resources/css/widgets/widget-icon-boxes-type-1.css">
+      <link rel="stylesheet"
+          href="resources/css/widgets/widget-icon-boxes-type-1.css">
+
+          <style>
+            .promo-section{
+              display: flex;
+              flex-direction: column;
+              gap:2em;
+            }
+            .icon-boxes-type-1 .icon-box {
+              width: 100%;
+            }
+          </style>
+      <div class="icon-boxes-type-1"> 
         <div class="icon-box">
           <div class="promo-icon">
-            <img src="resources/images/promo/kick-off.svg" alt="icon">
+            <img src="resources/images/home/how-business-scuess-icons/retial.svg"
+              alt="icon" loading="lazy">
           </div>
 
           <div class="promo-icon-content">
             <p data-font-family="Visuelt-Bold">
-              Kick off recruitment quickly
+              Retail
             </p>
           </div>
         </div>
 
         <div class="icon-box" data-sep="before">
           <div class="promo-icon">
-            <img src="resources/images/promo/move-rapidly.svg" alt="icon">
+            <img
+              src="resources/images/home/how-business-scuess-icons/food.svg"
+              alt="icon" loading="lazy">
           </div>
 
           <div class="promo-icon-content">
             <p data-font-family="Visuelt-Bold">
-              Move rapidly from requirement to fulfillment
+              Food
             </p>
           </div>
         </div>
 
         <div class="icon-box" data-sep="before">
           <div class="promo-icon">
-            <img src="resources/images/promo/secure-the-partner.svg" alt="icon">
+            <img
+              src="resources/images/home/how-business-scuess-icons/manufacturing.svg"
+              alt="icon" loading="lazy">
           </div>
 
           <div class="promo-icon-content">
             <p data-font-family="Visuelt-Bold">
-              Optimize your business’ most valuable asset— your people
+              Manufacturing
             </p>
           </div>
         </div>
 
         <div class="icon-box" data-sep="before">
           <div class="promo-icon">
-            <img src="resources/images/promo/boost-productivity.svg" alt="icon">
+            <img
+              src="resources/images/home/how-business-scuess-icons/construction.svg"
+              alt="icon" loading="lazy">
           </div>
 
           <div class="promo-icon-content">
             <p data-font-family="Visuelt-Bold">
-              Boost productivity & accelerate growth
+              Construction
             </p>
           </div>
         </div>
 
         <div class="icon-box" data-sep="before">
           <div class="promo-icon">
-            <img src="resources/images/promo/manage-hundreds.svg" alt="icon">
+            <img
+              src="resources/images/home/how-business-scuess-icons/pharmaceutical.svg"
+              alt="icon" loading="lazy">
           </div>
 
           <div class="promo-icon-content">
             <p data-font-family="Visuelt-Bold">
-              Manage hundreds of resources more efficiently than ever
+              Pharmaceutical
             </p>
           </div>
         </div>
 
         <div class="icon-box" data-sep="before">
           <div class="promo-icon">
-            <img src="resources/images/promo/enterprise-grade.svg" alt="icon">
+            <img
+              src="resources/images/home/how-business-scuess-icons/transportation.svg"
+              alt="icon" loading="lazy">
           </div>
 
           <div class="promo-icon-content">
             <p data-font-family="Visuelt-Bold">
-              Enterprise-grade workforce solutions
+              Transportation
+            </p>
+          </div>
+        </div> 
+      </div> 
+
+
+      <div class="icon-boxes-type-1"> 
+        <div class="icon-box">
+          <div class="promo-icon">
+            <img src="resources/images/home/how-business-scuess-icons/non-food-perishables.svg"
+              alt="icon" loading="lazy">
+          </div>
+
+          <div class="promo-icon-content">
+            <p data-font-family="Visuelt-Bold">
+              Non-Food Perishables
             </p>
           </div>
         </div>
+
+        <div class="icon-box" data-sep="before">
+          <div class="promo-icon">
+            <img
+              src="resources/images/home/how-business-scuess-icons/dangerous-goods.svg"
+              alt="icon" loading="lazy">
+          </div>
+
+          <div class="promo-icon-content">
+            <p data-font-family="Visuelt-Bold">
+              Dangerous goods
+            </p>
+          </div>
+        </div>
+
+        <div class="icon-box" data-sep="before">
+          <div class="promo-icon">
+            <img
+              src="resources/images/home/how-business-scuess-icons/aerospace.svg"
+              alt="icon" loading="lazy">
+          </div>
+
+          <div class="promo-icon-content">
+            <p data-font-family="Visuelt-Bold">
+              Aerospace
+            </p>
+          </div>
+        </div>
+
+        <div class="icon-box" data-sep="before">
+          <div class="promo-icon">
+            <img
+              src="resources/images/home/how-business-scuess-icons/automotive.svg"
+              alt="icon" loading="lazy">
+          </div>
+
+          <div class="promo-icon-content">
+            <p data-font-family="Visuelt-Bold">
+              Automotive
+            </p>
+          </div>
+        </div>
+
+        <div class="icon-box" data-sep="before">
+          <div class="promo-icon">
+            <img
+              src="resources/images/home/how-business-scuess-icons/warehousing.svg"
+              alt="icon" loading="lazy">
+          </div>
+
+          <div class="promo-icon-content">
+            <p data-font-family="Visuelt-Bold">
+              Warehousing
+            </p>
+          </div>
+        </div>
+
+        <div class="icon-box" data-sep="before">
+          <div class="promo-icon">
+            <img
+              src="resources/images/home/how-business-scuess-icons/out-of-gauge.svg"
+              alt="icon" loading="lazy">
+          </div>
+
+          <div class="promo-icon-content">
+            <p data-font-family="Visuelt-Bold">
+              Out-of-gauge
+            </p>
+          </div>
+        </div> 
       </div>
     </section>
     <!--------------- Promo Section ----------------------------->
+
 
 
 
@@ -572,7 +823,7 @@
     <section class="tod testimonial-section" id="section-11">
       <div class="content-container">
         <div class="content">
-          <h2 data-font-family="Visuelt-Bold">Canada’s Leading Businesses Are People-Powered<br> By Godspeed Workforce
+          <h2 data-font-family="Visuelt-Bold">Adding people-power to Canada's Leading Businesses
           </h2>
 
         </div>
@@ -595,7 +846,9 @@
                     <h4 data-font-family="Visuelt-Bold">North American Auto Parts Manufacturer</h4>
                     <div class="testimonial_text" data-font-family="Visuelt-Light">
                       <span class="quote-start"></span>
-                      We’ve been using Godspeed for well over a year with great success for all operations needs during our peak periods and beyond. I know we’ve tried a lot of agencies in the past but I can attest to Godspeed’s efficiency and ability to quickly turnaround with what you are looking for.
+                      We’ve been using Godspeed for well over a year with great success for all operations needs during
+                      our peak periods and beyond. I know we’ve tried a lot of agencies in the past but I can attest to
+                      Godspeed’s efficiency and ability to quickly turnaround with what you are looking for.
                       <span class="quote-end"></span>
                     </div>
                     <div class="testimonial_icon_container">
@@ -612,7 +865,8 @@
                     <h4 data-font-family="Visuelt-Bold">Leading LTL Service Provider</h4>
                     <div class="testimonial_text" data-font-family="Visuelt-Light">
                       <span class="quote-start"></span>
-                      Godspeed will work with you to find a solution that works to fulfill your business needs. They provide customer first service, understanding the need to work with a sense of urgency.
+                      Godspeed will work with you to find a solution that works to fulfill your business needs. They
+                      provide customer first service, understanding the need to work with a sense of urgency.
                       <span class="quote-end"></span>
                     </div>
                     <div class="testimonial_icon_container">
@@ -628,7 +882,10 @@
                     <h4 data-font-family="Visuelt-Bold">Canadian Retail Giant</h4>
                     <div class="testimonial_text" data-font-family="Visuelt-Light">
                       <span class="quote-start"></span>
-                      Our company has been utilizing Godspeed Group to recruit associates for the past year. All of Godspeed managers and recruiters have been professional and extremely effective in providing us the requested personnel in a timely manner and ensuring all associates meet our Health & Safety requirements. I highly recommend Goodspeed Group.
+                      Our company has been utilizing Godspeed Group to recruit associates for the past year. All of
+                      Godspeed managers and recruiters have been professional and extremely effective in providing us
+                      the requested personnel in a timely manner and ensuring all associates meet our Health & Safety
+                      requirements. I highly recommend Goodspeed Group.
                       <span class="quote-end"></span>
                     </div>
                     <div class="testimonial_icon_container">
@@ -643,7 +900,10 @@
                     <h4 data-font-family="Visuelt-Bold">Global Manufacturing Company</h4>
                     <div class="testimonial_text" data-font-family="Visuelt-Light">
                       <span class="quote-start"></span>
-                      Thanks to Denise and her team at Godspeed, we have been able to supplement our temporary hiring needs with a continuous supply of eligible candidates, sometimes even at short notice. Based on the experience, we would use their services for future temporary needs and would recommend them to other sites.
+                      Thanks to Denise and her team at Godspeed, we have been able to supplement our temporary hiring
+                      needs with a continuous supply of eligible candidates, sometimes even at short notice. Based on
+                      the experience, we would use their services for future temporary needs and would recommend them to
+                      other sites.
                       <span class="quote-end"></span>
                     </div>
                     <div class="testimonial_icon_container">
@@ -659,7 +919,9 @@
                     <h4 data-font-family="Visuelt-Bold">Distribution Giant</h4>
                     <div class="testimonial_text" data-font-family="Visuelt-Light">
                       <span class="quote-start"></span>
-                      Godspeed Group is the only workforce solutions provider who took the time to understand our business. They worked with us to implement new ideas which drastically improved our company’s productivity. I highly recommend their services.
+                      Godspeed Group is the only workforce solutions provider who took the time to understand our
+                      business. They worked with us to implement new ideas which drastically improved our company’s
+                      productivity. I highly recommend their services
                       <span class="quote-end"></span>
                     </div>
                     <div class="testimonial_icon_container">
@@ -675,7 +937,9 @@
                     <h4 data-font-family="Visuelt-Bold">Fortune 500 Company</h4>
                     <div class="testimonial_text" data-font-family="Visuelt-Light">
                       <span class="quote-start"></span>
-                      We have been using Godspeed Group’s services for two years and could not be happier. They offer flexibility and competitive pricing, which makes our business operations run a lot smoother. They are now our largest service provider, and we look forward to continuing doing business with them.
+                      We have been using Godspeed Group’s services for two years and could not be happier. They offer
+                      flexibility and competitive pricing, which makes our business operations run a lot smoother. They
+                      are now our largest service provider, and we look forward to continuing doing business with them.
                       <span class="quote-end"></span>
                     </div>
                     <div class="testimonial_icon_container">
@@ -691,7 +955,11 @@
                     <h4 data-font-family="Visuelt-Bold">3PL & Supply Chain Leader</h4>
                     <div class="testimonial_text" data-font-family="Visuelt-Light">
                       <span class="quote-start"></span>
-                      Godspeed Group has been taking care of our logistics and staffing needs for three years. Their staff is prompt in their communication, and as a result, our team has increased their productivity. They have provided us with warehouse associates, forklift operators and AZ drivers, so we don’t need to partner with another provider. We will certainly continue using their staffing and logistics services.
+                      Godspeed Group has been taking care of our logistics and staffing needs for three years. Their
+                      staff is prompt in their communication, and as a result, our team has increased their
+                      productivity. They have provided us with warehouse associates, forklift operators and AZ drivers,
+                      so we don’t need to partner with another provider. We will certainly continue using their staffing
+                      and logistics services.
 
                       <span class="quote-end"></span>
                     </div>
@@ -707,7 +975,11 @@
                     <h4 data-font-family="Visuelt-Bold">Canadian Transportation Player</h4>
                     <div class="testimonial_text" data-font-family="Visuelt-Light">
                       <span class="quote-start"></span>
-                      Just wanted to say Thank you! to you and your drivers for the recent course change your guys have demonstrated recently. GODSPEED is becoming a dependable operation and we hope this recent uptick in driver attendance and punctuality continues to be maintained moving forward. Please let your guys know! Again, THANK YOU!
+
+                      Just wanted to say Thank you! to you and your drivers for the recent course change your guys have
+                      demonstrated recently. GODSPEED is becoming a dependable operation and we hope this recent uptick
+                      in driver attendance and punctuality continues to be maintained moving forward. Please let your
+                      guys know! Again, THANK YOU!
 
                       <span class="quote-end"></span>
                     </div>
@@ -718,12 +990,16 @@
                     </div>
                   </div>
                 </li>
+
                 <li class="splide__slide">
                   <div class="slider_sub_container">
                     <h4 data-font-family="Visuelt-Bold">Canadian Management Services Company</h4>
                     <div class="testimonial_text" data-font-family="Visuelt-Light">
                       <span class="quote-start"></span>
-                      Our company has been utilizing Godspeed Group to recruit associates for a major client of ours in Hamilton for the past year. All of Godspeed managers and recruiters have been professional and extremely effective in providing us the requested personnel in a timely manner and ensuring all associates meet our Health and Safety requirements. I highly recommend Goodspeed Group.  
+                      Our company has been utilizing Godspeed Group to recruit associates for a major client of ours in
+                      Hamilton for the past year. All of Godspeed managers and recruiters have been professional and
+                      extremely effective in providing us the requested personnel in a timely manner and ensuring all
+                      associates meet our Health and Safety requirements. I highly recommend Goodspeed Group.
 
                       <span class="quote-end"></span>
                     </div>
@@ -734,6 +1010,7 @@
                     </div>
                   </div>
                 </li>
+
               </ul>
             </div>
 
@@ -749,29 +1026,41 @@
       <div class="partners-container">
         <div class="icon-box">
           <picture>
-            <source media="(min-width: )" srcset="resources/images/testimonial-icons/amazon.png">
-            <img src="resources/images/testimonial-icons/amazon.png" alt="partner">
+            <source
+              srcset="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/testimonial-icons/amazon.svg">
+            <img
+              src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/testimonial-icons/amazon.png"
+              alt="partner" loading="lazy">
           </picture>
         </div>
 
         <div class="icon-box">
           <picture>
-            <source media="(min-width: )" srcset="resources/images/testimonial-icons/home-depot.png">
-            <img src="resources/images/testimonial-icons/home-depot.png" alt="partner">
+            <source
+              srcset="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/testimonial-icons/home-depot.svg">
+            <img
+              src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/testimonial-icons/home-depot.png"
+              alt="partner" loading="lazy">
           </picture>
         </div>
 
         <div class="icon-box">
           <picture>
-            <source media="(min-width: )" srcset="resources/images/testimonial-icons/loblaws.png">
-            <img src="resources/images/testimonial-icons/loblaws.png" alt="partner">
+            <source
+              srcset="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/testimonial-icons/loblaws.svg">
+            <img
+              src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/testimonial-icons/loblaws.png"
+              alt="partner" loading="lazy">
           </picture>
         </div>
 
         <div class="icon-box">
           <picture>
-            <source media="(min-width: )" srcset="resources/images/testimonial-icons/bestway.png">
-            <img src="resources/images/testimonial-icons/bestway.png" alt="partner">
+            <source
+              srcset="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/testimonial-icons/bestway.svg">
+            <img
+              src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/testimonial-icons/bestway.png"
+              alt="partner" loading="lazy">
           </picture>
         </div>
       </div>
@@ -781,89 +1070,185 @@
 
     <!--------------- Complimentary Section ----------------------------->
     <section class="section-60-40" id="section-10" style="padding-bottom:0px;">
-      <div class="container-60-40 center-width">
+
+      <div class="complimentary-container-type-1" id="complimentary-1">
+        <link rel="stylesheet"
+          href="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/css/widgets/widget-complimentary-type-1.css">
+        <style>
+          #complimentary-1 {
+            --flex-direction: row-reverse;
+            --image-column-max-width: 800px;
+            --content-column-max-width: 450px;
+            --image-column-width: 50%;
+            --content-column-width: 50%;
+            --container-max-width: 1580px;
+            margin: 0vh auto 20vh auto;
+            --gap: 1em;
+          }
+
+          @media (min-width: 900px) {
+            #complimentary-1 {
+              align-items: flex-start;
+            }
+          }
+
+          #complimentary-1 .column-2 h2 {
+            font-size: clamp(1.5em, calc(5vw + 0.5rem), 2em);
+          }
+
+          #complimentary-1 .column-2 p {
+            font-size: 1.2em;
+            color: var(--text-secondary);
+            margin-top: 0.5em;
+          }
+
+          #complimentary-1 strong {
+            font-size: 1.2em;
+          }
+        </style>
+
         <div class="column-1">
-          <h1 data-font-family="Visuelt-Bold">Discover How Customers<br> Like You Found Success<br> By Leaving
-            Traditional<br> Recruiting Behind</h1>
+          <div class="video-container">
+
+            <div class="slider" id="testimonial-slider-video">
+              <div class="splide-video" style="width:100%">
+                <div class="splide__arrows">
+                  <button class="splide__arrow splide__arrow--prev">
+                  </button>
+                  <button class="splide__arrow splide__arrow--next">
+                  </button>
+                </div>
+                <div class="splide__track" style="margin-inline:auto;">
+                  <ul class="splide__list">
+                    <!------ Slides 1 ------>
+                    <li class="splide__slide">
+                      <div class="slider_sub_container">
+                        <div class="testimonial_text venoboxvid" data-gall="gall-video" data-autoplay="true"
+                          data-vbtype="video" href="https://youtu.be/IzRe00xcUc0" data-font-family="Visuelt-Light">
+                          <img
+                            src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/slider/video-thumb-2.jpg"
+                            loading="lazy" alt="" width="100%">
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <!------ Slides 2 ------>
+                    <li class="splide__slide">
+                      <div class="slider_sub_container">
+                        <div class="testimonial_text venoboxvid" data-gall="gall-video" data-autoplay="true"
+                          data-vbtype="video" data-font-family="Visuelt-Light" href="https://youtu.be/hI7tVHrecbQ">
+                          <img
+                            src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/slider/video-thumb-1.jpg"
+                            loading="lazy" alt="" width="100%">
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <!------ Slides 3 ------>
+                    <li class="splide__slide">
+                      <div class="slider_sub_container">
+                        <div class="testimonial_text venoboxvid" data-gall="gall-video" data-autoplay="true"
+                          data-vbtype="video" data-font-family="Visuelt-Light" href="https://youtu.be/j9fZ7eHTgpA">
+                          <img
+                            src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/slider/video-thumb-3.jpg"
+                            loading="lazy" alt="" width="100%">
+                        </div>
+
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-2">
+          <h2 data-font-family="Visuelt-Bold">Discover How Customers<br> Like You Found Success<br> By Leaving
+            Traditional<br> Recruiting Behind</h2>
           <p data-font-family="OpenSans-Regular">Revolutionise the way you hire</p>
           <div class="btn-container">
-            <a href="contact.html" class="btn btn-primary" data-font-family="OpenSans-Medium"><span
+            <a href="contact" class="btn btn-primary" data-font-family="OpenSans-Medium"><span
                 class="btn-content">Contact
                 Us</span></a>
           </div>
-        </div>
-
-        <div class="column-2">
-          <picture>
-            <source media="(min-width: 700px)" srcset="resources/images/discover-how-custoer.png">
-            <img src="resources/images/discover-how-custoer.png" alt="dummy image" width="90%">
-          </picture>
         </div>
       </div>
     </section>
     <!--------------- Complimentary Section ----------------------------->
 
-
-    <!--------------- Video Section ----------------------------->
-    <section class="video-section" id="section-13">
-      <h2 data-font-family="Visuelt-Bold" style="text-align:center;">
-        Watch to learn more about us
-      </h2>
-      <div class="video-container">
-
-        <div class="slider" id="testimonial-slider-video">
-          <div class="splide-video" style="width:100%">
-            <div class="splide__arrows">
-              <button class="splide__arrow splide__arrow--prev">
-              </button>
-              <button class="splide__arrow splide__arrow--next">
-              </button>
-            </div>
-            <div class="splide__track">
-              <ul class="splide__list">
-                <!------ Slides 1 ------>
-                <li class="splide__slide">
-                  <div class="slider_sub_container">
-                    <div class="testimonial_text venoboxvid" data-gall="gall-video" data-autoplay="true"
-                      data-vbtype="video" href="https://youtu.be/IzRe00xcUc0" data-font-family="Visuelt-Light">
-                      <img src="resources/images/slider/video-thumb-2.png" alt="" width="100%">
-                    </div>
-
-                  </div>
-                </li>
-
-                <!------ Slides 2 ------>
-                <li class="splide__slide">
-                  <div class="slider_sub_container">
-                    <div class="testimonial_text venoboxvid" data-gall="gall-video" data-autoplay="true"
-                      data-vbtype="video" data-font-family="Visuelt-Light" href="https://youtu.be/hI7tVHrecbQ">
-                      <img src="resources/images/slider/video-thumb-1.png" alt="" width="100%">
-                    </div>
-
-                  </div>
-                </li>
-
-                <!------ Slides 3 ------>
-                <li class="splide__slide">
-                  <div class="slider_sub_container">
-                    <div class="testimonial_text venoboxvid" data-gall="gall-video" data-autoplay="true"
-                      data-vbtype="video" data-font-family="Visuelt-Light" href="https://youtu.be/j9fZ7eHTgpA">
-                      <img src="resources/images/slider/video-thumb-3.jpg" alt="" width="100%">
-                    </div>
-
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--------------- Video Section ----------------------------->
   </main>
   <!-------------------------------------- Main Closed ----------------------------->
 
+
+
+  <!------------- Home Page Script ---------------->
+
+  <!-- <script src="/assets/js/moving-counter.js"></script> -->
+  <script>
+    var splide = new Splide('.splide', {
+      height: '20rem',
+      perPage: 1,
+      gap: '0rem',
+      pagination: true,
+      type: 'loop',
+      breakpoints: {
+        750: {
+          perPage: 1,
+          gap: '.7rem',
+          height: '28rem',
+        },
+        640: {
+          perPage: 1,
+          gap: '.7rem',
+          height: '30rem',
+        },
+        480: {
+          perPage: 1,
+          gap: '.7rem',
+          height: '32rem',
+        },
+      },
+    });
+
+
+    splide.mount();
+  </script>
+  <script>
+    var splide = new Splide('.splide-video', {
+      height: 'auto',
+      perPage: 1,
+      gap: '0rem',
+      pagination: true,
+      type: 'loop',
+      breakpoints: {
+        750: {
+          perPage: 1,
+          gap: '.7rem',
+          height: '18rem',
+        },
+        640: {
+          perPage: 1,
+          gap: '.7rem',
+          height: '18rem',
+        },
+        480: {
+          perPage: 1,
+          gap: '.7rem',
+          height: '18rem',
+        },
+      },
+    });
+
+    splide.mount();
+  </script>
+
+  <!------------- Home Page Script ---------------->
+
+
+  <!------------- Footer - Start ---------------->
   <footer>
     <section class="tod" id="footer-section-1">
       <div class="content-container">
@@ -876,15 +1261,50 @@
 
         <div class="email-input" id="contact-email-input">
 
-          <form action="" class="newsletter">
-            <div class="newsletter-box">
-              <input class="emailbox" type="email" name="" value="" required placeholder="Your Email Address…">
-              <button type="submit" name="button">Sign Up</button>
+          <div class="newsletter-box">
+            <div role="form" class="wpcf7" id="wpcf7-f28-o1" lang="en-US" dir="ltr">
+              <div class="screen-reader-response">
+                <p role="status" aria-live="polite" aria-atomic="true"></p>
+                <ul></ul>
+              </div>
+              <form action="/index#wpcf7-f28-o1" method="post" class="wpcf7-form init" novalidate="novalidate"
+                data-status="init">
+                <div style="display: none;">
+                  <input type="hidden" name="_wpcf7" value="28" />
+                  <input type="hidden" name="_wpcf7_version" value="5.6.4" />
+                  <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                  <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f28-o1" />
+                  <input type="hidden" name="_wpcf7_container_post" value="0" />
+                  <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+                </div>
+                <div class="newsletter-container">
+                  <div class="newsletter-email">
+                    <span class="wpcf7-form-control-wrap" data-name="email-251"><input type="email" name="email-251"
+                        value="" size="40"
+                        class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                        aria-required="true" aria-invalid="false" placeholder="Your Email Address . . ." /></span><br />
+                    <span></span>
+                  </div>
+                  <div class="newsletter-btn">
+                    <input type="submit" value="Sign Up" class="wpcf7-form-control has-spinner wpcf7-submit" />
+                  </div>
+                </div>
+                <div class="wpcf7-response-output" aria-hidden="true"></div>
+              </form>
             </div>
-          </form>
+            <!--               <input class="emailbox" type="email" name="" value="" required placeholder="Your Email Address…">
+              <button type="submit" name="button">Sign Up</button> -->
+          </div>
+
         </div>
       </div>
     </section>
+
+    <!-- 	 <section>
+	  <div class="tagembed-container" style="width:min(95%, 1380px);margin:auto;height:100%;overflow: auto;"><div class="tagembed-socialwall" data-wall-id="72112" view-url="https://widget.tagembed.com/72112?view">  </div> <script src="//widget.tagembed.com/embed.min.js" type="text/javascript"></script></div>
+	  </section> -->
+
+
 
     <section class="footer" id="footer-section-2">
       <div class="content-container">
@@ -893,49 +1313,49 @@
             <div class="column-left">
               <ul>
                 <li>
-                  <a href="index.html">
+                  <a href="https://workforce.godspeedgroup.ca">
                     Home
                   </a>
                 </li>
 
                 <li>
-                  <a href="about-us.html">
+                  <a href="https://workforce.godspeedgroup.ca/about-us">
                     About
                   </a>
                 </li>
 
                 <li>
-                  <a href="hiring-process.html">
+                  <a href="https://workforce.godspeedgroup.ca/hiring-process">
                     Hiring Process
                   </a>
                 </li>
 
                 <li>
-                  <a href="resources.html">
+                  <a href="https://workforce.godspeedgroup.ca/resources">
                     Resources
                   </a>
                 </li>
 
                 <li>
-                  <a href="contact.html">
+                  <a href="https://workforce.godspeedgroup.ca/contact">
                     Contact
                   </a>
                 </li>
 
                 <li>
-                  <a href="contingent-staffing.html">
+                  <a href="https://workforce.godspeedgroup.ca/contingent-staffing">
                     Contingent Staffing
                   </a>
                 </li>
 
                 <li>
-                  <a href="permanent-staffing.html">
+                  <a href="https://workforce.godspeedgroup.ca/permanent-staffing">
                     Permanent Staffing
                   </a>
                 </li>
 
                 <li>
-                  <a href="payroll-outsourcing.html">
+                  <a href="https://workforce.godspeedgroup.ca/payroll-outsourcing">
                     Payroll Outsourcing
                   </a>
                 </li>
@@ -951,49 +1371,49 @@
 
               <ul data-toggle-state="footer-menu-1" data-toggle-action="show-hide" data-status="passive">
                 <li style="order: 1;">
-                  <a href="policies.html#info1">
+                  <a href="https://workforce.godspeedgroup.ca/policies#info1">
                     Health & Safety Policy
                   </a>
                 </li>
 
                 <li style="order: 3;">
-                  <a href="policies.html#info2">
+                  <a href="https://workforce.godspeedgroup.ca/policies#info2">
                     Anti Harassment Policy
                   </a>
                 </li>
 
                 <li style="order: 5;">
-                  <a href="policies.html#info3">
+                  <a href="https://workforce.godspeedgroup.ca/policies#info3">
                     Privacy Policy
                   </a>
                 </li>
 
                 <li style="order: 7;">
-                  <a href="policies.html#info4">
+                  <a href="https://workforce.godspeedgroup.ca/policies#info4">
                     Personal Information
                   </a>
                 </li>
 
                 <li style="order: 2;">
-                  <a href="policies.html#info5">
+                  <a href="https://workforce.godspeedgroup.ca/policies#info5">
                     Personal Information Collected
                   </a>
                 </li>
 
                 <li style="order: 4;">
-                  <a href="policies.html#info6">
+                  <a href="https://workforce.godspeedgroup.ca/policies#info6">
                     Use Of Personal Information
                   </a>
                 </li>
 
                 <li style="order: 6;">
-                  <a href="policies.html#info7">
+                  <a href="https://workforce.godspeedgroup.ca/policies#info7">
                     Your Rights To Limit Use Of Personal Information
                   </a>
                 </li>
 
                 <li style="order: 8;">
-                  <a href="policies.html#info8">
+                  <a href="https://workforce.godspeedgroup.ca/policies#info8">
                     Verifying The Accuracy Of Your Information
                   </a>
                 </li>
@@ -1002,13 +1422,16 @@
           </div>
           <div class="one-column-container">
             <div class="site-logo">
-              <img src="resources/images/logo.png" width="220px" />
+              <img src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/logo.png"
+                width="220px" />
             </div>
 
             <div class="contact-info">
               <a class="social-info" href="mailto:info@godspeedgroup.ca">
                 <span class="icon">
-                  <img src="resources/images/social-icons/email-footer.svg" alt="Mail">
+                  <img
+                    src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/social-icons/email-footer.svg"
+                    alt="Mail">
                 </span>
                 <span>
                   info@godspeedgroup.ca
@@ -1016,14 +1439,25 @@
               </a>
               <a class="social-info" href="phone:(905)956-9525">
                 <span class="icon">
-                  <img src="resources/images/social-icons/phone-footer.svg" alt="phone">
+                  <img
+                    src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/social-icons/phone-footer.svg"
+                    alt="phone">
                 </span>
                 <span>(905) 956-9525</span>
+              </a>
+              <a class="social-info" href="https://www.youtube.com/channel/UCMz2hvOgF0a0Fj52O8Ae5Rw">
+                <span class="icon">
+                  <img
+                    src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/social-icons/yt-footer.svg"
+                    alt="youtube">
+                </span>
+                <span></span>
               </a>
             </div>
             <div class="copy-write">
               <a href="https://ca.linkedin.com/company/godspeedgroup" target="_blank"><img
-                  src="resources/images/linkedIn-logo.png" width="150px" /></a>
+                  src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/linkedIn-logo.png"
+                  width="150px" /></a>
               <!-- <p>Copyright © Godspeed Group 2022<br> Powered By Kreatipedia Inc.</p> -->
             </div>
 
@@ -1112,7 +1546,7 @@
   </script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="resources/js/venobox.js"></script>
   <script>
     $('.venobox').venobox({

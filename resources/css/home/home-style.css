@@ -3,7 +3,6 @@
     display: block;
 }
 
-
 #section-1 {
     background-color: rgb(255, 255, 255);
     padding-block: var(--universal-padding-heavy);
@@ -25,7 +24,6 @@
 .section-40-60 .column-2 p {
     font-size: 35px;
     color: var(--hover-text-color);
-    padding: 25px 0px;
 }
 
 @media (max-width: 500px) {
@@ -68,13 +66,29 @@
 #########################*/
 
 .items-section h2.items-heading {
-    font-size: clamp(2em, calc(5vw + 0.5rem), 2.5em);
+    font-size: clamp(1.5em, calc(5vw + 0.5rem), 2.5em);
     line-height: 1.25em;
     color: var(--heading-secondary);
     text-transform: capitalize;
     text-align: center;
-    position: relative;
-    z-index: 9;
+}
+
+#section-2 {
+	padding-bottom: 5em;
+}
+
+#section-2:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -20%;
+    left: 0;
+    background-image: url(../../images/home/world-line-illustration.svg);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+	z-index: -1;
 }
 
 /*#######################
@@ -87,14 +101,14 @@
 #### Promo-section ######
 #########################*/
 .promo-section .promo-heading h2 {
-    font-size: clamp(2.5em, calc(5vw + 0.5rem), 3em);
+    font-size: clamp(2em, calc(5vw + 0.5rem), 3em);
     line-height: 1.25em;
     color: var(--highlight-color);
     text-align: center;
 }
 
 .promo-section .promo-heading p {
-    font-size: 1.2em;
+    font-size: clamp(0.5em, calc(3vw + 0.35rem), 1.2em);
     text-align: center;
     line-height: 1.5em;
 }
@@ -215,7 +229,7 @@
 #################################*/
 
 .content-heading-container .complimentary-heading h2 {
-    font-size: clamp(2em, calc(5vw + 0.5rem), 2.5em);
+    font-size: clamp(1em, calc(5vw + 0.5rem), 2.5em);
     line-height: 1.25em;
     color: var(--heading-secondary);
     text-transform: capitalize;
@@ -241,6 +255,35 @@
 ######### Content-section #######
 #################################*/
 
+/* content heading section */
+.content-heading-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.building-illustration-bg-container {
+    padding-block: var(--universal-padding-heavy);
+    position: relative;
+    padding-bottom: 1em;
+    position: relative;
+}
+
+.building-illustration-bg-container:before {
+    /* content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    left: 0;
+    background-image: url(../../images/building-illustration.svg);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: -1; */
+}
 
 
 /*###############################
@@ -248,14 +291,7 @@
 #################################*/
 
 .stat-box-heading h2 {
-    font-size: clamp(2.5em, calc(5vw + 0.5rem), 3em);
-    line-height: 1.25em;
-    color: var(--heading-secondary);
-    text-align: center;
-}
-
-.video-section h2 {
-    font-size: clamp(2.5em, calc(5vw + 0.5rem), 3em);
+    font-size: clamp(1.5em, calc(5vw + 0.5rem), 3em);
     line-height: 1.25em;
     color: var(--heading-secondary);
     text-align: center;
@@ -267,10 +303,6 @@
 }
 
 .stat-box-content .stat-box {
-    width: 255px;
-    min-height: 200px;
-    margin: 1em;
-    padding: 1em;
     cursor: pointer;
 
     background:
@@ -284,7 +316,7 @@
         linear-gradient(to top, var(--highlight-color) 6px, transparent 6px) 100% 100%;
 
     background-repeat: no-repeat;
-    background-size: 60px 60px;
+    background-size: 3em 3em;
 }
 
 .stat-box-content .stat-box h3 {
@@ -343,14 +375,9 @@
         padding: 0;
     }
 
-    #section-2:after {
-        display: none;
-    }
-
     .content-heading-container:before {
         display: none;
     }
-
 
     .content-heading-section {
         padding-block: 0em;
@@ -368,7 +395,7 @@
 #################################*/
 
 .tod .content-container h2 {
-    /* font-size: clamp(2.5em, calc(5vw + 0.5rem), 3em); */
+    font-size: clamp(1.5em, calc(5vw + 0.5rem), 2.25em);
     line-height: 1.25em;
     color: var(--primary-color);
     text-align: center;
@@ -492,19 +519,21 @@
     }
 
     .stat-box-content .stat-box h3 {
-        font-size: clamp(2em, calc(10vw + 0.5rem), 2.5em);
+        font-size: clamp(1.5em, calc(5vw + 0.5rem), 2.5em);
     }
-
 }
 
 @media (max-width:1200px) {
     .complimentary-section .column-2 h1 {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: clamp(1.5em, calc(5vw + 0.5rem), 2em);
+		line-height: 1.25em;
+		padding-bottom: 0;
+		margin-bottom: 0;
     }
 
     .complimentary-section .column-2 p {
-        font-size: 18px;
+        font-size: 0.9em;
+		line-height: 1.5em;
     }
 
     .section-60-40 .column-1 h1 {
@@ -579,9 +608,9 @@
         padding-block: var(--universal-padding-heavy);
     }
 
-    #section-4 .content-heading-container .complimentary-heading {
+/*     #section-4 .content-heading-container .complimentary-heading {
         padding-block: var(--universal-padding-heavy);
-    }
+    } */
 
     .content-heading-container .complimentary-subcontent {
         padding: 30px 0px;
@@ -591,3 +620,25 @@
         padding-block: var(--universal-padding-heavy);
     }
 }
+
+#splide02 > div:nth-child(1) {
+	position: absolute;
+	width: 50%;
+	height: 20%;
+	top: 100%;
+	left: 25%;
+}
+
+#section-4 {
+	margin-bottom: 3em;
+}
+
+#section-4 .content-heading-container {
+	padding-top: 0em;
+  	padding-bottom: 0;
+}
+
+#section-3 {
+	padding-bottom: 0;
+}
+

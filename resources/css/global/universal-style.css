@@ -140,6 +140,12 @@ section>div {
     margin: 50px 0px 0px 0px;
 }
 
+@media (max-width: 500px) {
+	.btn-container {
+		margin-top: 1em;
+	}
+}
+
 .btn {
     padding: 16px 50px;
     font-size: 19px;
@@ -294,21 +300,8 @@ section>div {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: min(90%, 800px);
+    width: min(90%, 1380px);
     margin-inline: auto;
-}
-
-#section-2:after {
-    content: '';
-    position: absolute;
-    width: 100vw;
-    height: 100%;
-    bottom: -80px;
-    left: 0;
-    background-image: url(../../images/path-leaf-2.svg);
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
 }
 
 /*#######################
@@ -341,43 +334,6 @@ section>div {
 #### Promo-section ######
 #########################*/
 
-/* content heading section */
-.content-heading-section {
-    padding-block: var(--universal-padding-heavy);
-    position: relative;
-    padding-bottom: 12em;
-}
-
-.content-heading-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-.content-heading-container .complimentary-heading {
-    position: relative;
-}
-
-.content-heading-container .complimentary-subcontent {
-    padding: 60px 0px;
-    position: relative;
-}
-
-.content-heading-container:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    bottom: 0px;
-    left: 0;
-    background-image: url(../../images/building-illustration.svg);
-    background-size: 100vw;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-
 /*###############################
 #### Complimentary-section ######
 #################################*/
@@ -389,7 +345,7 @@ section>div {
 .complimentary-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     margin-inline: auto;
     gap: 30px;
 }
@@ -442,7 +398,7 @@ section>div {
 
 .stat-box-container .stat-box-content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
     gap: 2em;
@@ -453,7 +409,9 @@ section>div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    aspect-ratio: 0;
+    aspect-ratio: 1/1;
+	flex: 1 1 40%;
+	max-width: 250px;
 }
 
 /*################################
@@ -469,8 +427,11 @@ section>div {
     align-items: center;
     flex-wrap: wrap;
     width: min(100%, 1380px);
-    gap: 3em;
-    padding-block: var(--universal-padding-heavy);
+    gap: 1em;
+}
+
+.video-container {
+	padding-bottom: 5em;
 }
 
 .video-container .video-box {
@@ -558,7 +519,6 @@ section>div {
     --dark: #000;
     --light: #13171a;
     width: 100vw;
-    /* height: calc(var(--triangle-wedge-size) + var(--content-height, 450px)); */
     background: linear-gradient(0, var(--highlight-color) 40%, white 60%);
     position: relative;
 }
@@ -590,20 +550,15 @@ section>div {
 } */
 
 .tod .content-container {
-    /* position: absolute; */
-    z-index: 5;
-    top: var(--triangle-wedge-size);
-    left: 0;
     background-color: var(--light);
     width: 100%;
-    min-height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 0em;
     color: white;
-    padding-block: var(--universal-padding-heavy);
+	padding-top: 2em;
 }
 
 .tod .content-container .content {
@@ -614,19 +569,20 @@ section>div {
 /* Partners section */
 
 .partners-section {
-    background-color: var(--dark, black);
-    padding: 25px 0px 0px 0px;
+    /* background-color: var(--dark, black); */
+    padding: 40x 0px 0px 0px;
 }
 
 .partners-section .partners-container {
     margin-inline: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     min-height: 100px;
-    padding: 25px 0px;
-    gap: 25px 0px;
+    padding: 50px 0px 0px 0px;
+    gap: 25px 70px;
+    width: min(90%, 1280px);
 }
 
 .partners-section .partners-container img {
@@ -700,8 +656,8 @@ section>div {
 }
 
 .splide__arrow {
-    --arrow-btn-width: 3em;
-    --arrow-btn-color: gray;
+    --arrow-btn-width: 2.5em;
+    --arrow-btn-color: #024778;
     width: 0;
 
     background-color: transparent;
@@ -753,7 +709,6 @@ section>div {
 
 #testimonial-slider-video .splide__track {
     width: min(90%, var(--max-slider-width));
-    margin: 0 auto;
     border: 1px solid #70707069;
 }
 
@@ -865,7 +820,7 @@ section>div {
 }
 
 .arrow-btn-container {
-    margin-top: 1em !important;
+    margin-top: 1em;
 }
 
 .arrow-button {
