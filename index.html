@@ -166,6 +166,8 @@
               --icon-box-heading-font-size: clamp(0.75em, calc(4.5vw + 0.35rem), 1.4em);
               --icon-box-para-font-size: clamp(0.9em, calc(4vw + 0.35rem), 1em);
             }
+
+            
           </style>
 
           <div class="icon-box"
@@ -246,7 +248,20 @@
     <!--------------- Promo Section ----------------------------->
 
     <!--------------- Partner Section ----------------------------->
-    
+    <style>
+      .partners-container .icon-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        width: min(64%, 208px);
+        aspect-ratio: 3/2;
+        padding-right: 1em;
+        padding-left: 1em;
+        cursor: pointer;
+      }
+    </style>
     <section class="partners-section" id="section-12">
       <div class="content-heading-container center-width" style="width: min(90%, 1080px);">
         <div class="complimentary-heading">
@@ -256,95 +271,72 @@
           <!-- <p class="pt30" data-font-family="Visuelt-Light">
              The fastest coast-to-coast most reliable workforce solutions provider <span class="home-br">with enterprise-grade
                assurance and 24/7/365 customer support</span>
-           </p> --> 
+           </p> -->
         </div>
       </div>
       <div class="partners-container">
         <div class="icon-box">
           <picture>
-            <source
-              srcset="resources/images/home/partner-logo/c-trat.png">
-            <img
-              src="resources/images/home/partner-logo/c-trat.png"
-              alt="partner" loading="lazy">
-          </picture>
-        </div>
-    
-        <div class="icon-box">
-          <picture>
-            <source
-              srcset="resources/images/home/partner-logo/Hazmat.png">
-            <img
-              src="resources/images/home/partner-logo/Hazmat.png"
-              alt="partner" loading="lazy">
-          </picture>
-        </div>
-    
-        <div class="icon-box">
-          <picture>
-            <source
-              srcset="resources/images/home/partner-logo/ace.png">
-            <img
-              src="resources/images/home/partner-logo/ace.png"
-              alt="partner" loading="lazy">
-          </picture>
-        </div>
-    
-        <div class="icon-box">
-          <picture>
-            <source
-              srcset="resources/images/home/partner-logo/aci.png">
-            <img
-              src="resources/images/home/partner-logo/aci.png"
-              alt="partner" loading="lazy">
+            <source srcset="resources/images/home/partner-logo/c-trat.png">
+            <img src="resources/images/home/partner-logo/c-trat.png" alt="partner" loading="lazy">
           </picture>
         </div>
 
         <div class="icon-box">
           <picture>
-            <source
-              srcset="resources/images/home/partner-logo/Fast.png">
-            <img
-              src="resources/images/home/partner-logo/Fast.png"
-              alt="partner" loading="lazy">
+            <source srcset="resources/images/home/partner-logo/Hazmat.png">
+            <img src="resources/images/home/partner-logo/Hazmat.png" alt="partner" loading="lazy">
           </picture>
         </div>
 
         <div class="icon-box">
           <picture>
-            <source
-              srcset="resources/images/home/partner-logo/PIP.png">
-            <img
-              src="resources/images/home/partner-logo/PIP.png"
-              alt="partner" loading="lazy">
+            <source srcset="resources/images/home/partner-logo/ace.png">
+            <img src="resources/images/home/partner-logo/ace.png" alt="partner" loading="lazy">
           </picture>
         </div>
 
         <div class="icon-box">
           <picture>
-            <source
-              srcset="resources/images/home/partner-logo/csa.png">
-            <img
-              src="resources/images/home/partner-logo/csa.png"
-              alt="partner" loading="lazy">
+            <source srcset="resources/images/home/partner-logo/aci.png">
+            <img src="resources/images/home/partner-logo/aci.png" alt="partner" loading="lazy">
           </picture>
         </div>
 
         <div class="icon-box">
           <picture>
-            <source
-              srcset="resources/images/home/partner-logo/smartway-transport-partnership-vector-logo.png">
-            <img
-              src="resources/images/home/partner-logo/smartway-transport-partnership-vector-logo.png"
-              alt="partner" loading="lazy">
+            <source srcset="resources/images/home/partner-logo/Fast.png">
+            <img src="resources/images/home/partner-logo/Fast.png" alt="partner" loading="lazy">
           </picture>
         </div>
 
-        
-        
+        <div class="icon-box">
+          <picture>
+            <source srcset="resources/images/home/partner-logo/PIP.png">
+            <img src="resources/images/home/partner-logo/PIP.png" alt="partner" loading="lazy">
+          </picture>
+        </div>
+
+        <div class="icon-box">
+          <picture>
+            <source srcset="resources/images/home/partner-logo/csa.png">
+            <img src="resources/images/home/partner-logo/csa.png" alt="partner" loading="lazy">
+          </picture>
+        </div>
+
+        <div class="icon-box">
+          <picture>
+            <source srcset="resources/images/home/partner-logo/smartway-transport-partnership-vector-logo.png">
+            <img src="resources/images/home/partner-logo/smartway-transport-partnership-vector-logo.png" alt="partner"
+              loading="lazy">
+          </picture>
+        </div>
+
+
+
       </div>
     </section>
- <!--------------- Partner Section ----------------------------->
+    <!--------------- Partner Section ----------------------------->
 
     <!--------------- Complimentary Section ----------------------------->
     <section class="content-heading-section building-illustration-bg-container" id="section-4">
@@ -374,9 +366,7 @@
           <div class="card" tabindex="0">
             <div class="front-face">
               <div class="icon">
-                <img
-                  src="resources/images/home/supply-chain-partner/time.svg"
-                  loading="lazy" alt="icon">
+                <img src="resources/images/home/supply-chain-partner/time.svg" loading="lazy" alt="icon">
               </div>
 
               <div class="card-heading">
@@ -396,9 +386,8 @@
           <div class="card" tabindex="1">
             <div class="front-face">
               <div class="icon">
-                <img
-                  src="resources/images/home/supply-chain-partner/temperature-sensitive-freight.svg"
-                  loading="lazy" alt="icon">
+                <img src="resources/images/home/supply-chain-partner/temperature-sensitive-freight.svg" loading="lazy"
+                  alt="icon">
               </div>
 
               <div class="card-heading">
@@ -416,9 +405,8 @@
           <div class="card" tabindex="2">
             <div class="front-face">
               <div class="icon">
-                <img
-                  src="resources/images/home/supply-chain-partner/experienced-dispatchers.svg"
-                  loading="lazy" alt="icon">
+                <img src="resources/images/home/supply-chain-partner/experienced-dispatchers.svg" loading="lazy"
+                  alt="icon">
               </div>
 
               <div class="card-heading">
@@ -436,9 +424,8 @@
           <div class="card" tabindex="3">
             <div class="front-face">
               <div class="icon">
-                <img
-                  src="resources/images/home/supply-chain-partner/true-24_7_365-support.svg"
-                  loading="lazy" alt="icon">
+                <img src="resources/images/home/supply-chain-partner/true-24_7_365-support.svg" loading="lazy"
+                  alt="icon">
               </div>
 
               <div class="card-heading">
@@ -457,9 +444,8 @@
           <div class="card" tabindex="4">
             <div class="front-face">
               <div class="icon">
-                <img
-                  src="resources/images/home/supply-chain-partner/proven-carrier-compliance.svg"
-                  loading="lazy" alt="icon">
+                <img src="resources/images/home/supply-chain-partner/proven-carrier-compliance.svg" loading="lazy"
+                  alt="icon">
               </div>
 
               <div class="card-heading">
@@ -477,9 +463,7 @@
           <div class="card" tabindex="5">
             <div class="front-face">
               <div class="icon">
-                <img
-                  src="resources/images/home/supply-chain-partner/competitive-pricing.svg"
-                  loading="lazy" alt="icon">
+                <img src="resources/images/home/supply-chain-partner/competitive-pricing.svg" loading="lazy" alt="icon">
               </div>
 
               <div class="card-heading">
@@ -498,9 +482,8 @@
           <div class="card" tabindex="6">
             <div class="front-face">
               <div class="icon">
-                <img
-                  src="resources/images/home/supply-chain-partner/dedicated-account-managers.svg"
-                  loading="lazy" alt="icon">
+                <img src="resources/images/home/supply-chain-partner/dedicated-account-managers.svg" loading="lazy"
+                  alt="icon">
               </div>
 
               <div class="card-heading">
@@ -519,9 +502,7 @@
           <div class="card" tabindex="7">
             <div class="front-face">
               <div class="icon">
-                <img
-                  src="resources/images/home/supply-chain-partner/100%-accountability.svg"
-                  alt="icon" loading="lazy">
+                <img src="resources/images/home/supply-chain-partner/100%-accountability.svg" alt="icon" loading="lazy">
               </div>
 
               <div class="card-heading">
@@ -541,9 +522,7 @@
           <div class="card" tabindex="8">
             <div class="front-face">
               <div class="icon">
-                <img
-                  src="resources/images/home/supply-chain-partner/worldwide-coverage.svg"
-                  alt="icon" loading="lazy">
+                <img src="resources/images/home/supply-chain-partner/worldwide-coverage.svg" alt="icon" loading="lazy">
               </div>
 
               <div class="card-heading">
@@ -575,33 +554,33 @@
         <div class="stat-box-content">
           <div class="stat-box">
             <h3>
-              <span data-font-family="Poppin-Bold"  data-run="false"> 120 </span>
+              <span data-font-family="Poppin-Bold" data-run="false"> 120 </span>
             </h3>
             <p data-font-family="Poppin-Regular">Clients</p>
           </div>
 
           <div class="stat-box">
             <h3>
-              <span data-font-family="Poppin-Bold"  data-run="false"> 95-97% </span>
+              <span data-font-family="Poppin-Bold" data-run="false"> 95-97% </span>
             </h3>
             <p data-font-family="Poppin-Regular">Time Delivery Rate</p>
           </div>
 
           <div class="stat-box">
             <h3>
-              <span data-font-family="Poppin-Bold"  data-run="false">.001%</span>
+              <span data-font-family="Poppin-Bold" data-run="false">.001%</span>
             </h3>
             <p data-font-family="Poppin-Regular">Claims Rate</p>
           </div>
 
           <div class="stat-box">
             <h3>
-              <span data-font-family="Poppin-Bold"  data-run="false">1,000</span>+
+              <span data-font-family="Poppin-Bold" data-run="false">1,000</span>+
             </h3>
             <p data-font-family="Poppin-Regular">Validated Carriers</p>
           </div>
 
-          
+
         </div>
       </div>
     </section>
@@ -612,15 +591,16 @@
       <div class="complimentary-container full-width">
         <div class="column-1">
           <picture>
-            <source
-              srcset="resources/images/home/how-business-scuess-image.png">
-            <img src="resources/images/home/how-business-scuess-image.png"
-              alt="Godspeed_superfast" width="100%" loading="lazy">
+            <source srcset="resources/images/home/how-business-scuess-image.png">
+            <img src="resources/images/home/how-business-scuess-image.png" alt="Godspeed_superfast" width="100%"
+              loading="lazy">
           </picture>
         </div>
         <div class="column-2">
           <h1 data-font-family="Visuelt-Bold">How Businesses<br> Succeed With<br> Godspeed Supply Chain</h1>
-          <p data-font-family="Visuelt-Light">Businesses that work with us benefit from our custom logistic solutions, proactive communication, GPS-enabled shipment tracking, control over shipment and dedicated 24/7/365 support.
+          <p data-font-family="Visuelt-Light">Businesses that work with us benefit from our custom logistic solutions,
+            proactive communication, GPS-enabled shipment tracking, control over shipment and dedicated 24/7/365
+            support.
           </p>
         </div>
       </div>
@@ -628,26 +608,25 @@
     <!--------------- Complimentary Section ----------------------------->
 
     <!--------------- Promo Section ----------------------------->
-    <section class="promo-section" id="section-9" >
+    <section class="promo-section" id="section-9">
       <!-- WIDGET -->
-      <link rel="stylesheet"
-          href="resources/css/widgets/widget-icon-boxes-type-1.css">
+      <link rel="stylesheet" href="resources/css/widgets/widget-icon-boxes-type-1.css">
 
-          <style>
-            .promo-section{
-              display: flex;
-              flex-direction: column;
-              gap:2em;
-            }
-            .icon-boxes-type-1 .icon-box {
-              width: 100%;
-            }
-          </style>
-      <div class="icon-boxes-type-1"> 
+      <style>
+        .promo-section {
+          display: flex;
+          flex-direction: column;
+          gap: 2em;
+        }
+
+        .icon-boxes-type-1 .icon-box {
+          width: 100%;
+        }
+      </style>
+      <div class="icon-boxes-type-1">
         <div class="icon-box">
           <div class="promo-icon">
-            <img src="resources/images/home/how-business-scuess-icons/retial.svg"
-              alt="icon" loading="lazy">
+            <img src="resources/images/home/how-business-scuess-icons/retial.svg" alt="icon" loading="lazy">
           </div>
 
           <div class="promo-icon-content">
@@ -659,9 +638,7 @@
 
         <div class="icon-box" data-sep="before">
           <div class="promo-icon">
-            <img
-              src="resources/images/home/how-business-scuess-icons/food.svg"
-              alt="icon" loading="lazy">
+            <img src="resources/images/home/how-business-scuess-icons/food.svg" alt="icon" loading="lazy">
           </div>
 
           <div class="promo-icon-content">
@@ -673,9 +650,7 @@
 
         <div class="icon-box" data-sep="before">
           <div class="promo-icon">
-            <img
-              src="resources/images/home/how-business-scuess-icons/manufacturing.svg"
-              alt="icon" loading="lazy">
+            <img src="resources/images/home/how-business-scuess-icons/manufacturing.svg" alt="icon" loading="lazy">
           </div>
 
           <div class="promo-icon-content">
@@ -687,9 +662,7 @@
 
         <div class="icon-box" data-sep="before">
           <div class="promo-icon">
-            <img
-              src="resources/images/home/how-business-scuess-icons/construction.svg"
-              alt="icon" loading="lazy">
+            <img src="resources/images/home/how-business-scuess-icons/construction.svg" alt="icon" loading="lazy">
           </div>
 
           <div class="promo-icon-content">
@@ -701,9 +674,7 @@
 
         <div class="icon-box" data-sep="before">
           <div class="promo-icon">
-            <img
-              src="resources/images/home/how-business-scuess-icons/pharmaceutical.svg"
-              alt="icon" loading="lazy">
+            <img src="resources/images/home/how-business-scuess-icons/pharmaceutical.svg" alt="icon" loading="lazy">
           </div>
 
           <div class="promo-icon-content">
@@ -715,9 +686,7 @@
 
         <div class="icon-box" data-sep="before">
           <div class="promo-icon">
-            <img
-              src="resources/images/home/how-business-scuess-icons/transportation.svg"
-              alt="icon" loading="lazy">
+            <img src="resources/images/home/how-business-scuess-icons/transportation.svg" alt="icon" loading="lazy">
           </div>
 
           <div class="promo-icon-content">
@@ -725,15 +694,15 @@
               Transportation
             </p>
           </div>
-        </div> 
-      </div> 
+        </div>
+      </div>
 
 
-      <div class="icon-boxes-type-1"> 
+      <div class="icon-boxes-type-1">
         <div class="icon-box">
           <div class="promo-icon">
-            <img src="resources/images/home/how-business-scuess-icons/non-food-perishables.svg"
-              alt="icon" loading="lazy">
+            <img src="resources/images/home/how-business-scuess-icons/non-food-perishables.svg" alt="icon"
+              loading="lazy">
           </div>
 
           <div class="promo-icon-content">
@@ -745,9 +714,7 @@
 
         <div class="icon-box" data-sep="before">
           <div class="promo-icon">
-            <img
-              src="resources/images/home/how-business-scuess-icons/dangerous-goods.svg"
-              alt="icon" loading="lazy">
+            <img src="resources/images/home/how-business-scuess-icons/dangerous-goods.svg" alt="icon" loading="lazy">
           </div>
 
           <div class="promo-icon-content">
@@ -759,9 +726,7 @@
 
         <div class="icon-box" data-sep="before">
           <div class="promo-icon">
-            <img
-              src="resources/images/home/how-business-scuess-icons/aerospace.svg"
-              alt="icon" loading="lazy">
+            <img src="resources/images/home/how-business-scuess-icons/aerospace.svg" alt="icon" loading="lazy">
           </div>
 
           <div class="promo-icon-content">
@@ -773,9 +738,7 @@
 
         <div class="icon-box" data-sep="before">
           <div class="promo-icon">
-            <img
-              src="resources/images/home/how-business-scuess-icons/automotive.svg"
-              alt="icon" loading="lazy">
+            <img src="resources/images/home/how-business-scuess-icons/automotive.svg" alt="icon" loading="lazy">
           </div>
 
           <div class="promo-icon-content">
@@ -787,9 +750,7 @@
 
         <div class="icon-box" data-sep="before">
           <div class="promo-icon">
-            <img
-              src="resources/images/home/how-business-scuess-icons/warehousing.svg"
-              alt="icon" loading="lazy">
+            <img src="resources/images/home/how-business-scuess-icons/warehousing.svg" alt="icon" loading="lazy">
           </div>
 
           <div class="promo-icon-content">
@@ -801,9 +762,7 @@
 
         <div class="icon-box" data-sep="before">
           <div class="promo-icon">
-            <img
-              src="resources/images/home/how-business-scuess-icons/out-of-gauge.svg"
-              alt="icon" loading="lazy">
+            <img src="resources/images/home/how-business-scuess-icons/out-of-gauge.svg" alt="icon" loading="lazy">
           </div>
 
           <div class="promo-icon-content">
@@ -811,7 +770,7 @@
               Out-of-gauge
             </p>
           </div>
-        </div> 
+        </div>
       </div>
     </section>
     <!--------------- Promo Section ----------------------------->
@@ -846,7 +805,8 @@
                     <h4 data-font-family="Visuelt-Bold">NORTH AMERICAN GROCERY DISTRIBUTOR</h4>
                     <div class="testimonial_text" data-font-family="Visuelt-Light">
                       <span class="quote-start"></span>
-                      We are impressed with the speed of your execution. Thank you for making many things happen in a short span of time.
+                      We are impressed with the speed of your execution. Thank you for making many things happen in a
+                      short span of time.
                       <span class="quote-end"></span>
                     </div>
                     <div class="testimonial_icon_container">
@@ -863,7 +823,8 @@
                     <h4 data-font-family="Visuelt-Bold">NORTH AMERICAN GROCERY DISTRIBUTOR</h4>
                     <div class="testimonial_text" data-font-family="Visuelt-Light">
                       <span class="quote-start"></span>
-                      We are impressed with the speed of your execution. Thank you for making many things happen in a short span of time.
+                      We are impressed with the speed of your execution. Thank you for making many things happen in a
+                      short span of time.
                       <span class="quote-end"></span>
                     </div>
                     <div class="testimonial_icon_container">
@@ -873,7 +834,7 @@
                     </div>
                   </div>
                 </li>
- 
+
 
               </ul>
             </div>
@@ -885,7 +846,7 @@
     <!--------------- Testimonial Section ----------------------------->
 
 
-    
+
 
     <!--------------- Complimentary Section ----------------------------->
     <section class="section-60-40" id="section-10" style="padding-bottom:0px;">
@@ -907,7 +868,7 @@
 
           @media (min-width: 900px) {
             #complimentary-1 {
-              align-items:center;
+              align-items: center;
             }
           }
 
@@ -928,18 +889,16 @@
 
         <div class="column-1">
           <div class="video-container">
-            <img
-            src="resources/images/home/discover.svg"
-            loading="lazy" alt="" width="100%">
-             
+            <img src="resources/images/home/discover.svg" loading="lazy" alt="" width="100%">
+
           </div>
         </div>
         <div class="column-2">
           <h2 data-font-family="Visuelt-Bold">Discover How Businesses Like You Found Success By Choosing Us</h2>
           <p data-font-family="OpenSans-Regular">Revolutionise the way you hire</p>
           <div class="btn-container">
-            <a href="contact" class="btn btn-primary" data-font-family="OpenSans-Medium"><span
-                class="btn-content">Get a Quote</span></a>
+            <a href="contact" class="btn btn-primary" data-font-family="OpenSans-Medium"><span class="btn-content">Get a
+                Quote</span></a>
           </div>
         </div>
       </div>
@@ -1018,25 +977,25 @@
   <!------------- Footer - Start ---------------->
   <footer>
     <section class="tod" id="footer-section-1">
-    <div class="content-container">
-      <div class="content">
-        <h2 data-font-family="Visuelt-Bold">Become A Carrier</h2>
-        <!-- <p data-font-family="Visuelt-Regular">It has roots in a piece of classical latin literature contrary to
+      <div class="content-container">
+        <div class="content">
+          <h2 data-font-family="Visuelt-Bold">Become A Carrier</h2>
+          <!-- <p data-font-family="Visuelt-Regular">It has roots in a piece of classical latin literature contrary to
           popular belief, lorem<br> ipsum is not simply
           random text.</p> -->
-      </div>
+        </div>
 
-      <div class="email-input" id="contact-email-input">
+        <div class="email-input" id="contact-email-input">
 
-        <form action="" class="newsletter">
-          <div class="newsletter-box">
-            <input class="emailbox" type="email" name="" value="" required placeholder="Your Email Address…">
-            <button type="submit" name="button">Sign Up</button>
-          </div>
-        </form>
+          <form action="" class="newsletter">
+            <div class="newsletter-box">
+              <input class="emailbox" type="email" name="" value="" required placeholder="Your Email Address…">
+              <button type="submit" name="button">Sign Up</button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <!-- 	 <section>
 	  <div class="tagembed-container" style="width:min(95%, 1380px);margin:auto;height:100%;overflow: auto;"><div class="tagembed-socialwall" data-wall-id="72112" view-url="https://widget.tagembed.com/72112?view">  </div> <script src="//widget.tagembed.com/embed.min.js" type="text/javascript"></script></div>
@@ -1080,7 +1039,7 @@
                   </a>
                 </li>
 
-                 
+
               </ul>
             </div>
             <div class="column-middle">

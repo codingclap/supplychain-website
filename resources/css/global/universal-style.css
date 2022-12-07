@@ -3,7 +3,7 @@
     --universal-padding-light: 0.5em;
     --universal-padding-heavy: 3rem;
     --triangle-wedge-size: max(12.5vw, 11vh);
-    --container-max-width: 1800px;
+    --container-max-width: 1280px;
 }
 
 body {
@@ -581,7 +581,7 @@ section>div {
     align-items: center;
     min-height: 100px;
     padding: 50px 0px 0px 0px;
-    gap: 25px 70px;
+    gap: 25px 80px;
     width: min(90%, 1280px);
 }
 
