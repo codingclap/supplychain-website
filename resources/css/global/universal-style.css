@@ -137,7 +137,7 @@ section>div {
 .btn-container {
     width: 100%;
     min-height: 20px;
-    margin: 50px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
 }
 
 @media (max-width: 500px) {
@@ -345,7 +345,7 @@ section>div {
 .complimentary-container {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     margin-inline: auto;
     gap: 30px;
 }
