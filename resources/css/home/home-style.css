@@ -55,8 +55,8 @@
 }
 
 .text-shadow:hover::after {
-    height: 1.2em;
-    bottom: 0em;
+    height: 1em;
+    bottom: 7px;
     width: 104%;
     left: -2%;
 }
