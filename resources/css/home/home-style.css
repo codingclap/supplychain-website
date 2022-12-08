@@ -55,10 +55,10 @@
 }
 
 .text-shadow:hover::after {
-    height: 1.3em;
-    bottom: -0.1em;
-    width: 110%;
-    left: -5%;
+    height: 1.2em;
+    bottom: 0em;
+    width: 104%;
+    left: -2%;
 }
 
 /*#######################
