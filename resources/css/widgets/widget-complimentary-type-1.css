@@ -5,6 +5,8 @@
     --content-column-width: auto;
     --flex-direction: row;
     --gap: 0;
+	
+	--mobi-flex-direction: column-reverse;
 }
 
 .complimentary-container-type-1 {
@@ -38,10 +40,11 @@
     .complimentary-container-type-1 {
         --content-column-max-width: 600px;
         margin-block: 2em;
-        flex-direction: column-reverse;
+        flex-direction: var(--mobi-flex-direction);
+		align-items: center;
         max-width: 90%;
         font-size: 0.9em;
-        gap: 2em;
+        gap: 3em;
         margin: auto !important;
     }
 
