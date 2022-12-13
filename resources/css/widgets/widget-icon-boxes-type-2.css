@@ -57,6 +57,7 @@
     top: 0;
     left: calc(-1 * var(--gap) / 2);
     background-color: var(--separator-bg-color, gray);
+    opacity: 0.4;
 }
 
 @media (max-width: 900px) {
