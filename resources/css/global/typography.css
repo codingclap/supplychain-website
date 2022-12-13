@@ -2,8 +2,8 @@
 @media (min-width: 1150px) {
     :root {
         --font-size-p: 1.134em;
-        --font-size-p2: 1.3em;
-        --font-size-h1: 3.25em;
+        --font-size-p2: 1.46em;
+        --font-size-h1: 3.45em;
         --font-size-h2: 2.8em;
         --font-size-h3: 1.33em;
         --font-size-h4: 1.35em;
@@ -13,7 +13,7 @@
         --font-size-input: 1.25em;
 
         --line-height-p: 1.555em;
-        --line-height-h1: 1.2em;
+        --line-height-h1: 1.1em;
         --line-height-h2: 1.25em;
         --line-height-h3: 1.25em;
         --line-height-h4: 1.222em;
@@ -69,7 +69,7 @@
 }
 
 p {
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-p2);
     line-height: var(--line-height-p);
 }
 

@@ -33,8 +33,7 @@
                         <span></span>
                     </button>
                     <a href="#">
-                        <img src="https://workforce.godspeedgroup.ca/wp-content/uploads/2022/11/godspeed-workforce.png"
-                            alt="Godspeed Workforce" width="170px">
+                        <img src="resources/images/logo-white.png" alt="Godspeed Workforce" width="170px">
                     </a>
                 </div>
 
@@ -61,7 +60,8 @@
                                 </a>
                                 <ul class="dropdown" id="blog">
                                     <!-- <li class="separator"></li>  -->
-                                    <li id="nav-about-us"><a href="ground-transportation.html">Ground<br> Transportation</a>
+                                    <li id="nav-about-us"><a href="ground-transportation.html">Ground<br>
+                                            Transportation</a>
                                     </li>
                                     <li id="nav-the-team"><a href="rail-logistics.html">Rail Logistics</a> </li>
                                     <li id="nav-the-team"><a href="#">Air Freight</a> </li>
@@ -95,15 +95,23 @@
             <div class="complimentary-container-type-1" id="complimentary-home-1">
                 <link rel="stylesheet" href="resources/css/widgets/widget-complimentary-type-1.css">
                 <style>
+                    #section-1 .column-1 img {
+                        width: 100%;
+                    }
+
                     #complimentary-home-1 {
                         --flex-direction: row;
-                        --image-column-max-width: 700px;
-                        --content-column-max-width: 800px;
+                        --image-column-max-width: 1020px;
+                        --content-column-max-width: 900px;
                         --image-column-width: 50%;
                         --content-column-width: 50%;
-                        --container-max-width: 1380px;
+                        --container-max-width: 1920px;
 
                         --mobi-flex-direction: column;
+                    }
+
+                    .complimentary-container-type-1 {
+                        width: min(100%, var(--container-max-width, 1920px));
                     }
 
                     @media (max-width:900px) {
@@ -116,14 +124,16 @@
                 <div class="column-1">
                     <picture>
                         <source srcset="resources/images/rail-logistics/rail-image.png">
-                        <img src="resources/images/rail-logistics/rail-image.png" loading="lazy"
-                            alt="Godspeed_unicon" width="100%">
+                        <img src="resources/images/rail-logistics/rail-image.png" loading="lazy" alt="Godspeed_unicon"
+                            width="100%">
                     </picture>
                 </div>
                 <div class="column-2">
                     <h1 data-font-family="VisueltPro-Black" style="color:var(--secondary-color);">Rail Logistics
                     </h1>
-                    <p class="banner-para" data-hover-color="hover-color" data-font-family="OpenSans-Regular">Connecting North American <span class="home-br">markets you need through our</span> customised logistic solutions. 
+                    <p class="banner-para" data-hover-color="hover-color" data-font-family="OpenSans-Regular">Connecting
+                        North American markets <span class="home-br">you need through our customised</span> logistic
+                        solutions.
                     </p>
                     <!-- <div class="btn-container">
             <a href="#" class="btn btn-primary" data-font-family="OpenSans-Medium" data-content="Contact Us"><span
@@ -134,41 +144,52 @@
         </section>
         <!--------------- Header Section ----------------------------->
 
-        <section class="promo-section" id="section-3" style="position:relative;">
+        <section class="promo-section" id="section-3">
             <style>
-                .promo-heading{
-                    position: absolute; 
-                    bottom: 90px;
+                .promo-section {
+                    position: relative;
                 }
 
-                @media(max-width:768px){
-                    .promo-heading{
+                .promo-heading {
+                    position: absolute;
+                    bottom: 70px;
+                }
+
+                @media(min-width:900px) {
+                    .promo-section {
+                        top: -100px;
+                    }
+                }
+
+                @media(max-width:768px) {
+                    .promo-heading {
                         bottom: 50px;
                     }
                 }
-                @media(max-width:665px){
-                    .promo-heading{
+
+                @media(max-width:665px) {
+                    .promo-heading {
                         bottom: 10px;
                     }
                 }
             </style>
-            <img src="resources/images/rail-logistics/yellow-line.svg" alt="" width="100%"> 
+            <img src="resources/images/rail-logistics/yellow-line.svg" alt="" width="100%">
             <div class="promo-container">
-              <div class="promo-heading" > 
-                <h2 data-font-family="Visuelt-Bold">
-                    Intermodal
-                </h2>
-                <p data-font-family="Visuelt-Light">
-                  Move shipments between road and rail within North America.
-                </p>
-              </div>  
+                <div class="promo-heading">
+                    <h2 data-font-family="Visuelt-Bold">
+                        Intermodal
+                    </h2>
+                    <p data-font-family="Visuelt-Light">
+                        Move shipments between road and rail within North America.
+                    </p>
+                </div>
             </div>
-          </section>
+        </section>
 
         <!--------------- Item Section ----------------------------->
 
-        <section class="items-section" id="section-29" style="padding:0px;">  
-           
+        <section class="items-section" id="section-29" style="padding:0px;">
+
         </section>
         <!--------------- Item Section ----------------------------->
 
@@ -191,6 +212,19 @@
             <div class="widget-hover-card-promo-type-1" id="hover-card-pt1-1">
                 <link rel="stylesheet" href="resources/css/widgets/widget-hover-card-promo-type-1.css">
                 <style>
+                    .widget-hover-card-promo-type-1 .main-container .card .icon { 
+                        width: 100%;
+                        height: 135px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin:0 auto;
+                    }
+                     
+                    .widget-hover-card-promo-type-1 .main-container .card { 
+                            min-height: 200px;
+                        }
+
                     .widget-hover-card-promo-type-1 {
                         --widget-max-width: 1380px;
                         --card-max-width: 300px;
@@ -204,11 +238,11 @@
 
                     @media (max-width:720px) {
                         .widget-hover-card-promo-type-1 .main-container .card {
-                            width: min(60%, var(--card-max-width));
+                            width: min(60%, var(--card-max-width)); 
                         }
 
                         .widget-hover-card-promo-type-1 .main-container .card img {
-                            width: 50%;
+                            width:98px;
                         }
                     }
                 </style>
@@ -217,8 +251,8 @@
                     <div class="card" tabindex="0">
                         <div class="front-face">
                             <div class="icon">
-                                <img src="resources/images/rail-logistics/proactive-shipment-tracking.svg" loading="lazy"
-                                    alt="icon">
+                                <img src="resources/images/rail-logistics/proactive-shipment-tracking.svg"
+                                    loading="lazy" alt="icon">
                             </div>
 
                             <div class="card-heading">
@@ -238,8 +272,8 @@
                     <div class="card" tabindex="1">
                         <div class="front-face">
                             <div class="icon">
-                                <img src="resources/images/rail-logistics/freight-insurance.svg"
-                                    loading="lazy" alt="icon">
+                                <img src="resources/images/rail-logistics/freight-insurance.svg" loading="lazy"
+                                    alt="icon">
                             </div>
 
                             <div class="card-heading">
@@ -257,8 +291,8 @@
                     <div class="card" tabindex="2">
                         <div class="front-face">
                             <div class="icon">
-                                <img src="resources/images/rail-logistics/railway-transloading.svg"
-                                    loading="lazy" alt="icon">
+                                <img src="resources/images/rail-logistics/railway-transloading.svg" loading="lazy"
+                                    alt="icon">
                             </div>
 
                             <div class="card-heading">
@@ -293,8 +327,8 @@
             </div> -->
                     </div>
 
-                   
-                    
+
+
 
 
                 </div>
