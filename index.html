@@ -33,8 +33,7 @@
             <span></span>
           </button>
           <a href="#">
-            <img src="resources/images/logo-white.png"
-              alt="Godspeed Workforce" width="170px">
+            <img src="resources/images/logo-white.png" alt="Godspeed Workforce" width="170px">
           </a>
         </div>
 
@@ -94,7 +93,6 @@
       <div class="complimentary-container-type-1" id="complimentary-home-1">
         <link rel="stylesheet" href="resources/css/widgets/widget-complimentary-type-1.css">
         <style>
-          
           #complimentary-home-1 {
             --flex-direction: row;
             --image-column-max-width: 700px;
@@ -167,7 +165,13 @@
               --icon-box-para-font-size: clamp(0.9em, calc(4vw + 0.35rem), 1em);
             }
 
+
             @media(max-width:1385px) {
+              .icon-boxes-type-2 .icon-box .promo-icon img {
+                width: 75%;
+                height: 75%;
+              }
+
               #icon-box-t2-1 {
                 --icon-box-max-width: 190px;
                 --gap: min(15vw, 3em);
@@ -177,9 +181,7 @@
             }
           </style>
 
-          <div class="icon-box"
-            onclick="hyperlinkTo('', false, false)"
-            style="cursor:pointer;">
+          <div class="icon-box" onclick="hyperlinkTo('', false, false)" style="cursor:pointer;">
             <div class="promo-icon">
               <img src="resources/images/home/what_we_do/GROUND-TRANSPORTATION.svg" loading="lazy" alt="icon">
             </div>
@@ -192,9 +194,7 @@
             </div>
           </div>
 
-          <div class="icon-box" data-sep="before"
-            onclick="hyperlinkTo('', false, false)"
-            style="cursor:pointer;">
+          <div class="icon-box" data-sep="before" onclick="hyperlinkTo('', false, false)" style="cursor:pointer;">
             <div class="promo-icon">
               <img src="resources/images/home/what_we_do/RAIL-LOGISTICS.svg" loading="lazy" alt="icon">
             </div>
@@ -207,9 +207,7 @@
             </div>
           </div>
 
-          <div class="icon-box" data-sep="before"
-            onclick="hyperlinkTo('', false, false)"
-            style="cursor:pointer;">
+          <div class="icon-box" data-sep="before" onclick="hyperlinkTo('', false, false)" style="cursor:pointer;">
             <div class="promo-icon">
               <img src="resources/images/home/what_we_do/AIR-FREIGHT.svg" loading="lazy" alt="icon">
             </div>
@@ -221,9 +219,7 @@
               </p> -->
             </div>
           </div>
-          <div class="icon-box" data-sep="before"
-            onclick="hyperlinkTo('', false, false)"
-            style="cursor:pointer;">
+          <div class="icon-box" data-sep="before" onclick="hyperlinkTo('', false, false)" style="cursor:pointer;">
             <div class="promo-icon">
               <img src="resources/images/home/what_we_do/OCEAN-FREIGHT.svg" loading="lazy" alt="icon">
             </div>
@@ -235,9 +231,7 @@
               </p> -->
             </div>
           </div>
-          <div class="icon-box" data-sep="before"
-            onclick="hyperlinkTo('', false, false)"
-            style="cursor:pointer;">
+          <div class="icon-box" data-sep="before" onclick="hyperlinkTo('', false, false)" style="cursor:pointer;">
             <div class="promo-icon">
               <img src="resources/images/home/what_we_do/INDUSTRIAL-PROJECTS.svg" loading="lazy" alt="icon">
             </div>
@@ -256,6 +250,10 @@
 
     <!--------------- Partner Section ----------------------------->
     <style>
+      .partners-section .partners-container img {
+        width: 100%;
+      }
+
       .partners-container .icon-box {
         display: flex;
         justify-content: center;
@@ -267,6 +265,28 @@
         padding-right: 1em;
         padding-left: 1em;
         cursor: pointer;
+      }
+
+      @media(max-width:560px) {
+        .partners-container .icon-box {
+          width: min(64%, 208px);
+        }
+
+        .partners-section .partners-container {
+          gap: 20px 15px;
+        }
+      }
+
+      @media(max-width:480px) {
+        .partners-container .icon-box {
+          width: min(43%, 208px);
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+
+        .partners-section .partners-container {
+          gap: 5px 5px;
+        }
       }
     </style>
     <section class="partners-section" id="section-12">
@@ -365,6 +385,10 @@
         <style>
           #hover-card-pt1-1 {
             --widget-max-width: 1280px;
+          }
+
+          .widget-hover-card-promo-type-1 .main-container .card {
+            min-height: 185px;
           }
         </style>
         <link rel="stylesheet" href="resources/css/widgets/widget-hover-card-promo-type-1.css">
@@ -629,6 +653,12 @@
 
         .icon-boxes-type-1 .icon-box {
           width: 100%;
+        }
+
+        @media(max-width:500px) {
+          .icon-boxes-type-1 .icon-box {
+            max-width: 130px;
+          }
         }
       </style>
       <div class="icon-boxes-type-1">
@@ -952,7 +982,7 @@
 
 
     splide.mount();
-  </script> 
+  </script>
   <!------------- Home Page Script ---------------->
 
 
@@ -1147,7 +1177,7 @@
 
     counterIntersectionObserver.observe(counterContainer);
   </script>
- 
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous">
     </script>
