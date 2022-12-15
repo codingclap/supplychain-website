@@ -1,0 +1,312 @@
+ 
+
+body {
+    background-color: #024778;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    padding: 10px 15px;
+    position: relative;
+}
+.footer-image{
+    position: absolute;
+    left:0;
+    bottom: 0;
+}
+
+.content-section {
+    display: flex;
+    justify-content: center;
+    gap: 2em 10em; 
+}
+
+.heading-tagline {
+    color: #FFD729;
+    font-size: 16px;
+}
+
+.heading {
+    color: #fff; 
+    padding: 30px 0px 20px;
+}
+
+.description {
+    color: #fff;
+    font-size: 18px;
+    padding: 0px 40px 40px 0px;
+    line-height: 28px;
+}
+
+.header-btn {
+    transition: 0.3s ease-in-out;
+    width: 250px;
+}
+
+.header-btn-style {
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.header-btn-style::before {
+    content: " ";
+    background: url('../images/arrow-left.png');
+    position: absolute;
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 22px; 
+    z-index: -7;
+    opacity: 0;
+    left:0px;
+    transition: 0.3s ease-in-out;
+}
+
+.header-btn:hover {
+    padding-left: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.header-btn:hover>.header-btn-style::before {
+    opacity: 1;
+    left:-40px;
+}
+
+
+
+.submit-btn {
+    padding: 10px 0px;
+}
+
+.btn-style {
+    background: #FFD729;
+    padding: 7px 35px;
+    border: 0px;
+    font-size: 15px;
+    font-family: 'OpenSans-Bold';
+}
+
+.column-1 {
+     width: 100%;
+    max-width: 400px;
+}
+
+.column-2 {
+    max-width: 600px;
+    width: 100%;
+    
+}
+
+#form-container .first-row {
+    display: flex;
+    gap: 2em;
+    padding-bottom: 1.5em;
+    justify-content: center;
+}
+
+#form-container .first-row .sec-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    width: 50%;
+}
+
+
+#form-container .second-row {
+    display: flex;
+    gap: 0.7em;
+    padding-bottom: 1.5em;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#form-container .second-row .sec-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    width: 100%;
+}
+
+/* Form Styling */
+::placeholder {
+    color: #fff!important;
+    font-size: 14px!important;
+    opacity: 1!important;
+}
+
+#form-container label {
+    font-family: 'OpenSans-Bold';
+    color: #fff;
+    font-size: 14px;
+}
+
+
+#form-container textarea {
+    background: #FFFFFF14;
+    border: 0px;
+    font-family: 'OpenSans-Regular';
+    padding: 10px 2px 5px 15px;
+    font-size: 14px;
+}
+
+#form-container input[type=text] {
+    font-size: 14px;
+    height: 32px;
+    padding: 5px 2px 5px 15px;
+    font-family: 'OpenSans-Regular';
+    background: #FFFFFF14;
+    border: 0px;
+    color: #fff;
+}
+
+#form-container input[type=email] {
+    font-size: 14px;
+    height: 32px;
+    padding: 5px 2px 5px 15px;
+    font-family: 'OpenSans-Regular';
+    background: #FFFFFF14;
+    border: 0px;
+    color: #fff;
+}
+
+
+
+
+
+
+/***** Custom Check box *******/
+
+#form-container input[type=checkbox] {
+    background: #FFFFFF14;
+    font-family: 'OpenSans-Regular';
+    font-size: 14px;
+    accent-color: red;
+}
+
+#form-container .checkbox-1 {
+    color: #fff;
+    font-family: 'OpenSans-Regular';
+    display: flex;
+    gap: 0.6em;
+    justify-content: flex-start;
+    font-size: 14px;
+}
+
+#form-container .checkbox-1 label {
+    font-family: 'OpenSans-Regular';
+}
+
+.main {
+    display: block;
+    position: relative;
+    padding-left: 38px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hide the default checkbox */
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+/* Creating a custom checkbox
+based on demand */
+.geekmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #FFFFFF14;
+}
+
+/* Specify the background color to be
+shown when hovering over checkbox */
+.main:hover input~.geekmark {
+    background-color: #FFD729;
+}
+
+/* Specify the background color to be
+shown when checkbox is active */
+.main input:active~.geekmark {
+    background-color: #FFFFFF14;
+}
+
+/* Specify the background color to be
+shown when checkbox is checked */
+.main input:checked~.geekmark {
+    background-color: #FFFFFF14;
+}
+
+/* Checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.geekmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Display checkmark when checked */
+.main input:checked~.geekmark:after {
+    display: block;
+}
+
+/* Styling the checkmark using webkit */
+/* Rotated the rectangle by 45 degree and 
+showing only two border to make it look
+like a tickmark */
+.main .geekmark:after {
+    left: 7px;
+    bottom: 5px;
+    width: 4px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+@media (max-width:1380px){
+.content-section {
+    gap: 2em 6em; 
+}
+}
+
+@media (max-width:1200px){
+.content-section {
+    gap: 2em 5em; 
+}
+#form-container .checkbox-1{
+    flex-wrap:wrap;
+}
+ 
+}
+
+@media (max-width:768px){
+    #form-container .first-row {
+         flex-wrap: wrap;
+    }
+    #form-container .second-row {
+        flex-wrap: wrap;
+   }
+   .content-section {
+    gap: 2em 2em;
+    flex-wrap: wrap;
+}
+#form-container .first-row .sec-1{
+    width:100%;
+}
+}

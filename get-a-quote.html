@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GodSpeed</title>
+    <link rel="shortcut icon" href="resources/images/fav-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/widgets/venobox.css">
+    <link rel="stylesheet" href="resources/css/widgets/splide.min.css">
+    <link rel="stylesheet" href="resources/css/global/basic.css">
+    <link rel="stylesheet" href="resources/css/global/typography.css">
+    <link rel="stylesheet" href="resources/css/global/typography-specific.css">
+    <link rel="stylesheet" href="resources/css/global/nav-style.css">
+    <link rel="stylesheet" href="resources/css/global/universal-style.css">
+    
+</head>
+
+<body>
+
+    <!--------------- Navbar Section ----------------------------->
+    <header style="position:sticky;top:0;z-index:999999;">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggler" data-toggle="open-navbar1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <a href="#">
+                        <img src="resources/images/logo-white.png" alt="Godspeed Workforce" width="170px">
+                    </a>
+                </div>
+
+                <div class="nav-menu-container">
+                    <div class="navbar-menu" id="open-navbar1">
+                        <ul class="navbar-nav">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li class="navbar-dropdown ">
+                                <a href="javascript:void(0)" class="dropdown-toggler" data-dropdown="my-dropdown-id">
+                                    About <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown" id="my-dropdown-id">
+                                    <!-- <li class="separator"></li>  -->
+                                    <li id="nav-about-us"><a href="#">About</a></li>
+                                    <li id="nav-the-team"><a href="#">
+                                            The Team
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navbar-dropdown ">
+                                <a href="javascript:void(0)" class="dropdown-toggler" data-dropdown="blog">
+                                    logistic<br> Solutions <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown" id="blog">
+                                    <!-- <li class="separator"></li>  -->
+                                    <li id="nav-about-us"><a href="ground-transportation.html">Ground<br>
+                                            Transportation</a>
+                                    </li>
+                                    <li id="nav-the-team"><a href="rail-logistics.html">Rail Logistics</a> </li>
+                                    <li id="nav-the-team"><a href="air-freight.html">Air Freight</a> </li>
+                                    <li id="nav-the-team"><a href="#">Ocean Freight</a> </li>
+                                    <li id="nav-the-team"><a href="#">Industrial Projects</a> </li>
+                                    <li id="nav-the-team"><a href="#">Our Partners</a> </li>
+                                </ul>
+                            </li>
+
+                            <li class=""><a href="#">
+                                    What We Do
+                                </a></li>
+                            <li class=""><a href="#">Get a Quote</a></li>
+                            <li class=""><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--------------- Navbar Section ----------------------------->
+ 
+    <link rel="stylesheet" href="resources/css/get-a-guote/style.css"> 
+    <main>
+        <div class="main-container">
+            <div class="footer-image">
+                <img src="images/triangle-image.svg" alt="" width="90%">
+            </div>
+            <div class="content-section">
+                <div class="column-1">
+                    <span data-font-family="OpenSans-Bold" class="heading-tagline" >READY TO PUT SPEED TO WORK?</span>
+                    <h2 data-font_family="Visuelt-Bold" class="heading" >Get a Quote</h2>
+                    <p data-font_family="OpenSans-Regular" class="description">Fill out the quote request form and a member of our team will be in contact with you shortly.</p>
+    
+                    <div class="header-btn">
+                        <a href="#" class="header-btn-style" data-font-family="OpenSans-Bold">Back to Home</a>
+                    </div>
+                    
+                </div>
+                <div class="column-2" id="form-container">
+                    <form action="" method="post">
+                        <div class="first-row">
+                            <div class="sec-1">
+                                <label for="">NAME*</label>
+                                <input type="text" name="name" placeholder="First & Last Name">
+                            </div>
+                            <div class="sec-1">
+                                <label for="">PHONE*</label>
+                                <input type="text" name="phone" placeholder="Your number">
+                            </div>
+    
+                        </div>
+                        <div class="first-row">
+                            <div class="sec-1">
+                                <label for="">COMPANY NAME*</label>
+                                <input type="text" name="company" placeholder="Company name">
+                            </div>
+                            <div class="sec-1">
+                                <label for="">EMAIL*</label>
+                                <input type="email" name="email" placeholder="Your email address">
+                            </div>
+    
+                        </div>
+                        <div class="second-row">
+                            <div class="sec-2">
+                                <label for="">COMMODITY*</label>
+                                <input type="text" name="commodity" placeholder="Your commodity details">
+                            </div>
+                        </div>
+                        <div class="second-row">
+                            <div class="sec-2">
+                                <label for="">WHERE ARE YOU SHIPPING FROM ?</label>
+                                <input type="text" name="address-from" placeholder="Address">
+                            </div>
+                        </div>
+                        <div class="second-row">
+                            <div class="sec-2">
+                                <label for="">WHERE ARE YOU SHIPPING TO ?</label>
+                                <input type="text" name="address-to" placeholder="Address">
+                            </div>
+                        </div>
+                        <div class="second-row">
+                            <label for="">SELECT SERVICES :</label>
+                            <div class="checkbox-1">
+                                <label class="main">Truckload
+                                    <input type="checkbox">
+                                    <span class="geekmark"></span>
+                                </label>
+    
+                                <label class="main">LTL
+                                    <input type="checkbox">
+                                    <span class="geekmark"></span>
+                                </label>
+    
+                                <label class="main">Intermodal
+                                    <input type="checkbox">
+                                    <span class="geekmark"></span>
+                                </label>
+    
+                                <label class="main">Drayage
+                                    <input type="checkbox">
+                                    <span class="geekmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkbox-1">
+                                <label class="main">Ocean
+                                    <input type="checkbox">
+                                    <span class="geekmark"></span>&nbsp; &nbsp;&nbsp;
+                                </label>
+    
+                                <label class="main">Air
+                                    <input type="checkbox">
+                                    <span class="geekmark"></span>&nbsp;
+                                </label>
+    
+                                <label class="main">Customs
+                                    <input type="checkbox">
+                                    <span class="geekmark"></span>&nbsp;&nbsp;
+                                </label>
+    
+                                <label class="main">Freight Forwarding
+                                    <input type="checkbox">
+                                    <span class="geekmark"></span>
+                                </label>
+                            </div>
+    
+                        </div>
+                        <div class="second-row">
+                            <div class="sec-2">
+                                <label for="">ADDITIONAL INFORMATION</label>
+                                <textarea name="description" rows="7"
+                                    placeholder="Anything else we need to know ?"></textarea>
+                            </div>
+                        </div>
+                        <div class="submit-btn">
+                            <input type="submit" class="btn-style" name="save-data" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-------------------------------------- Main Closed ----------------------------->
+
+    <!------------- Footer - Start ---------------->
+    <link rel="stylesheet" href="resources/css/global/footer.css">
+  
+    <footer> 
+        <section class="footer" id="footer-section-2">
+            <div class="content-container">
+                <div class="content">
+                    <div class="two-column-container">
+                        <div class="column-left">
+                            <ul>
+                                <li>
+                                    <a href=#">
+                                        Home
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        logistic Solutions
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        What We Do
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Get a Quote
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Contact
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                        <div class="column-middle">
+                            <h5 onclick="toggleElementsState('footer-menu-1')" id="footer-title">
+                                Policies
+                                <span data-toggle-state="footer-menu-1" data-toggle-action="rotate-90">
+                                    >
+                                </span>
+                            </h5>
+
+                            <ul data-toggle-state="footer-menu-1" data-toggle-action="show-hide" data-status="passive">
+                                <li style="order: 1;">
+                                    <a href="https://workforce.godspeedgroup.ca/policies#info1">
+                                        Health & Safety Policy
+                                    </a>
+                                </li>
+
+                                <li style="order: 3;">
+                                    <a href="https://workforce.godspeedgroup.ca/policies#info2">
+                                        Anti Harassment Policy
+                                    </a>
+                                </li>
+
+                                <li style="order: 5;">
+                                    <a href="https://workforce.godspeedgroup.ca/policies#info3">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+
+                                <li style="order: 7;">
+                                    <a href="https://workforce.godspeedgroup.ca/policies#info4">
+                                        Personal Information
+                                    </a>
+                                </li>
+
+                                <li style="order: 2;">
+                                    <a href="https://workforce.godspeedgroup.ca/policies#info5">
+                                        Personal Information Collected
+                                    </a>
+                                </li>
+
+                                <li style="order: 4;">
+                                    <a href="https://workforce.godspeedgroup.ca/policies#info6">
+                                        Use Of Personal Information
+                                    </a>
+                                </li>
+
+                                <li style="order: 6;">
+                                    <a href="https://workforce.godspeedgroup.ca/policies#info7">
+                                        Your Rights To Limit Use Of Personal Information
+                                    </a>
+                                </li>
+
+                                <li style="order: 8;">
+                                    <a href="https://workforce.godspeedgroup.ca/policies#info8">
+                                        Verifying The Accuracy Of Your Information
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one-column-container">
+                        <div class="site-logo">
+                            <img src="resources/images/logo.png" width="220px" />
+                        </div>
+
+                        <div class="contact-info">
+                            <a class="social-info" href="mailto:info@godspeedgroup.ca">
+                                <span class="icon">
+                                    <img src="resources/images/social-icons/email-footer.svg" alt="Mail">
+                                </span>
+                                <span>
+                                    info@godspeedgroup.ca
+                                </span>
+                            </a>
+                            <a class="social-info" href="phone:(905)956-9525">
+                                <span class="icon">
+                                    <img src="resources/images/social-icons/phone-footer.svg" alt="phone">
+                                </span>
+                                <span>(905) 956-9525</span>
+                            </a>
+                            <!-- <a class="social-info" href="https://www.youtube.com/channel/UCMz2hvOgF0a0Fj52O8Ae5Rw">
+                <span class="icon">
+                  <img
+                    src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/social-icons/yt-footer.svg"
+                    alt="youtube">
+                </span>
+                <span></span>
+              </a> -->
+                        </div>
+                        <div class="copy-write">
+                            <a href="https://ca.linkedin.com/company/godspeedgroup" target="_blank"><img
+                                    src="resources/images/linkedIn-logo.png" width="150px" /></a>
+                            <!-- <p>Copyright © Godspeed Group 2022<br> Powered By Kreatipedia Inc.</p> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="resources/js/nav.js"></script>
+    <script src="resources/js/shape-design.js"></script>
+    <script src="resources/js/moving-counter.js"></script>
+
+    <!-- Execution script -->
+    <script>
+        // observe height of the wedge shape section and update the css variable
+        const section11 = document.querySelector('#section-11 .content-container');
+        const section14 = document.querySelector('#footer-section-1 .content-container');
+
+        heightObserver.observe(section11);
+        heightObserver.observe(section14);
+
+        // run counter on intersection
+        const counterIntersectionObserver = new IntersectionObserver(callback)
+
+        counterIntersectionObserver.observe(counterContainer);
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous">
+        </script>
+    <script src="resources/js/venobox.js"></script>
+    <script>
+        $('.venobox').venobox({
+            numeratio: true,
+            border: '20px'
+        });
+
+        $('.venoboxvid').venobox({
+            bgcolor: '#000',
+            spinner: 'cube-grid',
+            // cb_post_open : function(obj, gallIndex, thenext, theprev){
+            //     console.log(thenext);
+            // },
+        });
+    </script>
+</body>
+
+</html>
