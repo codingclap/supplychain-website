@@ -123,18 +123,16 @@
 
                 <div class="column-1">
                     <picture>
-                        <source srcset="resources/images/air-freight/flight.png">
-                        <img src="resources/images/air-freight/flight.png" loading="lazy" alt="Godspeed_unicon"
+                        <source srcset="resources/images/ocean-freight/ocean-ship.png">
+                        <img src="resources/images/ocean-freight/ocean-ship.png" loading="lazy" alt="Godspeed_unicon"
                             width="100%">
                     </picture>
                 </div>
                 <div class="column-2">
-                    <h1 data-font-family="VisueltPro-Black" style="color:var(--secondary-color);">Air Freight
+                    <h1 data-font-family="VisueltPro-Black" style="color:var(--secondary-color);">Ocean Freight
                     </h1>
-                    <p class="banner-para" data-hover-color="hover-color" data-font-family="OpenSans-Regular">Our air
-                        freight solutions make us <span class="home-br">a trusted transportation partner</span> <span
-                            class="home-br">for leading businesses globally. </span>
-                    </p>
+                    <p class="banner-para" data-hover-color="hover-color" data-font-family="OpenSans-Regular">Ship freight for all types of cargo<span
+                        class="home-br"> with a partner that has you covered</span> over the oceans and beyond. 
                     <!-- <div class="btn-container">
             <a href="#" class="btn btn-primary" data-font-family="OpenSans-Medium" data-content="Contact Us"><span
                 class="btn-content">Get a Quote</span></a>
@@ -180,10 +178,12 @@
                             justify-content: start;
                             flex-basis: 18%;
                             flex-grow: 1;
+                            flex-direction: row;
+                            gap:30px;
                         }
 
                         .icon-boxes-type-2 .icon-box .promo-icon img {
-                            width: 70%;
+                            width:100%;
                             margin-bottom: 0em;
                         }
 
@@ -199,8 +199,8 @@
                         }
 
                         #icon-box-t2-1 {
-                            --icon-box-max-width: 350px;
-                            --gap: min(15vw, 3em);
+                            --icon-box-max-width: 445px;
+                            --gap: min(15vw, 4em);
                             --icon-box-heading-font-size: clamp(0.75em, calc(4.5vw + 0.35rem), 1.2em);
                             --icon-box-para-font-size: clamp(0.9em, calc(4vw + 0.35rem), 1em);
                         }
@@ -208,7 +208,9 @@
                         #section-3 .icon-boxes-type-2 .promo-icon-content p {
                             max-width: 335px;
                         }
-
+                        #section-3 .icon-boxes-type-2 .promo-icon-content h3{
+                            text-align: left;
+                        }
                         @media(max-width:1385px) {
                             .icon-boxes-type-2 .icon-box {
                                 flex-basis: 35%;
@@ -237,152 +239,293 @@
 
                     <div class="icon-box" onclick="hyperlinkTo('', false, false)" style="cursor:pointer;">
                         <div class="promo-icon">
-                            <img src="resources/images/air-freight/air.svg" loading="lazy" alt="icon">
+                            <img src="resources/images/ocean-freight/full-container-load-FCL.svg" loading="lazy" alt="icon">
                         </div>
 
                         <div class="promo-icon-content">
-                            <h3 data-font-family="Visuelt-Bold">AIR</h3>
-                            <p data-font-family="OpenSans-Regular">
+                            <h3 data-font-family="Visuelt-Bold">FULL CONTAINER LOAD (FCL)</h3>
+                            <!-- <p data-font-family="OpenSans-Regular">
                                 Safely transport your cargo anywhere in the world using commercial carriers.
-                            </p>
+                            </p> -->
                         </div>
                     </div>
 
                     <div class="icon-box" data-sep="before" onclick="hyperlinkTo('', false, false)"
                         style="cursor:pointer;">
                         <div class="promo-icon">
-                            <img src="resources/images/air-freight/charter.svg" loading="lazy" alt="icon">
+                            <img src="resources/images/ocean-freight/less-than-container-load-LCL.svg" loading="lazy" alt="icon">
                         </div>
 
                         <div class="promo-icon-content">
-                            <h3 data-font-family="Visuelt-Bold">CHARTER</h3>
-                            <p data-font-family="OpenSans-Regular">
+                            <h3 data-font-family="Visuelt-Bold">LESS THAN CONTAINER LOAD (LCL)</h3>
+                            <!-- <p data-font-family="OpenSans-Regular">
                                 Partnerships under our program offer cargo charter flights to any destination around the
                                 world.
-                            </p>
+                            </p> -->
                         </div>
                     </div>
-
-                    <div class="icon-box" data-sep="before" onclick="hyperlinkTo('', false, false)"
-                        style="cursor:pointer;">
-                        <div class="promo-icon">
-                            <img src="resources/images/air-freight/combination-services.svg" loading="lazy" alt="icon">
-                        </div>
-
-                        <div class="promo-icon-content">
-                            <h3 data-font-family="Visuelt-Bold">COMBINATION SERVICES</h3>
-                            <p data-font-family="OpenSans-Regular">
-                                Logistic solutions that combine air and sea or air and road routes moves cargo faster
-                                and saves costs.
-                            </p>
-                        </div>
-                    </div>
+ 
                 </div>
             </div>
         </section>
         <!--------------- Promo Section ----------------------------->
 
 
-        <section id="po-section-4">
-            <div class="widget-sub-heading-type-1">
-                <style>
-                    .widget-sub-heading-type-1 {
-                        margin-block: 0em;
-                        max-width: 90%;
-                    }
+        <!--------------- Complimentary Section ----------------------------->
+        <section class="content-heading-section building-illustration-bg-container" id="section-4">
+            <div class="content-heading-container center-width" style="width: min(90%, 1280px);">
+                <div class="complimentary-heading">
+                    <h2 data-font-family="Visuelt-Bold">
+                        Why Businesses Choose To Work With Us
+                    </h2>
+                    <!-- <p class="pt30" data-font-family="Visuelt-Light">
+                        The fastest coast-to-coast most reliable workforce solutions provider <span class="home-br">with
+                            enterprise-grade
+                            assurance and 24/7/365 customer support</span>
+                    </p> -->
 
-                    .widget-sub-heading-type-1 h2 {
-                        text-align: center;
-                        font-size: clamp(1.5em, calc(3vw + 0.5rem), 2em);
-                        max-width: 1080px;
-                        margin: auto;
-                    }
-                </style>
-                <h2 data-font-family="Visuelt-Bold">
-                    Why Businesses Choose To Work With Us
-                </h2>
+                </div>
             </div>
 
-            <div class="card-widget-container">
-                <div class="icon-boxes-type-3" id="icons-container-t3-1">
-                    <link rel="stylesheet" href="resources/css/widgets/widget-icon-boxes-type-3.css">
-
-                    <style>
-                        #icons-container-t3-1 {
-                            padding-block: 2em;
+            <div class="widget-hover-card-promo-type-1" id="hover-card-pt1-1">
+                <link rel="stylesheet" href="resources/css/widgets/widget-hover-card-promo-type-1.css">
+                <style>
+                    .widget-hover-card-promo-type-1 .main-container .card .icon {
+                        width: 90%;
+                        height: 135px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 auto;
+                    } 
+                    .widget-hover-card-promo-type-1 .main-container .card {
+                        min-height: 250px;
+                        width: min(18%, var(--card-max-width));
+                        aspect-ratio: unset;
+                        padding-bottom: 1em;
+                        padding-top: 1em;
+                    } 
+                    .widget-hover-card-promo-type-1 {
+                        --widget-max-width: 1380px;
+                        --card-max-width: 240px;
+                        --card-aspect-ratio: 3/3;
+                    }  
+                    .widget-hover-card-promo-type-1 .main-container {
+                        gap: min(5vw, 1.2em);
+                        width: 110%;
+                    } 
+                    @media (max-width:920px) {
+                        .widget-hover-card-promo-type-1 .main-container .card {
+                            width: min(34%, var(--card-max-width));
+                        } 
+                        .widget-hover-card-promo-type-1 .main-container .card .icon {
+                            width: 70%;
+                        } 
+                        .widget-hover-card-promo-type-1 .main-container .card img {
+                            width: 70%;
                         }
-                    </style>
 
-                    <div class="icon-box" tabindex="0">
-                        <div class="promo-icon">
-                            <img src="resources/images/air-freight/industry-solutions.svg" alt="icon">
+                    }
+
+                    @media (max-width:720px) {
+                        .widget-hover-card-promo-type-1 .main-container .card {
+                            width: min(34%, var(--card-max-width));
+                        } 
+                        .widget-hover-card-promo-type-1 .main-container .card .icon {
+                            width: 70%;
+                        } 
+                        .widget-hover-card-promo-type-1 .main-container .card img {
+                            width: 70%;
+                        }
+
+                    }
+                </style>
+
+                <div class="main-container">
+                    <div class="card" tabindex="0">
+                        <div class="front-face">
+                            <div class="icon">
+                                <img src="resources/images/ocean-freight/shipments-coordination.svg"
+                                    loading="lazy" alt="icon">
+                            </div>
+
+                            <div class="card-heading">
+                                <h4 data-font-family="OpenSans-Medium">
+                                    Shipments coordination from inland ports
+                                </h4>
+                            </div>
                         </div>
 
-                        <div class="promo-icon-content">
-                            <h3 data-font-family="Visuelt-Bold">
-                                Industry<br> Solutions
-                            </h3>
-                        </div>
-
-                        <p class="description">
-                            Customised solutions offered to meet industry-specific special storage and handling
-                            requirements.
-                        </p>
+                        <!-- <div class="front-back">
+              <p data-font-family="Visuelt-Light">Unrivaled speed of fulfillment, vast talent pool, and scalability make
+                Godspeed a high-
+                performance partner</p>
+            </div> -->
                     </div>
 
-                    <div class="icon-box" tabindex="1">
-                        <div class="promo-icon">
-                            <img src="resources/images/air-freight/customs-brokerage.svg" alt="icon">
+                    <div class="card" tabindex="1">
+                        <div class="front-face">
+                            <div class="icon">
+                                <img src="resources/images/ocean-freight/efficient-transit-time.svg" loading="lazy"
+                                    alt="icon">
+                            </div> 
+                            <div class="card-heading">
+                                <h4 data-font-family="OpenSans-Medium">
+                                    Efficient transit time
+                                </h4>
+                            </div>
                         </div>
-
-                        <div class="promo-icon-content">
-                            <h3 data-font-family="Visuelt-Bold">
-                                Customs<br> Brokerage
-                            </h3>
-                        </div>
-
-                        <p class="description">
-                            Complete all the required paperwork based on freight specifics and regulations of the
-                            destination country; thereby, clearing customs and getting the cargo delivered with ease.
-                        </p>
+                        <!-- <div class="front-back">
+              <p data-font-family="Visuelt-Light">Retail, food, manufacturing, warehousing, transportation – we’ve
+                covered it all!</p>
+            </div> -->
                     </div>
 
-                    <div class="icon-box" tabindex="2">
-                        <div class="promo-icon">
-                            <img src="resources/images/air-freight/cargo-insurance.svg" alt="icon">
-                        </div>
+                    <div class="card" tabindex="2">
+                        <div class="front-face">
+                            <div class="icon">
+                                <img src="resources/images/ocean-freight/shipside-deliveries.svg" loading="lazy"
+                                    alt="icon">
+                            </div>
 
-                        <div class="promo-icon-content">
-                            <h3 data-font-family="Visuelt-Bold">
-                                Cargo<br> Insurance
-                            </h3>
+                            <div class="card-heading">
+                                <h4 data-font-family="OpenSans-Medium">
+                                    Shipside deliveries
+                                </h4>
+                            </div>
                         </div>
-
-                        <p class="description">
-                            Avail cargo insurance options designed to provide comprehensive coverage for goods in
-                            transit.
-                        </p>
+                        <!-- <div class="front-back">
+              <p data-font-family="Visuelt-Light">Execute your recruitment goals at any scale with a
+                single vendor.</p>
+            </div> -->
                     </div>
 
-                    <div class="icon-box" tabindex="2">
-                        <div class="promo-icon">
-                            <img src="resources/images/air-freight/real-time-tracking.svg" alt="icon">
-                        </div>
+                    <div class="card" tabindex="3">
+                        <div class="front-face">
+                            <div class="icon">
+                                <img src="resources/images/ocean-freight/trucking-inland.svg"
+                                    loading="lazy" alt="icon">
+                            </div>
 
-                        <div class="promo-icon-content">
-                            <h3 data-font-family="Visuelt-Bold">
-                                Real-time<br> tracking
-                            </h3>
+                            <div class="card-heading">
+                                <h4 data-font-family="OpenSans-Medium">
+                                    Trucking & inland freight services
+                                </h4>
+                            </div>
                         </div>
-
-                        <p class="description">
-                            Monitor the progress of the cargo and receive updates as it travels to the final
-                            destination.
-                        </p>
+                        <!-- <div class="front-back">
+              <p data-font-family="Visuelt-Light">Automate screening, vetting, hiring and payroll duties. Reallocate
+                resources from the tedious task of running recruitment-related activities towards more strategic
+                business initiatives.</p>
+            </div> -->
                     </div>
+
+                    <div class="card" tabindex="4">
+                        <div class="front-face">
+                            <div class="icon">
+                                <img src="resources/images/ocean-freight/customs-clearance.svg"
+                                    loading="lazy" alt="icon">
+                            </div>
+
+                            <div class="card-heading">
+                                <h4 data-font-family="OpenSans-Medium">
+                                    Customs clearance
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- <div class="front-back">
+              <p data-font-family="Visuelt-Light">Automate screening, vetting, hiring and payroll duties. Reallocate
+                resources from the tedious task of running recruitment-related activities towards more strategic
+                business initiatives.</p>
+            </div> -->
+                    </div>
+
+                    <div class="card" tabindex="5">
+                        <div class="front-face">
+                            <div class="icon">
+                                <img src="resources/images/ocean-freight/marine-cargo-insurance.svg"
+                                    loading="lazy" alt="icon">
+                            </div>
+
+                            <div class="card-heading">
+                                <h4 data-font-family="OpenSans-Medium">
+                                    Marine cargo insurance
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- <div class="front-back">
+              <p data-font-family="Visuelt-Light">Automate screening, vetting, hiring and payroll duties. Reallocate
+                resources from the tedious task of running recruitment-related activities towards more strategic
+                business initiatives.</p>
+            </div> -->
+                    </div>
+
+                    <div class="card" tabindex="6">
+                        <div class="front-face">
+                            <div class="icon">
+                                <img src="resources/images/ocean-freight/break-bulk-services.svg"
+                                    loading="lazy" alt="icon">
+                            </div>
+
+                            <div class="card-heading">
+                                <h4 data-font-family="OpenSans-Medium">
+                                    Break bulk services
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- <div class="front-back">
+              <p data-font-family="Visuelt-Light">Automate screening, vetting, hiring and payroll duties. Reallocate
+                resources from the tedious task of running recruitment-related activities towards more strategic
+                business initiatives.</p>
+            </div> -->
+                    </div>
+
+                    <div class="card" tabindex="7">
+                        <div class="front-face">
+                            <div class="icon">
+                                <img src="resources/images/ocean-freight/project-and-heavy-lift-movements.svg"
+                                    loading="lazy" alt="icon">
+                            </div>
+
+                            <div class="card-heading">
+                                <h4 data-font-family="OpenSans-Medium">
+                                    Project and heavy-lift movements
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- <div class="front-back">
+              <p data-font-family="Visuelt-Light">Automate screening, vetting, hiring and payroll duties. Reallocate
+                resources from the tedious task of running recruitment-related activities towards more strategic
+                business initiatives.</p>
+            </div> -->
+                    </div>
+
+                    <div class="card" tabindex="8">
+                        <div class="front-face">
+                            <div class="icon">
+                                <img src="resources/images/ocean-freight/flexible-delivery.svg"
+                                    loading="lazy" alt="icon">
+                            </div>
+
+                            <div class="card-heading">
+                                <h4 data-font-family="OpenSans-Medium">
+                                    Flexible delivery choices (door-to-door, terminal-to-terminal or port-to-port)
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- <div class="front-back">
+              <p data-font-family="Visuelt-Light">Automate screening, vetting, hiring and payroll duties. Reallocate
+                resources from the tedious task of running recruitment-related activities towards more strategic
+                business initiatives.</p>
+            </div> -->
+                    </div>
+                    
+   
                 </div>
             </div>
         </section>
+        <!--------------- Content Section ----------------------------->
+
 
         <!--------------- Content Section ----------------------------->
 
