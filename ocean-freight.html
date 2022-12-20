@@ -131,9 +131,10 @@
                 <div class="column-2">
                     <h1 data-font-family="VisueltPro-Black" style="color:var(--secondary-color);">Ocean Freight
                     </h1>
-                    <p class="banner-para" data-hover-color="hover-color" data-font-family="OpenSans-Regular">Ship freight for all types of cargo<span
-                        class="home-br"> with a partner that has you covered</span> over the oceans and beyond. 
-                    <!-- <div class="btn-container">
+                    <p class="banner-para" data-hover-color="hover-color" data-font-family="OpenSans-Regular">Ship
+                        freight for all types of cargo<span class="home-br"> with a partner that has you covered</span>
+                        over the oceans and beyond.
+                        <!-- <div class="btn-container">
             <a href="#" class="btn btn-primary" data-font-family="OpenSans-Medium" data-content="Contact Us"><span
                 class="btn-content">Get a Quote</span></a>
           </div> -->
@@ -147,7 +148,6 @@
                 .promo-section {
                     position: relative;
                 }
-   
             </style>
             <img src="resources/images/air-freight/yellow-line.png" alt="" width="100%">
             <!-- <div class="promo-container">
@@ -164,7 +164,7 @@
 
         <!--------------- Promo Section ----------------------------->
         <section class="promo-section" id="section-3">
-            <div class="promo-container"> 
+            <div class="promo-container">
 
                 <div class="icon-boxes-type-2" id="icon-box-t2-1">
                     <link rel="stylesheet" href="resources/css/widgets/widget-icon-boxes-type-2.css">
@@ -179,11 +179,11 @@
                             flex-basis: 18%;
                             flex-grow: 1;
                             flex-direction: row;
-                            gap:30px;
+                            gap: 30px;
                         }
 
                         .icon-boxes-type-2 .icon-box .promo-icon img {
-                            width:100%;
+                            width: 100%;
                             margin-bottom: 0em;
                         }
 
@@ -200,7 +200,7 @@
 
                         #icon-box-t2-1 {
                             --icon-box-max-width: 445px;
-                            --gap: min(15vw, 4em);
+                            --gap: min(15vw, 9em);
                             --icon-box-heading-font-size: clamp(0.75em, calc(4.5vw + 0.35rem), 1.2em);
                             --icon-box-para-font-size: clamp(0.9em, calc(4vw + 0.35rem), 1em);
                         }
@@ -208,9 +208,11 @@
                         #section-3 .icon-boxes-type-2 .promo-icon-content p {
                             max-width: 335px;
                         }
-                        #section-3 .icon-boxes-type-2 .promo-icon-content h3{
+
+                        #section-3 .icon-boxes-type-2 .promo-icon-content h3 {
                             text-align: left;
                         }
+
                         @media(max-width:1385px) {
                             .icon-boxes-type-2 .icon-box {
                                 flex-basis: 35%;
@@ -239,7 +241,8 @@
 
                     <div class="icon-box" onclick="hyperlinkTo('', false, false)" style="cursor:pointer;">
                         <div class="promo-icon">
-                            <img src="resources/images/ocean-freight/full-container-load-FCL.svg" loading="lazy" alt="icon">
+                            <img src="resources/images/ocean-freight/full-container-load-FCL.svg" loading="lazy"
+                                alt="icon">
                         </div>
 
                         <div class="promo-icon-content">
@@ -253,7 +256,8 @@
                     <div class="icon-box" data-sep="before" onclick="hyperlinkTo('', false, false)"
                         style="cursor:pointer;">
                         <div class="promo-icon">
-                            <img src="resources/images/ocean-freight/less-than-container-load-LCL.svg" loading="lazy" alt="icon">
+                            <img src="resources/images/ocean-freight/less-than-container-load-LCL.svg" loading="lazy"
+                                alt="icon">
                         </div>
 
                         <div class="promo-icon-content">
@@ -264,7 +268,7 @@
                             </p> -->
                         </div>
                     </div>
- 
+
                 </div>
             </div>
         </section>
@@ -297,30 +301,47 @@
                         justify-content: center;
                         align-items: center;
                         margin: 0 auto;
-                    } 
+                    }
+
+                    .widget-hover-card-promo-type-1 .main-container .card .card-heading { 
+                        min-height: 111px;
+                    }
+
                     .widget-hover-card-promo-type-1 .main-container .card {
-                        min-height: 250px;
+                        min-height: 300px;
                         width: min(18%, var(--card-max-width));
                         aspect-ratio: unset;
                         padding-bottom: 1em;
                         padding-top: 1em;
-                    } 
+                    }
+
+                    .widget-hover-card-promo-type-1 .main-container .card .front-face {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 20px;
+                    }
+
                     .widget-hover-card-promo-type-1 {
                         --widget-max-width: 1380px;
                         --card-max-width: 240px;
                         --card-aspect-ratio: 3/3;
-                    }  
+                    }
+
                     .widget-hover-card-promo-type-1 .main-container {
                         gap: min(5vw, 1.2em);
                         width: 110%;
-                    } 
+                    }
+
                     @media (max-width:920px) {
                         .widget-hover-card-promo-type-1 .main-container .card {
                             width: min(34%, var(--card-max-width));
-                        } 
+                        }
+
                         .widget-hover-card-promo-type-1 .main-container .card .icon {
                             width: 70%;
-                        } 
+                        }
+
                         .widget-hover-card-promo-type-1 .main-container .card img {
                             width: 70%;
                         }
@@ -330,10 +351,12 @@
                     @media (max-width:720px) {
                         .widget-hover-card-promo-type-1 .main-container .card {
                             width: min(34%, var(--card-max-width));
-                        } 
+                        }
+
                         .widget-hover-card-promo-type-1 .main-container .card .icon {
                             width: 70%;
-                        } 
+                        }
+
                         .widget-hover-card-promo-type-1 .main-container .card img {
                             width: 70%;
                         }
@@ -345,8 +368,8 @@
                     <div class="card" tabindex="0">
                         <div class="front-face">
                             <div class="icon">
-                                <img src="resources/images/ocean-freight/shipments-coordination.svg"
-                                    loading="lazy" alt="icon">
+                                <img src="resources/images/ocean-freight/shipments-coordination.svg" loading="lazy"
+                                    alt="icon">
                             </div>
 
                             <div class="card-heading">
@@ -368,10 +391,10 @@
                             <div class="icon">
                                 <img src="resources/images/ocean-freight/efficient-transit-time.svg" loading="lazy"
                                     alt="icon">
-                            </div> 
+                            </div>
                             <div class="card-heading">
                                 <h4 data-font-family="OpenSans-Medium">
-                                    Efficient transit time
+                                    Efficient transit<br> time
                                 </h4>
                             </div>
                         </div>
@@ -390,7 +413,7 @@
 
                             <div class="card-heading">
                                 <h4 data-font-family="OpenSans-Medium">
-                                    Shipside deliveries
+                                    Shipside<br> deliveries
                                 </h4>
                             </div>
                         </div>
@@ -403,8 +426,7 @@
                     <div class="card" tabindex="3">
                         <div class="front-face">
                             <div class="icon">
-                                <img src="resources/images/ocean-freight/trucking-inland.svg"
-                                    loading="lazy" alt="icon">
+                                <img src="resources/images/ocean-freight/trucking-inland.svg" loading="lazy" alt="icon">
                             </div>
 
                             <div class="card-heading">
@@ -423,13 +445,13 @@
                     <div class="card" tabindex="4">
                         <div class="front-face">
                             <div class="icon">
-                                <img src="resources/images/ocean-freight/customs-clearance.svg"
-                                    loading="lazy" alt="icon">
+                                <img src="resources/images/ocean-freight/customs-clearance.svg" loading="lazy"
+                                    alt="icon">
                             </div>
 
                             <div class="card-heading">
                                 <h4 data-font-family="OpenSans-Medium">
-                                    Customs clearance
+                                    Customs<br> clearance
                                 </h4>
                             </div>
                         </div>
@@ -443,8 +465,8 @@
                     <div class="card" tabindex="5">
                         <div class="front-face">
                             <div class="icon">
-                                <img src="resources/images/ocean-freight/marine-cargo-insurance.svg"
-                                    loading="lazy" alt="icon">
+                                <img src="resources/images/ocean-freight/marine-cargo-insurance.svg" loading="lazy"
+                                    alt="icon">
                             </div>
 
                             <div class="card-heading">
@@ -463,13 +485,13 @@
                     <div class="card" tabindex="6">
                         <div class="front-face">
                             <div class="icon">
-                                <img src="resources/images/ocean-freight/break-bulk-services.svg"
-                                    loading="lazy" alt="icon">
+                                <img src="resources/images/ocean-freight/break-bulk-services.svg" loading="lazy"
+                                    alt="icon">
                             </div>
 
                             <div class="card-heading">
                                 <h4 data-font-family="OpenSans-Medium">
-                                    Break bulk services
+                                    Break bulk<br> services
                                 </h4>
                             </div>
                         </div>
@@ -503,8 +525,8 @@
                     <div class="card" tabindex="8">
                         <div class="front-face">
                             <div class="icon">
-                                <img src="resources/images/ocean-freight/flexible-delivery.svg"
-                                    loading="lazy" alt="icon">
+                                <img src="resources/images/ocean-freight/flexible-delivery.svg" loading="lazy"
+                                    alt="icon">
                             </div>
 
                             <div class="card-heading">
@@ -519,8 +541,8 @@
                 business initiatives.</p>
             </div> -->
                     </div>
-                    
-   
+
+
                 </div>
             </div>
         </section>
