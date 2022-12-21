@@ -79,7 +79,7 @@
 
 
     <main>
-         
+
         <section id="au-section-8">
             <style>
                 .heading-container {
@@ -143,7 +143,7 @@
                     }
 
                     #main-team-member-info-id {
-                        --main-container-width: min(1500px, 100vw);
+                        --main-container-width: min(1920px, 100vw);
                         --widget-skew-height: 10vh;
                         --widget-skew-height-mobile: 5vh;
                         --odd-box-bg-color: rgb(255, 255, 255);
@@ -166,7 +166,19 @@
                     }
 
                     #main-team-member-info-id .main-container .member-info:nth-of-type(2n) .complimentary-t1-1[data-specificity="enhance"] {
-                        --flex-direction: row;
+                        --flex-direction: row-reverse;
+                    }
+
+                    .widget-team-info-type-1 .main-container .member-info:nth-of-type(2n)::before {
+                        top: 0;
+                        border-bottom: #ddd !important;
+                        border-right: #ddd !important;
+                    }
+
+                    .widget-team-info-type-1 .main-container .member-info:nth-of-type(2n)::after {
+                        bottom: 0;
+                        border-top: #ddd!important;
+                        border-left: #ddd!important;
                     }
 
                     @media(max-width:1300px) {
@@ -196,11 +208,14 @@
                                     Ash Tandon
                                 </h2>
                                 <h3 data-font-family="Visuelt-Light">
-                                    <span class="designation" style="display: block;color: #454545;" data-font-family="Visuelt-Light">
+                                    <span class="designation" style="display: block;color: #454545;"
+                                        data-font-family="Visuelt-Light">
                                         Chief Executive Officer
-                                    </span> 
-                                    <span class="designation" style="display: block;font-size: 19px;font-weight: 600;color:#8B8B8B;" data-font-family="Visuelt-Light">
-                                       (Godspeed Group)
+                                    </span>
+                                    <span class="designation"
+                                        style="display: block;font-size: 19px;font-weight: 600;color:#8B8B8B;"
+                                        data-font-family="Visuelt-Light">
+                                        (Godspeed Group)
                                     </span>
                                 </h3>
                                 <p data-font-family="Visuelt-Light" class="p-tb10">
@@ -223,10 +238,10 @@
                                     Ash has a B.A. in Business Information Management from Leeds Beckett University.
                                 </p>
 
-                               
+
                                 <a href="https://www.linkedin.com/in/ashtandon/" class="social-icon" target="_blank">
                                     <img class="p-tb10" src="resources/images/about/linkdin-icon.svg" alt="linkdin-icon"
-                                        width="50px"> 
+                                        width="50px">
                                 </a>/ashtandon
                             </div>
                         </div>
@@ -320,6 +335,50 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="member-info">
+                        <div class="complimentary-container-type-2 complimentary-t1-1" data-specificity="enhance">
+                            <div class="column-1">
+                                <picture>
+                                    <source srcset="resources/images/about/abhishek-tandon.png">
+                                    <img src="resources/images/about/abhishek-tandon.png" alt="john" width="100%">
+                                </picture>
+                            </div>
+                            <div class="column-2">
+                                <p data-font-family="Visuelt-Light" class="p-tb10">
+                                    Abhishek is the co-founder and CFO of Godspeed Group.
+                                </p>
+                                <p data-font-family="Visuelt-Light" class="p-b10">
+                                    Abhishek is an expert in insurance statistical analysis and with this knowledge,
+                                    helped companies like
+                                    Aviva and Wawanesa grow. Since leaving the insurance industry, he has applied his
+                                    expertise to
+                                    developing the organisation’s financial plans and proposing strategic solutions to
+                                    increase revenue.Abhishek is an expert in insurance statistical analysis and with
+                                    this knowledge, helped companies like
+                                    Aviva and Wawanesa grow. Since leaving the insurance industry, he has applied his
+                                    expertise to
+                                    developing the organisation’s financial plans and proposing strategic solutions to
+                                    increase revenue.
+                                </p>
+                                <p data-font-family="Visuelt-Light" class="p-b10">
+                                    Abhishek holds a bachelor’s degree in Actuarial Science and Statistics from
+                                    University of Toronto.
+                                </p>
+
+                                <h2 data-font-family="Visuelt-Medium" data-color='secondary-color' class="p-t20">
+                                    Abhishek Tandon
+                                </h2>
+                                <h3 data-font-family="Visuelt-Light"><span class="designation"
+                                        data-font-family="Visuelt-Light">
+                                        Co-founder and CFO
+                                    </span></h3>
+                                <a href="https://www.linkedin.com/in/abhishek-tandon-30347b32/" target="_blank"><img
+                                        class="p-tb10" src="resources/images/about/linkdin-icon.svg" alt="linkdin-icon"
+                                        width="50px"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -370,344 +429,11 @@
                 </style>
                 <div class="meet-title">
                     <h2 data-font-family="Visuelt-Bold" data-color='--heading-secondary' style="text-align:center;">
-                        Meet The Team
+                        Business Development
                     </h2>
                 </div>
 
-                <div class="widget-center-tabs-type-2" id="about-us-tabs-container-id">
-                    <link rel="stylesheet" href="resources/css/widgets/widget-center-tabs-type-2.css">
-                    <link rel="stylesheet" href="resources/css/widgets/widget-team-info-type-1.css">
-
-                    <link rel="stylesheet" href="resources/css/widgets/widget-complimentary-type-2.css">
-
-                    <div class="widget-main-container">
-
-                    </div>
-
-                    <script src="resources/js/widgets/widget-center-tabs-type-2.js"></script>
-                    <script>
-                        const centersData = [{
-                            name: 'Ontario',
-                            members: [{
-                                name: 'John Mageau',
-                                vocation: 'Regional Sales Manager, Southwest Ontario',
-                                description: [
-                                    'John joined Godspeed Workforce in 2021 as a Sales Manager, where he was responsible for educating clients on the services we provide and our competitive pricing. His success in this role led to promotion to Regional Sales Manager, where John was assigned the entire Southwest Region of Ontario. His experience in developing applications and systems for recruitment has been a significant asset to Godspeed Group.',
-                                    'John is a graduate of York University.'
-                                ],
-                                social: {
-                                    linkedin: 'https://www.linkedin.com/in/john-mageau-62632b6/',
-                                    facebook: '',
-                                    youtube: '',
-                                    gmail: '',
-                                    reddit: '',
-                                    twitter: '',
-                                    number: '',
-                                    email: ''
-                                },
-                                socialIcons: {
-                                    linkedin: 'resources/images/social-icons/linkedin-connect.svg',
-                                    facebook: 'resources/images/social-icons/facebook-connect.svg',
-                                    youtube: 'resources/images/social-icons/youtube-connect.svg',
-                                    gmail: 'resources/images/social-icons/gmail-connect.svg',
-                                    reddit: 'resources/images/social-icons/reddit-connect.svg',
-                                    twitter: 'resources/images/social-icons/twitter-connect.svg',
-                                    number: 'resources/images/social-icons/phone-connect.svg',
-                                    email: 'resources/images/social-icons/email-connect.svg'
-                                },
-                                memberImageSource: 'resources/images/leadership/john-mageau.png',
-                            },
-                            {
-                                name: 'Denise Kinsman',
-                                vocation: 'Business Development Manager',
-                                description: [
-                                    'Denise is a Business Development Manager at Godspeed Workforce and is based in Barrie, Ontario.',
-                                    'With over 20 years as a talent recruiter and talent manager in both the employment and entertainment business, Denise brings the skills and knowledge of building long-lasting, successful business relationships with some of North America’s leading companies. Denise is a Member of the Barrie Chamber of Commerce.',
-                                    'Mother, grandmother, community member/advocate, Denise is always there for her clients, her team and her company, going above and beyond to help them achieve continued greatness.'
-                                ],
-                                social: {
-                                    linkedin: 'https://www.linkedin.com/in/denise-marie-kinsman/',
-                                    facebook: '',
-                                    youtube: '',
-                                    gmail: '',
-                                    reddit: '',
-                                    twitter: '',
-                                    number: ''
-                                },
-                                socialIcons: {
-                                    linkedin: 'resources/images/social-icons/linkedin-connect.svg',
-                                    facebook: 'resources/images/social-icons/facebook-connect.svg',
-                                    youtube: 'resources/images/social-icons/youtube-connect.svg',
-                                    gmail: 'resources/images/social-icons/gmail-connect.svg',
-                                    reddit: 'resources/images/social-icons/reddit-connect.svg',
-                                    twitter: 'resources/images/social-icons/twitter-connect.svg',
-                                    number: 'resources/images/social-icons/phone-connect.svg',
-                                    email: 'resources/images/social-icons/email-connect.svg'
-                                },
-                                memberImageSource: 'resources/images/leadership/denise-kinsman.png'
-                            },
-                            {
-                                name: 'Iman Thanvi',
-                                vocation: 'Business Development Manager',
-                                description: [
-                                    'Iman is the Business Development Manager of Godspeed Group, overseeing the operations, growth and financial performance of the company. He has an extensive background in the technology and finance industries, giving him the expertise to ensure Godspeed Group reaches its full potential.',
-                                    'Prior to founding this company, Ash had a successful career at world renowned companies such as IBM and American Express.',
-                                    'In 2014, Iman decided it was time to take his knowledge from the corporate sector and use it to fill a gap in the recruiting process. Along with his brother, they found a truck to transport cartage through the GTA that has now grown into a nationwide company.'
-
-                                ],
-                                social: {
-                                    linkedin: 'https://www.linkedin.com/in/imanthanvi/ ',
-                                    facebook: '',
-                                    youtube: '',
-                                    gmail: '',
-                                    reddit: '',
-                                    twitter: '',
-                                    number: ''
-                                },
-                                socialIcons: {
-                                    linkedin: 'resources/images/social-icons/linkedin-connect.svg',
-                                    facebook: 'resources/images/social-icons/facebook-connect.svg',
-                                    youtube: 'resources/images/social-icons/youtube-connect.svg',
-                                    gmail: 'resources/images/social-icons/gmail-connect.svg',
-                                    reddit: 'resources/images/social-icons/reddit-connect.svg',
-                                    twitter: 'resources/images/social-icons/twitter-connect.svg',
-                                    number: 'resources/images/social-icons/phone-connect.svg',
-                                    email: 'resources/images/social-icons/email-connect.svg'
-                                },
-                                memberImageSource: 'resources/images/about/iman-thanvi.png'
-                            }
-                            ]
-                        },
-                        {
-                            name: 'Cambridge',
-                            members: [{
-                                name: "Mike O’Toole",
-                                vocation: 'Business Development Manager ',
-                                description: [
-                                    'Michael is a Business Development Manager at Godspeed Workforce and is based in Cambridge, Ontario. He started his career in the IT industry where he grew into a Corporate Trainer position traveling throughout Canada, U.S. and Mexico installing ERP systems and training staff.',
-
-                                    'Michael also had a run with entrepreneurship through an auto parts company selling B2B to the automotive industry. He grew his company from zero sales into an $8 million a year company. He accomplished this by growing incredible relationships with his customers and going above and beyond providing customer service and earning their business.'
-
-                                ],
-                                social: {
-                                    linkedin: 'https://www.linkedin.com/in/mike-o-toole-a0598995/',
-                                    facebook: '',
-                                    youtube: '',
-                                    gmail: '',
-                                    reddit: '',
-                                    twitter: '',
-                                    number: ''
-                                },
-                                socialIcons: {
-                                    linkedin: 'resources/images/social-icons/linkedin-connect.svg',
-                                    facebook: 'resources/images/social-icons/facebook-connect.svg',
-                                    youtube: 'resources/images/social-icons/youtube-connect.svg',
-                                    gmail: 'resources/images/social-icons/gmail-connect.svg',
-                                    reddit: 'resources/images/social-icons/reddit-connect.svg',
-                                    twitter: 'resources/images/social-icons/twitter-connect.svg',
-                                    number: 'resources/images/social-icons/phone-connect.svg',
-                                    email: 'resources/images/social-icons/email-connect.svg'
-                                },
-                                memberImageSource: 'resources/images/about/ash-tondon.svg'
-                            },
-                            {
-                                name: 'Susan Ricketts',
-                                vocation: 'Business Development Manager ',
-                                description: [
-                                    'Susan is a Business Development Manager at Godspeed Workforce and is based in Cambridge, Ontario. She has over 20 years experience within the staffing industry and works with clients within the Cambridge, Brantford, Kitchener, Waterloo, Guelph and surrounding areas.',
-                                    'Susan started her career in the staffing industry as a junior recruiter and worked her way up to be a branch manager with a well-known staffing firm where she was responsible for the growth of the branch, finances and hiring and guiding an award-winning team. She loves meeting with customers and learning about their business and takes pride in putting the needs of her clients first by having solutions to all of their staffing needs.',
-                                    'Susan was educated at Conestoga College and Waterloo University in Business Management and Human Resources Management.'
-
-                                ],
-                                social: {
-                                    linkedin: 'https://www.linkedin.com/in/susan-ricketts-01313022/',
-                                    facebook: '',
-                                    youtube: '',
-                                    gmail: '',
-                                    reddit: '',
-                                    twitter: '',
-                                    number: ''
-                                },
-                                socialIcons: {
-                                    linkedin: 'resources/images/social-icons/linkedin-connect.svg',
-                                    facebook: 'resources/images/social-icons/facebook-connect.svg',
-                                    youtube: 'resources/images/social-icons/youtube-connect.svg',
-                                    gmail: 'resources/images/social-icons/gmail-connect.svg',
-                                    reddit: 'resources/images/social-icons/reddit-connect.svg',
-                                    twitter: 'resources/images/social-icons/twitter-connect.svg',
-                                    number: 'resources/images/social-icons/phone-connect.svg',
-                                    email: 'resources/images/social-icons/email-connect.svg'
-                                },
-                                memberImageSource: 'resources/images/about/ash-tondon.svg'
-                            }
-                            ]
-                        },
-                        {
-                            name: 'London',
-                            members: [{
-                                name: 'Ryan Marchello',
-                                vocation: 'Business Development Manager',
-                                description: [
-                                    'Ryan is the Business Development Manager at Godspeed Workforce and is based in London, Ontario. He comes from a strong sales background in the staffing industry. He works with both management and leadership teams to identify workforce business needs and define hiring priorities. Ryan focuses on providing top service to every client. ',
-                                    'Having been raised in a few small-towns, Ryan understands the value of local community. And exposure to the city life has taught him the importance of networking. ',
-                                    'Ryan holds a diploma in Liberal Arts and Sciences, and is an alumnus of King’s University College and Fanshawe College. '
-
-                                ],
-                                social: {
-                                    linkedin: 'https://www.linkedin.com/in/ryan-marchello-16197988/',
-                                    facebook: '',
-                                    youtube: '',
-                                    gmail: '',
-                                    reddit: '',
-                                    twitter: '',
-                                    number: ''
-                                },
-                                socialIcons: {
-                                    linkedin: 'resources/images/social-icons/linkedin-connect.svg',
-                                    facebook: 'resources/images/social-icons/facebook-connect.svg',
-                                    youtube: 'resources/images/social-icons/youtube-connect.svg',
-                                    gmail: 'resources/images/social-icons/gmail-connect.svg',
-                                    reddit: 'resources/images/social-icons/reddit-connect.svg',
-                                    twitter: 'resources/images/social-icons/twitter-connect.svg',
-                                    number: 'resources/images/social-icons/phone-connect.svg',
-                                    email: 'resources/images/social-icons/email-connect.svg'
-                                },
-                                memberImageSource: 'resources/images/about/ryan-marchello.png'
-                            },
-                            {
-                                name: 'Helen Sobh',
-                                vocation: 'Business Development Manager',
-                                description: [
-                                    'Helen is the Business Development Manager at Godspeed Workforce and is based in London, Ontario. With a decade and half of sales experience and customer facing roles, she prides herself pride on good work ethic and lasting results.',
-                                    'Helen is an alumnus of Southern Alberta Institute of Technology (SAIT). '
-
-                                ],
-                                social: {
-                                    linkedin: 'https://www.linkedin.com/in/ahlam-helen-sobh-636916181/',
-                                    facebook: '',
-                                    youtube: '',
-                                    gmail: '',
-                                    reddit: '',
-                                    twitter: '',
-                                    number: ''
-                                },
-                                socialIcons: {
-                                    linkedin: 'resources/images/social-icons/linkedin-connect.svg',
-                                    facebook: 'resources/images/social-icons/facebook-connect.svg',
-                                    youtube: 'resources/images/social-icons/youtube-connect.svg',
-                                    gmail: 'resources/images/social-icons/gmail-connect.svg',
-                                    reddit: 'resources/images/social-icons/reddit-connect.svg',
-                                    twitter: 'resources/images/social-icons/twitter-connect.svg',
-                                    number: 'resources/images/social-icons/phone-connect.svg',
-                                    email: 'resources/images/social-icons/email-connect.svg'
-                                },
-                                memberImageSource: 'resources/images/about/ash-tondon.svg'
-                            }
-                            ]
-                        },
-                        {
-                            name: 'Alberta',
-                            members: [{
-                                name: 'Stephanie Gardeski',
-                                vocation: 'Regional Sales Manager, Calgary ',
-                                description: [
-                                    'Stephanie is the Calgary Sales Manager at Godspeed Workforce. She specializes in recruitment and has worked for many different staffing companies. ',
-                                    'Stephanie’s exceptional career has taken her from a position as Senior Consultant to Senior Manager. Her knowledge of the staffing and financial industries serves as an advantage to her. ',
-                                    'Stephanie holds a B.Com in Finance from Haskayne School of Business at the University of Calgary.'
-
-                                ],
-                                social: {
-                                    linkedin: 'https://www.linkedin.com/in/stephanie-gardeski-95290163/',
-                                    facebook: '',
-                                    youtube: '',
-                                    gmail: '',
-                                    reddit: '',
-                                    twitter: '',
-                                    number: ''
-                                },
-                                socialIcons: {
-                                    linkedin: 'resources/images/social-icons/linkedin-connect.svg',
-                                    facebook: 'resources/images/social-icons/facebook-connect.svg',
-                                    youtube: 'resources/images/social-icons/youtube-connect.svg',
-                                    gmail: 'resources/images/social-icons/gmail-connect.svg',
-                                    reddit: 'resources/images/social-icons/reddit-connect.svg',
-                                    twitter: 'resources/images/social-icons/twitter-connect.svg',
-                                    number: 'resources/images/social-icons/phone-connect.svg',
-                                    email: 'resources/images/social-icons/email-connect.svg'
-                                },
-                                memberImageSource: 'resources/images/about/ash-tondon.svg'
-                            }]
-                        },
-                        {
-                            name: 'British Columbia',
-                            members: [{
-                                name: 'Ted Hermano',
-                                vocation: 'Regional Sales Manager, British Columbia',
-                                description: [
-                                    'Ted joined Godspeed Workforce as Regional Sales Manager in British Columbia. He brings a wealth of experience in the field of sales – ranging from waste companies to staffing firms.   '
-
-                                ],
-                                social: {
-                                    linkedin: 'https://www.linkedin.com/in/ted-hermano-b01641244/',
-                                    facebook: '',
-                                    youtube: '',
-                                    gmail: '',
-                                    reddit: '',
-                                    twitter: '',
-                                    number: ''
-                                },
-                                socialIcons: {
-                                    linkedin: 'resources/images/social-icons/linkedin-connect.svg',
-                                    facebook: 'resources/images/social-icons/facebook-connect.svg',
-                                    youtube: 'resources/images/social-icons/youtube-connect.svg',
-                                    gmail: 'resources/images/social-icons/gmail-connect.svg',
-                                    reddit: 'resources/images/social-icons/reddit-connect.svg',
-                                    twitter: 'resources/images/social-icons/twitter-connect.svg',
-                                    number: 'resources/images/social-icons/phone-connect.svg',
-                                    email: 'resources/images/social-icons/email-connect.svg'
-                                },
-                                memberImageSource: 'resources/images/about/ted-hermano.png'
-                            }]
-                        },
-                        {
-                            name: 'Manitoba',
-                            members: [{
-                                name: 'Vince Styke',
-                                vocation: 'Regional Sales Manager, Manitoba & Saskatchewan',
-                                description: [
-                                    'Vince is the Regional Sales Manager for Manitoba and Saskatchewan. He joined the Godspeed Group in 2022 after four years of being the Branch Sales Manager for a global staffing organization.',
-                                    'Prior to being the Branch Sales Manager, Vince has worked with 2 other global staffing companies in the position of sales, marketing, business planning and strategic growth.  In addition, Vince has recruited for 2 major financial service organizations for nearly 14 years.  This experience helps Vince to contribute to the aggressive growth of Godspeed Workforce in Manitoba and Saskatchewan.',
-                                    'Vince’s most recent studies are from the University of London (England), London Business School.'
-                                ],
-                                social: {
-                                    linkedin: 'https://www.linkedin.com/in/vincestycke/',
-                                    facebook: '',
-                                    youtube: '',
-                                    gmail: '',
-                                    reddit: '',
-                                    twitter: '',
-                                    number: ''
-                                },
-                                socialIcons: {
-                                    linkedin: 'resources/images/social-icons/linkedin-connect.svg',
-                                    facebook: 'resources/images/social-icons/facebook-connect.svg',
-                                    youtube: 'resources/images/social-icons/youtube-connect.svg',
-                                    gmail: 'resources/images/social-icons/gmail-connect.svg',
-                                    reddit: 'resources/images/social-icons/reddit-connect.svg',
-                                    twitter: 'resources/images/social-icons/twitter-connect.svg',
-                                    number: 'resources/images/social-icons/phone-connect.svg',
-                                    email: 'resources/images/social-icons/email-connect.svg'
-                                },
-                                memberImageSource: 'resources/images/about/vince-styke.png'
-                            }]
-                        },
-                        ]
-
-                        const tabsMainContainerSelector = '#about-us-tabs-container-id .widget-main-container';
-
-                        addCenterTabs(tabsMainContainerSelector, centersData);
-                    </script>
-                </div>
+               
             </div>
 
         </section>
