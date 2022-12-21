@@ -66,7 +66,8 @@
                                     <li id="nav-the-team"><a href="rail-logistics.html">Rail Logistics</a> </li>
                                     <li id="nav-the-team"><a href="air-freight.html">Air Freight</a> </li>
                                     <li id="nav-the-team"><a href="ocean-freight.html">Ocean Freight</a> </li>
-                                    <li id="nav-the-team"><a href="industrial-projects.html">Industrial Projects</a> </li>
+                                    <li id="nav-the-team"><a href="industrial-projects.html">Industrial Projects</a>
+                                    </li>
                                     <li id="nav-the-team"><a href="our-partners.html">Our Partners</a> </li>
                                 </ul>
                             </li>
@@ -111,7 +112,6 @@
 
                     .complimentary-container-type-1 {
                         width: min(100%, var(--container-max-width, 1920px));
-                        gap: 3em;
                     }
 
                     @media (max-width:900px) {
@@ -123,16 +123,18 @@
 
                 <div class="column-1">
                     <picture>
-                        <source srcset="resources/images/ocean-freight/ocean-ship.png">
-                        <img src="resources/images/ocean-freight/ocean-ship.png" loading="lazy" alt="Godspeed_unicon"
-                            width="100%">
+                        <source srcset="resources/images/industrial-project/factory-project.png">
+                        <img src="resources/images/industrial-project/factory-project.png" loading="lazy"
+                            alt="Godspeed_unicon" width="100%">
                     </picture>
                 </div>
                 <div class="column-2">
-                    <h1 data-font-family="VisueltPro-Black" style="color:var(--secondary-color);">Industrial Projects
+                    <h1 data-font-family="VisueltPro-Black" style="color:var(--secondary-color);">Industrial <span
+                            class="home-br">Projects</span>
                     </h1>
-                    <p class="banner-para" data-hover-color="hover-color" data-font-family="OpenSans-Regular">The Godspeed response to <span class="home-br">challenging projects.</span> </p>
-                        <!-- <div class="btn-container">
+                    <p class="banner-para" data-hover-color="hover-color" data-font-family="OpenSans-Regular">The
+                        Godspeed response to <span class="home-br">challenging projects.</span> </p>
+                    <!-- <div class="btn-container">
             <a href="#" class="btn btn-primary" data-font-family="OpenSans-Medium" data-content="Contact Us"><span
                 class="btn-content">Get a Quote</span></a>
           </div> -->
@@ -147,8 +149,8 @@
                     position: relative;
                 }
             </style>
-            <img src="resources/images/air-freight/yellow-line.png" alt="" width="100%">
-            
+            <img src="resources/images/industrial-project/yellow-line.svg" alt="" width="100%">
+
         </section>
 
         <!--------------- Promo Section ----------------------------->
@@ -165,10 +167,10 @@
                         .icon-boxes-type-2 .icon-box {
                             width: 100%;
                             justify-content: start;
-                            flex-basis: 18%;
+                            flex-basis: 16%;
                             flex-grow: 1;
-                            flex-direction: row;
-                            gap: 30px;
+                            flex-direction: column;
+                            gap: 20px;
                         }
 
                         .icon-boxes-type-2 .icon-box .promo-icon img {
@@ -189,7 +191,7 @@
 
                         #icon-box-t2-1 {
                             --icon-box-max-width: 445px;
-                            --gap: min(15vw, 9em);
+                            --gap: min(15vw, 2em);
                             --icon-box-heading-font-size: clamp(0.75em, calc(4.5vw + 0.35rem), 1.2em);
                             --icon-box-para-font-size: clamp(0.9em, calc(4vw + 0.35rem), 1em);
                         }
@@ -230,12 +232,12 @@
 
                     <div class="icon-box" onclick="hyperlinkTo('', false, false)" style="cursor:pointer;">
                         <div class="promo-icon">
-                            <img src="resources/images/ocean-freight/full-container-load-FCL.svg" loading="lazy"
+                            <img src="resources/images/industrial-project/engineering.svg" loading="lazy"
                                 alt="icon">
                         </div>
 
                         <div class="promo-icon-content">
-                            <h3 data-font-family="Visuelt-Bold">FULL CONTAINER LOAD (FCL)</h3>
+                            <p data-font-family="Visuelt-Bold">Engineering, procurement & construction (EPC)</p>
                             <!-- <p data-font-family="OpenSans-Regular">
                                 Safely transport your cargo anywhere in the world using commercial carriers.
                             </p> -->
@@ -245,18 +247,142 @@
                     <div class="icon-box" data-sep="before" onclick="hyperlinkTo('', false, false)"
                         style="cursor:pointer;">
                         <div class="promo-icon">
-                            <img src="resources/images/ocean-freight/less-than-container-load-LCL.svg" loading="lazy"
+                            <img src="resources/images/industrial-project/mining.svg" loading="lazy"
                                 alt="icon">
                         </div>
 
                         <div class="promo-icon-content">
-                            <h3 data-font-family="Visuelt-Bold">LESS THAN CONTAINER LOAD (LCL)</h3>
+                            <p data-font-family="Visuelt-Bold">Mining and<br> metal</p>
                             <!-- <p data-font-family="OpenSans-Regular">
                                 Partnerships under our program offer cargo charter flights to any destination around the
                                 world.
                             </p> -->
                         </div>
                     </div>
+
+                    <div class="icon-box" data-sep="before" onclick="hyperlinkTo('', false, false)"
+                        style="cursor:pointer;">
+                        <div class="promo-icon">
+                            <img src="resources/images/industrial-project/energy.svg" loading="lazy"
+                                alt="icon">
+                        </div>
+
+                        <div class="promo-icon-content">
+                            <p data-font-family="Visuelt-Bold">Energy</p>
+                            <!-- <p data-font-family="OpenSans-Regular">
+                            Partnerships under our program offer cargo charter flights to any destination around the
+                            world.
+                        </p> -->
+                        </div>
+                    </div>
+
+                    <div class="icon-box" data-sep="before" onclick="hyperlinkTo('', false, false)"
+                        style="cursor:pointer;">
+                        <div class="promo-icon">
+                            <img src="resources/images/industrial-project/petrochemical.svg" loading="lazy"
+                                alt="icon">
+                        </div>
+
+                        <div class="promo-icon-content">
+                            <p data-font-family="Visuelt-Bold">Petrochemical & Chemical</p>
+                            <!-- <p data-font-family="OpenSans-Regular">
+                        Partnerships under our program offer cargo charter flights to any destination around the
+                        world.
+                    </p> -->
+                        </div>
+                    </div>
+
+                    <div class="icon-box" data-sep="before" onclick="hyperlinkTo('', false, false)"
+                        style="cursor:pointer;">
+                        <div class="promo-icon">
+                            <img src="resources/images/industrial-project/industrial-original.svg" loading="lazy"
+                                alt="icon">
+                        </div>
+
+                        <div class="promo-icon-content">
+                            <p data-font-family="Visuelt-Bold">Industrial original equipment manufacturers (OEM)</p>
+                            <!-- <p data-font-family="OpenSans-Regular">
+                    Partnerships under our program offer cargo charter flights to any destination around the
+                    world.
+                </p> -->
+                        </div>
+                    </div>
+                    <div class="icon-box" data-sep="before" onclick="hyperlinkTo('', false, false)"
+                        style="cursor:pointer;">
+                        <div class="promo-icon">
+                            <img src="resources/images/industrial-project/infrastructure.svg" loading="lazy"
+                                alt="icon">
+                        </div>
+
+                        <div class="promo-icon-content">
+                            <p data-font-family="Visuelt-Bold">Infrastructure</p>
+                            <!-- <p data-font-family="OpenSans-Regular">
+                            Partnerships under our program offer cargo charter flights to any destination around the
+                            world.
+                        </p> -->
+                        </div>
+                    </div>
+                    <div class="icon-box" data-sep="before" onclick="hyperlinkTo('', false, false)"
+                        style="cursor:pointer;">
+                        <div class="promo-icon">
+                            <img src="resources/images/industrial-project/industrial-plants.svg" loading="lazy"
+                                alt="icon">
+                        </div>
+
+                        <div class="promo-icon-content">
+                            <p data-font-family="Visuelt-Bold">Industrial<br> Plants</p>
+                            <!-- <p data-font-family="OpenSans-Regular">
+                        Partnerships under our program offer cargo charter flights to any destination around the
+                        world.
+                    </p> -->
+                        </div>
+                    </div>
+                    <div class="icon-box" data-sep="before" onclick="hyperlinkTo('', false, false)"
+                        style="cursor:pointer;">
+                        <div class="promo-icon">
+                            <img src="resources/images/industrial-project/generic-industrial-projects.svg" loading="lazy"
+                                alt="icon">
+                        </div>
+
+                        <div class="promo-icon-content">
+                            <p data-font-family="Visuelt-Bold">Generic industrial projects</p>
+                            <!-- <p data-font-family="OpenSans-Regular">
+                    Partnerships under our program offer cargo charter flights to any destination around the
+                    world.
+                </p> -->
+                        </div>
+                    </div>
+                    <div class="icon-box" data-sep="before" onclick="hyperlinkTo('', false, false)"
+                        style="cursor:pointer;">
+                        <div class="promo-icon">
+                            <img src="resources/images/industrial-project/out-of-gauge.svg" loading="lazy"
+                                alt="icon">
+                        </div>
+
+                        <div class="promo-icon-content">
+                            <p data-font-family="Visuelt-Bold">Out-of-gauge</p>
+                            <!-- <p data-font-family="OpenSans-Regular">
+                Partnerships under our program offer cargo charter flights to any destination around the
+                world.
+            </p> -->
+                        </div>
+                    </div>
+                    <div class="icon-box" data-sep="before" onclick="hyperlinkTo('', false, false)"
+                        style="cursor:pointer;">
+                        <div class="promo-icon">
+                            <img src="resources/images/industrial-project/dangerous-goods.svg" loading="lazy"
+                                alt="icon">
+                        </div>
+
+                        <div class="promo-icon-content">
+                            <p data-font-family="Visuelt-Bold">Dangerous<br> goods</p>
+                            <!-- <p data-font-family="OpenSans-Regular">
+            Partnerships under our program offer cargo charter flights to any destination around the
+            world.
+        </p> -->
+                        </div>
+                    </div>
+                    
 
                 </div>
             </div>
@@ -357,13 +483,13 @@
                     <div class="card" tabindex="0">
                         <div class="front-face">
                             <div class="icon">
-                                <img src="resources/images/ocean-freight/shipments-coordination.svg" loading="lazy"
+                                <img src="resources/images/industrial-project/Why-Businesses-Choose-To-Work-With-Us/air-ocean.svg" loading="lazy"
                                     alt="icon">
                             </div>
 
                             <div class="card-heading">
                                 <h4 data-font-family="OpenSans-Medium">
-                                    Shipments coordination from inland ports
+                                    Air & ocean<br> charters
                                 </h4>
                             </div>
                         </div>
@@ -378,12 +504,12 @@
                     <div class="card" tabindex="1">
                         <div class="front-face">
                             <div class="icon">
-                                <img src="resources/images/ocean-freight/efficient-transit-time.svg" loading="lazy"
+                                <img src="resources/images/industrial-project/Why-Businesses-Choose-To-Work-With-Us/heavy-lift-transportation.svg" loading="lazy"
                                     alt="icon">
                             </div>
                             <div class="card-heading">
                                 <h4 data-font-family="OpenSans-Medium">
-                                    Efficient transit<br> time
+                                    Heavy-lift transportation
                                 </h4>
                             </div>
                         </div>
@@ -396,13 +522,13 @@
                     <div class="card" tabindex="2">
                         <div class="front-face">
                             <div class="icon">
-                                <img src="resources/images/ocean-freight/shipside-deliveries.svg" loading="lazy"
+                                <img src="resources/images/industrial-project/Why-Businesses-Choose-To-Work-With-Us/specialized.svg" loading="lazy"
                                     alt="icon">
                             </div>
 
                             <div class="card-heading">
                                 <h4 data-font-family="OpenSans-Medium">
-                                    Shipside<br> deliveries
+                                    Specialized operational planning
                                 </h4>
                             </div>
                         </div>
@@ -415,12 +541,12 @@
                     <div class="card" tabindex="3">
                         <div class="front-face">
                             <div class="icon">
-                                <img src="resources/images/ocean-freight/trucking-inland.svg" loading="lazy" alt="icon">
+                                <img src="resources/images/industrial-project/Why-Businesses-Choose-To-Work-With-Us/trade-compliance.svg" loading="lazy" alt="icon">
                             </div>
 
                             <div class="card-heading">
                                 <h4 data-font-family="OpenSans-Medium">
-                                    Trucking & inland freight services
+                                    Trade<br> compliance
                                 </h4>
                             </div>
                         </div>
@@ -434,13 +560,13 @@
                     <div class="card" tabindex="4">
                         <div class="front-face">
                             <div class="icon">
-                                <img src="resources/images/ocean-freight/customs-clearance.svg" loading="lazy"
+                                <img src="resources/images/industrial-project/Why-Businesses-Choose-To-Work-With-Us/final-mile delivery.svg" loading="lazy"
                                     alt="icon">
                             </div>
 
                             <div class="card-heading">
                                 <h4 data-font-family="OpenSans-Medium">
-                                    Customs<br> clearance
+                                    Final-mile<br> delivery
                                 </h4>
                             </div>
                         </div>
@@ -450,88 +576,7 @@
                 business initiatives.</p>
             </div> -->
                     </div>
-
-                    <div class="card" tabindex="5">
-                        <div class="front-face">
-                            <div class="icon">
-                                <img src="resources/images/ocean-freight/marine-cargo-insurance.svg" loading="lazy"
-                                    alt="icon">
-                            </div>
-
-                            <div class="card-heading">
-                                <h4 data-font-family="OpenSans-Medium">
-                                    Marine cargo insurance
-                                </h4>
-                            </div>
-                        </div>
-                        <!-- <div class="front-back">
-              <p data-font-family="Visuelt-Light">Automate screening, vetting, hiring and payroll duties. Reallocate
-                resources from the tedious task of running recruitment-related activities towards more strategic
-                business initiatives.</p>
-            </div> -->
-                    </div>
-
-                    <div class="card" tabindex="6">
-                        <div class="front-face">
-                            <div class="icon">
-                                <img src="resources/images/ocean-freight/break-bulk-services.svg" loading="lazy"
-                                    alt="icon">
-                            </div>
-
-                            <div class="card-heading">
-                                <h4 data-font-family="OpenSans-Medium">
-                                    Break bulk<br> services
-                                </h4>
-                            </div>
-                        </div>
-                        <!-- <div class="front-back">
-              <p data-font-family="Visuelt-Light">Automate screening, vetting, hiring and payroll duties. Reallocate
-                resources from the tedious task of running recruitment-related activities towards more strategic
-                business initiatives.</p>
-            </div> -->
-                    </div>
-
-                    <div class="card" tabindex="7">
-                        <div class="front-face">
-                            <div class="icon">
-                                <img src="resources/images/ocean-freight/project-and-heavy-lift-movements.svg"
-                                    loading="lazy" alt="icon">
-                            </div>
-
-                            <div class="card-heading">
-                                <h4 data-font-family="OpenSans-Medium">
-                                    Project and heavy-lift movements
-                                </h4>
-                            </div>
-                        </div>
-                        <!-- <div class="front-back">
-              <p data-font-family="Visuelt-Light">Automate screening, vetting, hiring and payroll duties. Reallocate
-                resources from the tedious task of running recruitment-related activities towards more strategic
-                business initiatives.</p>
-            </div> -->
-                    </div>
-
-                    <div class="card" tabindex="8">
-                        <div class="front-face">
-                            <div class="icon">
-                                <img src="resources/images/ocean-freight/flexible-delivery.svg" loading="lazy"
-                                    alt="icon">
-                            </div>
-
-                            <div class="card-heading">
-                                <h4 data-font-family="OpenSans-Medium">
-                                    Flexible delivery choices (door-to-door, terminal-to-terminal or port-to-port)
-                                </h4>
-                            </div>
-                        </div>
-                        <!-- <div class="front-back">
-              <p data-font-family="Visuelt-Light">Automate screening, vetting, hiring and payroll duties. Reallocate
-                resources from the tedious task of running recruitment-related activities towards more strategic
-                business initiatives.</p>
-            </div> -->
-                    </div>
-
-
+ 
                 </div>
             </div>
         </section>
