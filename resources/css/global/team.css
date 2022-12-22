@@ -1,0 +1,110 @@
+.slider {
+    --max-slider-width: 1200px;
+}
+
+.tod {
+    background: #fff !important;
+}
+
+#testimonial-slider .splide__track {
+    box-shadow: 3px 2px 17px #00000029;
+    border-right: 0px solid #70707069;
+    border-left: 0px solid #70707069;
+}
+
+#testimonial-slider .slider_sub_container {
+    box-shadow: none !important;
+}
+
+#testimonial-slider .splide__pagination {
+    bottom: -3em !important;
+}
+/*###############################
+######### Testimonial-section #######
+#################################*/
+#testimonial-slider {
+    margin-top: 1em;
+}
+
+#testimonial-slider .hor-pagination-container {
+    margin-block: 1em;
+}
+
+#testimonial-slider li h3 {
+    font-size: 25px;
+    color: #024778;
+    text-align: center;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 10px 0px;
+}
+
+#testimonial-slider li p {
+    font-size: 16px;
+    color: #024778;
+    margin: 0 auto;
+    line-height: 28px;
+    padding: 1px 0px;
+}
+
+#testimonial-slider .testimonial_text {
+    font-size: 21px;
+    color:#024778;
+    margin: 0 auto;
+    line-height: 32px;
+    padding: 10px 0px;
+    max-width: 800px;
+    position: relative;
+}
+
+#testimonial-slider .testimonial_text .quote-start,
+#testimonial-slider .testimonial_text .quote-end {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.2em;
+    background-repeat: no-repeat;
+}
+
+#testimonial-slider .testimonial_text .quote-start {
+    background-image: url('../../images/left-inveted.png');
+}
+
+#testimonial-slider .testimonial_text .quote-end {
+    background-image: url('../../images/right-inveted.png');
+    transform: translateY(0.4em);
+}
+
+#section-11 .splide__arrow {
+    --arrow-btn-color: gray;
+    --arrow-btn-width: 2em;
+}
+
+#section-11 .splide__arrow:hover {
+    --arrow-btn-color: #eee;
+}
+
+#section-13 {
+    padding-block: min(20vw, calc(2 * var(--universal-padding-heavy)));
+}
+
+#section-13 .splide__arrow {
+    --arrow-btn-color: #024778;
+}
+
+#section-13 .splide__arrow:hover {
+    --arrow-btn-color: #02477833;
+}
+
+.testimonial-section {
+    padding-block: 0px;
+}
+
+.testimonial-section .content-container {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+/*###############################
+######### Testimonial-section #######
+#################################*/

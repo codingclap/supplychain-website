@@ -6,7 +6,7 @@
     <title>GodSpeed</title>
     <link rel="shortcut icon" href="resources/images/fav-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="resources/css/widgets/splide.min.css">
     <link rel="stylesheet" href="resources/css/global/basic.css">
     <link rel="stylesheet" href="resources/css/global/typography.css">
     <link rel="stylesheet" href="resources/css/global/typography-specific.css">
@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="resources/css/global/universal-style.css">
     <link rel="stylesheet" href="resources/css/global/footer.css">
 
+    <script src="resources/js/splide.min.js"></script>
     <script src="resources/js/basic-func.js"></script>
+   
 </head>
 
 <body>
@@ -58,23 +60,24 @@
                                     <!-- <li class="separator"></li>  -->
                                     <li id="nav-about-us"><a href="ground-transportation.html">Ground<br>
                                             Transportation</a>
-                                    </li> 
-                                    <li id="nav-the-team"><a href="industrial-projects.html">Industrial Projects</a> </li>
+                                    </li>
+                                    <li id="nav-the-team"><a href="industrial-projects.html">Industrial Projects</a>
+                                    </li>
                                     <li id="nav-the-team"><a href="our-partners.html">Our Partners</a> </li>
                                 </ul>
                             </li>
 
                             <li class="navbar-dropdown ">
                                 <a href="javascript:void(0)" class="dropdown-toggler" data-dropdown="blog2">
-                                  What We Do <i class="fa fa-angle-down"></i>
+                                    What We Do <i class="fa fa-angle-down"></i>
                                 </a>
                                 <ul class="dropdown" id="blog2">
-                                  <!-- <li class="separator"></li>  --> 
-                                  <li id="nav-the-team"><a href="air-freight.html">Air Freight</a> </li>
-                                  <li id="nav-the-team"><a href="rail-logistics.html">Rail Logistics</a> </li> 
-                                  <li id="nav-the-team"><a href="ocean-freight.html">Ocean Freight</a> </li> 
+                                    <!-- <li class="separator"></li>  -->
+                                    <li id="nav-the-team"><a href="air-freight.html">Air Freight</a> </li>
+                                    <li id="nav-the-team"><a href="rail-logistics.html">Rail Logistics</a> </li>
+                                    <li id="nav-the-team"><a href="ocean-freight.html">Ocean Freight</a> </li>
                                 </ul>
-                              </li> 
+                            </li>
                             <li class=""><a href="#">Get a Quote</a></li>
                             <li class=""><a href="#">Contact Us</a></li>
                         </ul>
@@ -151,6 +154,16 @@
                         padding-top: 0em;
                     }
 
+                    .member-info .designation:nth-child(2)::after {
+                        content: " ";
+                        width: 60px;
+                        height: 2px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        background-color: #FDCE01;
+                    }
+
                     #main-team-member-info-id {
                         --main-container-width: min(1920px, 100vw);
                         --widget-skew-height: 10vh;
@@ -186,9 +199,26 @@
 
                     .widget-team-info-type-1 .main-container .member-info:nth-of-type(2n)::after {
                         bottom: 0;
-                        border-top: #ddd!important;
-                        border-left: #ddd!important;
+                        border-top: #ddd !important;
+                        border-left: #ddd !important;
                     }
+
+                    .social-icons {
+                        display: flex;
+                        gap: 1em;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        margin-top: 1em;
+                        font-family: "OpenSans-Regular";
+                    }
+
+                    .social-icons .social-contact {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 1em;
+                    }
+
 
                     @media(max-width:1300px) {
                         #au-section-9 {
@@ -222,7 +252,7 @@
                                         Chief Executive Officer
                                     </span>
                                     <span class="designation"
-                                        style="display: block;font-size: 19px;font-weight: 600;color:#8B8B8B;"
+                                        style="display: block;font-size: 19px;font-weight: 600;color:#8B8B8B;position: relative;"
                                         data-font-family="Visuelt-Light">
                                         (Godspeed Group)
                                     </span>
@@ -247,11 +277,32 @@
                                     Ash has a B.A. in Business Information Management from Leeds Beckett University.
                                 </p>
 
+                                <div class="social-icons">
+                                    <div class="social-contact" data-social-type="linkedin">
+                                        <div class="social-icon"
+                                            onclick="hyperlinkTo('https\://www.linkedin.com/in/abhishek-tandon-30347b32/', false)">
+                                            <img src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/about/linkdin-icon.svg"
+                                                alt="linkedin" loading="lazy" width="37px">
+                                        </div>
+                                        <div class="social-id">
+                                            <span data-font-family="Visuelt-Medium"
+                                                data-text-color='primary'>/ashtandon</span>
+                                        </div>
+                                    </div>
+                                    <div class="social-contact" data-social-type="email">
+                                        <div class="social-icon"
+                                            onclick="hyperlinkTo('mailto:abhitan@godspeedgroup.ca', false)">
+                                            <img src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/about/email-connect.svg"
+                                                alt="email" loading="lazy" width="37px">
+                                        </div>
 
-                                <a href="https://www.linkedin.com/in/ashtandon/" class="social-icon" target="_blank">
-                                    <img class="p-tb10" src="resources/images/about/linkdin-icon.svg" alt="linkdin-icon"
-                                        width="50px">
-                                </a>/ashtandon
+                                        <div class="social-id">
+                                            <span data-font-family="Visuelt-Medium"
+                                                data-text-color='primary'>abhitan@godspeedgroup.ca</span>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -265,37 +316,66 @@
                                 </picture>
                             </div>
                             <div class="column-2">
-                                <p data-font-family="Visuelt-Light" class="p-tb10">
-                                    Abhishek is the co-founder and CFO of Godspeed Group.
-                                </p>
-                                <p data-font-family="Visuelt-Light" class="p-b10">
-                                    Abhishek is an expert in insurance statistical analysis and with this knowledge,
-                                    helped companies like
-                                    Aviva and Wawanesa grow. Since leaving the insurance industry, he has applied his
-                                    expertise to
-                                    developing the organisation’s financial plans and proposing strategic solutions to
-                                    increase revenue.Abhishek is an expert in insurance statistical analysis and with
-                                    this knowledge, helped companies like
-                                    Aviva and Wawanesa grow. Since leaving the insurance industry, he has applied his
-                                    expertise to
-                                    developing the organisation’s financial plans and proposing strategic solutions to
-                                    increase revenue.
-                                </p>
-                                <p data-font-family="Visuelt-Light" class="p-b10">
-                                    Abhishek holds a bachelor’s degree in Actuarial Science and Statistics from
-                                    University of Toronto.
-                                </p>
-
                                 <h2 data-font-family="Visuelt-Medium" data-color='secondary-color' class="p-t20">
-                                    Abhishek Tandon
+                                    Abby Tandon
                                 </h2>
                                 <h3 data-font-family="Visuelt-Light"><span class="designation"
                                         data-font-family="Visuelt-Light">
-                                        Co-founder and CFO
-                                    </span></h3>
-                                <a href="https://www.linkedin.com/in/abhishek-tandon-30347b32/" target="_blank"><img
-                                        class="p-tb10" src="resources/images/about/linkdin-icon.svg" alt="linkdin-icon"
-                                        width="50px"></a>
+                                        Chief Financial Officer
+                                    </span>
+                                    <span class="designation"
+                                        style="display: block;font-size: 19px;font-weight: 600;color:#8B8B8B;position: relative;"
+                                        data-font-family="Visuelt-Light">
+                                        (Godspeed Group)
+                                    </span>
+                                </h3>
+                                <p data-font-family="Visuelt-Light" class="p-tb10">
+                                    Abby is the Chief Financial Officer and co-founder of Godspeed Group.
+                                </p>
+                                <p data-font-family="Visuelt-Light" class="p-b10">
+                                    bhishek is an expert in insurance statistical analysis and with this knowledge, he
+                                    has helped companies like Aviva and Wawanesa grow. Since leaving the insurance
+                                    industry, he has applied his expertise to developing Godspeed Group’s financial
+                                    plans and proposing strategic solutions to increase revenue.
+                                </p>
+                                <p data-font-family="Visuelt-Light" class="p-b10">
+                                    Currently, Abby heads the financial operations of the company and leads the
+                                    operations team. He performs effective risk management and plans the organization’s
+                                    financial strategy. He has an extensive background in the technology and finance
+                                    industries, giving him the expertise to ensure Godspeed Group reaches its full
+                                    potential.
+                                </p>
+                                <p data-font-family="Visuelt-Light" class="p-b10">
+                                    Abhishek holds a bachelor’s degree in Actuarial Science and Statistics from the
+                                    University of Toronto.
+                                </p>
+
+
+                                <div class="social-icons">
+                                    <div class="social-contact" data-social-type="linkedin">
+                                        <div class="social-icon"
+                                            onclick="hyperlinkTo('https\://www.linkedin.com/in/abhishek-tandon-30347b32/', false)">
+                                            <img src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/about/linkdin-icon.svg"
+                                                alt="linkedin" loading="lazy" width="37px">
+                                        </div>
+                                        <div class="social-id">
+                                            <span data-font-family="Visuelt-Medium"
+                                                data-text-color='primary'>/abhishek-tandon-30347b32</span>
+                                        </div>
+                                    </div>
+                                    <div class="social-contact" data-social-type="email">
+                                        <div class="social-icon"
+                                            onclick="hyperlinkTo('mailto:abhitan@godspeedgroup.ca', false)">
+                                            <img src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/about/email-connect.svg"
+                                                alt="email" loading="lazy" width="37px">
+                                        </div>
+
+                                        <div class="social-id">
+                                            <span data-font-family="Visuelt-Medium"
+                                                data-text-color='primary'>abhitan@godspeedgroup.ca</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -309,38 +389,63 @@
                                 </picture>
                             </div>
                             <div class="column-2">
-                                <p data-font-family="Visuelt-Light" class="p-tb10">
-                                    Bill is the Chief Strategy Officer at Godspeed Group. He joined in 2021 following a
-                                    successful career that
-                                    spanned three decades in management and executive roles with Purolator, Maritime-
-                                    Ontario, G4S and
-                                    Remco
-                                </p>
-                                <p data-font-family="Visuelt-Light" class="p-b10">
-                                    His Board participation included the Canadian American Border Trade Alliance,
-                                    Canadian Courier Association and Executive Education Wharton School.
-                                </p>
-                                <p data-font-family="Visuelt-Light" class="p-b10">
-                                    Bill’s skills and experience has enabled an effective contribution to Godspeed
-                                    Group’s growth as the
-                                    company evolves into an integrated services company across North America.
-                                </p>
-                                <p data-font-family="Visuelt-Light" class="p-b10">
-                                    Bill attended the Schulich School of Business, Queens, and the Wharton School of the
-                                    University of
-                                    Pennsylvania.
-                                </p>
-
                                 <h2 data-font-family="Visuelt-Medium" data-color='secondary-color' class="p-t20">
                                     Bill Henderson
                                 </h2>
                                 <h3 data-font-family="Visuelt-Light"><span class="designation"
                                         data-font-family="Visuelt-Light">
                                         Chief Strategy Officer
-                                    </span></h3>
-                                <a href="https://www.linkedin.com/in/hendersonbill/" target="_blank"><img class="p-tb10"
-                                        src="resources/images/about/linkdin-icon.svg" alt="linkdin-icon"
-                                        width="50px"></a>
+                                    </span>
+                                    <span class="designation"
+                                        style="display: block;font-size: 19px;font-weight: 600;color:#8B8B8B;position: relative;"
+                                        data-font-family="Visuelt-Light">
+                                        (Godspeed Group)
+                                    </span>
+                                </h3>
+                                <p data-font-family="Visuelt-Light" class="p-tb10">
+                                    Bill is the Chief Strategy Officer at Godspeed Group.
+                                </p>
+                                <p data-font-family="Visuelt-Light" class="p-b10">
+                                    Bill joined the Group in 2021 following a successful career that spanned three
+                                    decades in management and executive roles with Purolator, Maritime-Ontario, and G4S.
+                                    His Board participation included the Canadian American Border Trade Alliance,
+                                    Canadian Courier Association and Executive Education Wharton School.
+                                </p>
+                                <p data-font-family="Visuelt-Light" class="p-b10">
+                                    Bill’s skills and experience has enabled an effective contribution to Godspeed
+                                    Group’s growth as the company evolves into an integrated services company across
+                                    North America.
+                                </p>
+                                <p data-font-family="Visuelt-Light" class="p-b10">
+                                    Bill attended the Schulich School of Business, Queens, and the Wharton School of the
+                                    University of Pennsylvania.
+                                </p>
+
+                                <div class="social-icons">
+                                    <div class="social-contact" data-social-type="linkedin">
+                                        <div class="social-icon"
+                                            onclick="hyperlinkTo('https\://www.linkedin.com/in/abhishek-tandon-30347b32/', false)">
+                                            <img src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/about/linkdin-icon.svg"
+                                                alt="linkedin" loading="lazy" width="37px">
+                                        </div>
+                                        <div class="social-id">
+                                            <span data-font-family="Visuelt-Medium"
+                                                data-text-color='primary'>/hendersonbill</span>
+                                        </div>
+                                    </div>
+                                    <div class="social-contact" data-social-type="email">
+                                        <div class="social-icon"
+                                            onclick="hyperlinkTo('mailto:bill@godspeedgroup.ca', false)">
+                                            <img src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/about/email-connect.svg"
+                                                alt="email" loading="lazy" width="37px">
+                                        </div>
+
+                                        <div class="social-id">
+                                            <span data-font-family="Visuelt-Medium"
+                                                data-text-color='primary'>bill@godspeedgroup.ca</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -354,37 +459,60 @@
                                 </picture>
                             </div>
                             <div class="column-2">
-                                <p data-font-family="Visuelt-Light" class="p-tb10">
-                                    Abhishek is the co-founder and CFO of Godspeed Group.
-                                </p>
-                                <p data-font-family="Visuelt-Light" class="p-b10">
-                                    Abhishek is an expert in insurance statistical analysis and with this knowledge,
-                                    helped companies like
-                                    Aviva and Wawanesa grow. Since leaving the insurance industry, he has applied his
-                                    expertise to
-                                    developing the organisation’s financial plans and proposing strategic solutions to
-                                    increase revenue.Abhishek is an expert in insurance statistical analysis and with
-                                    this knowledge, helped companies like
-                                    Aviva and Wawanesa grow. Since leaving the insurance industry, he has applied his
-                                    expertise to
-                                    developing the organisation’s financial plans and proposing strategic solutions to
-                                    increase revenue.
-                                </p>
-                                <p data-font-family="Visuelt-Light" class="p-b10">
-                                    Abhishek holds a bachelor’s degree in Actuarial Science and Statistics from
-                                    University of Toronto.
-                                </p>
-
                                 <h2 data-font-family="Visuelt-Medium" data-color='secondary-color' class="p-t20">
-                                    Abhishek Tandon
+                                    George Travassos
                                 </h2>
                                 <h3 data-font-family="Visuelt-Light"><span class="designation"
                                         data-font-family="Visuelt-Light">
-                                        Co-founder and CFO
-                                    </span></h3>
-                                <a href="https://www.linkedin.com/in/abhishek-tandon-30347b32/" target="_blank"><img
-                                        class="p-tb10" src="resources/images/about/linkdin-icon.svg" alt="linkdin-icon"
-                                        width="50px"></a>
+                                        Chief Operating Officer
+                                    </span>
+                                    <span class="designation"
+                                        style="display: block;font-size: 19px;font-weight: 600;color:#8B8B8B;position: relative;"
+                                        data-font-family="Visuelt-Light">
+                                        (Godspeed Group)
+                                    </span>
+                                </h3>
+                                <p data-font-family="Visuelt-Light" class="p-tb10">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry’s standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                                <p data-font-family="Visuelt-Light" class="p-b10">
+                                    it has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum. </p>
+                                <p data-font-family="Visuelt-Light" class="p-b10">
+                                    It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout.
+                                </p>
+
+                                <div class="social-icons">
+                                    <div class="social-contact" data-social-type="linkedin">
+                                        <div class="social-icon"
+                                            onclick="hyperlinkTo('https\://www.linkedin.com/in/abhishek-tandon-30347b32/', false)">
+                                            <img src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/about/linkdin-icon.svg"
+                                                alt="linkedin" loading="lazy" width="37px">
+                                        </div>
+                                        <div class="social-id" data-font-family="Visuelt-Medium"
+                                            data-text-color='primary'>
+                                            <span>/abcdef-ghijkl-12345678</span>
+                                        </div>
+                                    </div>
+                                    <div class="social-contact" data-social-type="email">
+                                        <div class="social-icon"
+                                            onclick="hyperlinkTo('mailto:abcde@godspeedgroup.ca', false)">
+                                            <img src="https://workforce.godspeedgroup.ca/wp-content/themes/godspeed/assets/images/about/email-connect.svg"
+                                                alt="email" loading="lazy" width="37px">
+                                        </div>
+
+                                        <div class="social-id" data-font-family="Visuelt-Medium">
+                                            <span data-font-family="Visuelt-Medium"
+                                                data-text-color='primary'>abcde@godspeedgroup.ca</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -393,63 +521,110 @@
             </div>
         </section>
 
+       
+
+        <!--------------- Team Slider Section ----------------------------->
+        <link rel="stylesheet" href="resources/css/global/team.css">
         <style>
-            #widget-tabs-popup-container .complimentary-t1-2[data-specificity="enhance"] {
-                --flex-direction: row-reverse;
-                --flex-direction-mobile: column;
-                --image-column-max-width: 600px;
-                --content-column-max-width: 600px;
-                --image-column-width: 50%;
-                --content-column-width: 50%;
-                --container-max-width: 1380px;
-                --gap: 2em;
+            #au-section-10 {
+                margin-bottom: 4em;
             }
-
-            #widget-tabs-popup-container .complimentary-t1-2[data-specificity="enhance"] p {
-                font-size: 1em;
-            }
-
-            #widget-tabs-popup-container .main-container .member-info:nth-of-type(2n) .complimentary-t1-2[data-specificity="enhance"] {
-                --flex-direction: row;
+ 
+            .tod .content-container {
+                background-color: #fff !important;
+                color: #024778;
+                padding-top: 2em;
+                padding-bottom: 8em;
             }
         </style>
-
-        <div id="widget-tabs-popup-container">
-
-        </div>
-
-        <section id="au-section-10">
-            <style>
-                #au-section-10 {
-                    margin-bottom: 4em;
-                }
-            </style>
-            <div class="meet-team-container">
-                <style>
-                    .meet-team-container {
-                        display: flex;
-                        justify-content: center;
-                        flex-direction: column;
-                        align-items: center;
-                        margin: auto;
-                        width: min(90%, var(--container-max-width, 1380px));
-                        gap: 2em;
-                    }
-                </style>
-                <div class="meet-title">
+        <section class="tod testimonial-section" id="section-11">
+            <div class="content-container">
+                <div class="content">
                     <h2 data-font-family="Visuelt-Bold" data-color='--heading-secondary' style="text-align:center;">
-                        Business Development
-                    </h2>
+                        Business Development </h2>
                 </div>
 
-               
-            </div>
+                <div class="slider" id="testimonial-slider">
+                    <div class="splide" style="width:100%">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <!-- <img src="resources/images/arrow-left.png"> -->
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <!-- <img src="resources/images/arrow-right.png"> -->
+                            </button>
+                        </div>
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <!------ Slides 1 ------>
+                                <li class="splide__slide">
+                                    <div class="slider_sub_container">
+                                        <div class="team-container">
+                                            <div class="team-pic">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="team-details">
+                                                <h4 data-font-family="Visuelt-Bold">NORTH AMERICAN GROCERY DISTRIBUTOR
+                                                </h4>
+                                                <div class="testimonial_text" data-font-family="Visuelt-Light">
+                                                    <span class="quote-start"></span>
+                                                    We are impressed with the speed of your execution. Thank you for
+                                                    making
+                                                    many
+                                                    things happen in a
+                                                    short span of time.
+                                                    <span class="quote-end"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="team-footer">
 
+                                        </div>
+
+
+
+                                    </div>
+                                </li>
+
+ 
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </section>
+        <!--------------- Team Slider Section ----------------------------->
 
     </main>
     <!-------------------------------------- Main Closed ----------------------------->
-
+    <script>
+        var splide = new Splide('.splide', {
+            height: '20rem',
+            perPage: 1,
+            gap: '0rem',
+            pagination: true,
+            type: 'loop',
+            breakpoints: {
+                750: {
+                    perPage: 1,
+                    gap: '.7rem',
+                    height: '28rem',
+                },
+                640: {
+                    perPage: 1,
+                    gap: '.7rem',
+                    height: '30rem',
+                },
+                480: {
+                    perPage: 1,
+                    gap: '.7rem',
+                    height: '32rem',
+                },
+            },
+        });
+        splide.mount();
+    </script>
 
     <footer>
         <section class="footer" id="footer-section-2">
