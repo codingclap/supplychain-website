@@ -170,7 +170,9 @@
 .navbar-dropdown:hover #blog {
     display: block !important;
 }
-
+.navbar-dropdown:hover #blog2 {
+    display: block !important;
+}
 .navbar-dropdown:hover #my-dropdown-id {
     display: block !important;
 }
