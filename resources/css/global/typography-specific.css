@@ -14,7 +14,12 @@
 p {
     color: var(--text-color);
 }
-
+[data-color='black'] {
+    color: var(--black);
+}
+[data-color='header-secondary'] {
+    color: var(--heading-secondary);
+}
 [data-color='primary-color'] {
     color: var(--primary-color);
 }
