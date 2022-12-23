@@ -235,6 +235,12 @@
 .pic-simple-border{ 
 border-bottom: 0.5px solid #D1D1D1;
 }
+
+@media(max-width:450px){
+    .testimonial-section .slider_sub_container .team-footer .team-phone,.team-email{
+        font-size: 16px;
+    }
+}
 /*###############################
 ######### Testimonial-section #######
 #################################*/
