@@ -53,7 +53,7 @@
     line-height: 28px;
     padding: 1px 0px;
 }
-
+ 
 #testimonial-slider .testimonial_text p{
     font-size: 1em;
     color:#454545;
@@ -159,7 +159,7 @@
     width: 60px;
     height: 2px;
     position: absolute;
-    top: 30px;
+    top: 36px;
     left: 0;
     background-color: #FDCE01;
 }
@@ -184,8 +184,8 @@
     justify-content: center;
     flex-wrap: wrap; 
     font-size: clamp(0.75em, 4vw + 0.1rem, 1em);
-    gap: min(5vw, 3em);
-    width: 68%;
+    gap: min(14vw, 3em);
+    width: 85%;
 }
 .carrier-picture-container .carrier-picture{
     display: flex;
@@ -194,7 +194,7 @@
     flex-direction: column;
     position: relative;
     overflow: hidden; 
-    width: min(45%, 300px);  
+    width: min(95%, 300px);  
     gap:18px;
 }
 
