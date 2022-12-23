@@ -5,7 +5,10 @@
 .tod {
     background: #fff !important;
 }
-
+.splide__arrow.splide__arrow--prev,.splide__arrow.splide__arrow--next{
+    border-right:0px;
+    border-left:0px;
+}
 #testimonial-slider .splide__track {
     box-shadow: 3px 2px 17px #00000029;
     border-right: 0px solid #70707069;
@@ -14,10 +17,13 @@
 
 #testimonial-slider .slider_sub_container {
     box-shadow: none !important;
+    gap: 0px;  
+    justify-content: space-between;
+    padding: 50px 0px 0px 0px;
 }
 
 #testimonial-slider .splide__pagination {
-    bottom: -3em !important;
+    bottom: -3.5em !important;
 }
 /*###############################
 ######### Testimonial-section #######
@@ -42,20 +48,26 @@
 
 #testimonial-slider li p {
     font-size: 16px;
-    color: #024778;
+    color: #454545;
     margin: 0 auto;
     line-height: 28px;
     padding: 1px 0px;
 }
 
-#testimonial-slider .testimonial_text {
-    font-size: 21px;
-    color:#024778;
+#testimonial-slider .testimonial_text p{
+    font-size: 18px;
+    color:#454545;
     margin: 0 auto;
-    line-height: 32px;
-    padding: 10px 0px;
+    line-height: 27px;
+    padding: 4px 0px;
     max-width: 800px;
     position: relative;
+}
+#testimonial-slider .splide__pagination__page.is-active {
+    background: #0B3766; 
+}
+#testimonial-slider .splide__pagination__page { 
+    border: 1px solid #0B3766;
 }
 
 #testimonial-slider .testimonial_text .quote-start,
@@ -78,6 +90,7 @@
 #section-11 .splide__arrow {
     --arrow-btn-color: gray;
     --arrow-btn-width: 2em;
+    opacity: .9;
 }
 
 #section-11 .splide__arrow:hover {
@@ -105,6 +118,49 @@
     padding-bottom: 4em;
 }
 
+.testimonial-section .slider_sub_container .team-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap:4em;
+    flex-wrap: wrap;
+    padding: 20px 28px;
+}
+.testimonial-section .slider_sub_container .team-container .team-details{
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+}
+
+.testimonial-section .slider_sub_container .team-footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #EDEDED;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    row-gap:1em;
+    column-gap: 10em;
+}
+
+.testimonial-section .slider_sub_container .team-footer .team-phone,.team-email{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-section .slider_sub_container .team-details .designation2:nth-child(2)::after {
+    content: " ";
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #FDCE01;
+}
 /*###############################
 ######### Testimonial-section #######
 #################################*/
