@@ -163,6 +163,78 @@
     left: 0;
     background-color: #FDCE01;
 }
+
+.carrier-main .heading-container {
+    background-color: var(--light);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0em;
+    padding:0em 0px 4em 0px;
+    color: white; 
+}
+.carrier-main .heading-container .heading {
+    width: min(90%, var(--container-max-width));
+    text-align: center;
+}
+.carrier-picture-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    font-size: clamp(0.75em, 4vw + 0.1rem, 1em);
+    gap: min(5vw, 3em);
+    width: 68%;
+}
+.carrier-picture-container .carrier-picture{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden; 
+    width: min(45%, 300px);  
+    gap:18px;
+}
+
+.carrier-picture-container .carrier-picture .pic_area{
+    background-color: #D7E1F8;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+.image-animate{
+    transition: 0.3s ease-in-out; 
+}
+.carrier-picture-container .carrier-picture .pic_area:hover{
+    background-color: #FDCE01;
+    transition: 0.3s ease-in-out; 
+}
+.carrier-picture-container .carrier-picture .pic_area:hover .image-animate{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+.carrier-picture-container .carrier-picture .pic-text{
+    width: 100%;
+    text-align: center;  
+    cursor: initial;
+}
+
+.carrier-picture-container .carrier-picture .pic-text h3{ 
+    width: 75%;
+    margin: 0 auto;
+}
+.carrier-picture-container .carrier-picture .pic-text a{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 33px;
+}
+ 
+.pic-simple-border{ 
+border-bottom: 0.5px solid #D1D1D1;
+}
 /*###############################
 ######### Testimonial-section #######
 #################################*/
