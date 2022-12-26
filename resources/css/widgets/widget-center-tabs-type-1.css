@@ -1,6 +1,6 @@
 .widget-center-tabs-type-1 {
     --tab-bg-color: var(--highlight-color);
-    --tab-bg-hover-color: #024778;
+    --tab-bg-hover-color: var(--secondary-color);
     --tab-text-color: black;
     --tab-text-hover-color: white;
 
@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: min(85%, var(--container-max-width));
+    width: min(95%, var(--container-max-width));
     margin: auto;
     gap: 1em; 
 }
@@ -28,7 +28,6 @@
     background-color: var(--tab-bg-color, gray);
     color: var(--tab-text-color, black);
     padding: var(--tab-padding-block) 1.8em;
-    cursor: pointer;
     border-radius: 4px;
     position: relative;
     transition: color 0.1s ease-in-out;
@@ -69,11 +68,11 @@
 .widget-center-tabs-type-1 .widget-main-container .center-tab .feature-container {
     position: absolute;
     background-color: var(--tab-bg-hover-color, white);
-    width: min(250px, 90vw);
-    left: 0;
+    width: fit-content;
+    left: 0%;
     top: calc(var(--tab-heading-font-size) + var(--tab-padding-block) * 2 + var(--tab-gap-btw-heading-content));
-    border-radius: 4px;
-    padding: 1em 0.5em;
+    border-radius: 0.25em;
+    padding: 1em;
     z-index: 9;
     transform: scale(0);
     transform-origin: top left;
@@ -81,7 +80,27 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
+    /* flex-wrap: wrap; */
 }
+
+@media (min-width: 800px) {
+    .widget-center-tabs-type-1 .widget-main-container .center-tab .feature-container {
+        max-height: var(--max-padding-bottom, 20em);
+        overflow-y: scroll;
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--highlight-color) var(--secondary-color) !important;
+    }
+
+    .widget-center-tabs-type-1 .widget-main-container .center-tab {
+        width: fit-content;
+    }
+}
+
+.widget-center-tabs-type-1 .widget-main-container .center-tab:last-child .feature-container {
+    left: auto;
+    right: 0%;
+}
+
 @media(max-width:768px){
     #contact-section-7 {
         padding-top: 1em;
@@ -91,43 +110,80 @@
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 800px) {
     .widget-center-tabs-type-1 .widget-main-container .center-tab .feature-container {
         position: relative;
-        left: -1.5em;
+        left: 0;
         top: 0;
         transform: scale(1);
-        width: min(270px, 90vw);
+        width: min(470px, 100%);
+        text-align: left;
     }
 
     .widget-center-tabs-type-1 .widget-main-container .center-tab {
-        width: min(300px, 90vw);
+        width: min(450px, 100%);
         background-color: var(--tab-bg-hover-color, white);
         color: var(--tab-text-hover-color, gray);
+        padding: var(--tab-padding-block) 0;
     }
 }
 
 .widget-center-tabs-type-1 .widget-main-container .center-tab:hover .feature-container {
     transform: scale(1);
-    border-radius: 0px 0px 4px 4px;
 }
 
 .widget-center-tabs-type-1 .widget-main-container .center-tab .feature-container .member-social-container {
-    background: rgba(0, 0, 0, 0.1);
+    --gap: min(1em, 5vw);
+    --icon-box-max-width: 250px;
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     color: var(--feature-text-color, white);
+    display: grid;
+    grid-gap: var(--gap);
+    gap: var(--gap);
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 0.5em 1em;
 }
 
-.widget-center-tabs-type-1 .widget-main-container .center-tab .feature-container .member-social-container .member-social-links {
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
+.widget-center-tabs-type-1 .widget-main-container .center-tab .feature-container .member-social-container .member-name {
+    font-size: 1.5em;
+}
+
+.widget-center-tabs-type-1 .widget-main-container .center-tab .feature-container .social-icons {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.25em 1em 0.25em 0.5em;
-    font-size: 0.9em;
+    gap: 0.5em;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.widget-center-tabs-type-1 .widget-main-container .center-tab .feature-container .member-social-container .member-social-links .social-icon img {
-    height: 1.25em;
+.widget-center-tabs-type-1 .widget-main-container .center-tab .feature-container .social-icons .social-contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.widget-center-tabs-type-1 .widget-main-container .center-tab .feature-container .social-icons .social-contact .social-icon {
+    --social-icon-width: 1em;
+    width: var(--social-icon-width);
+    cursor: pointer;
+}
+
+.widget-center-tabs-type-1 .widget-main-container .center-tab .feature-container .member-social-container .member-designation {
+    font-size: 0.75em;
+}
+
+.widget-center-tabs-type-1 .widget-main-container .center-tab .feature-container .social-icons .social-contact .social-icon img {
+    width: 100%;
+}
+
+.widget-center-tabs-type-1 .widget-main-container .center-tab .feature-container .social-icons .social-contact .social-id {
+    font-size: 1em;
+}
+
+.widget-center-tabs-type-1 .widget-main-container .center-tab .feature-container .social-icons .social-contact .social-icon,
+.widget-center-tabs-type-1 .widget-main-container .center-tab .feature-container .social-icons .social-contact .social-id {
+    display: flex;
+    align-items: center;
 }

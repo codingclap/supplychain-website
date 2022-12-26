@@ -15,7 +15,6 @@
     margin-inline: auto;
     position: relative;
 	padding-block: var(--universal-padding-heavy);
-    flex-wrap: wrap;
 }
 
 .icon-boxes-type-2 .icon-box {
@@ -24,7 +23,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     position: relative;
 }
 
@@ -45,7 +43,8 @@
 }
 
 .icon-boxes-type-2 .icon-box .promo-icon img {
-    width: 70%; 
+    width: clamp(3.5em, 20vw, 5em);
+    aspect-ratio: 1/1;
 	margin-bottom: 1em;	
 }
 
@@ -57,7 +56,6 @@
     top: 0;
     left: calc(-1 * var(--gap) / 2);
     background-color: var(--separator-bg-color, gray);
-    opacity: 0.4;
 }
 
 @media (max-width: 900px) {
