@@ -13,7 +13,7 @@ a {
     justify-content: center;
     align-items: center;
     min-height: 95vh;
-    padding: 10px 15px;
+    padding: 4em 15px;
     position: relative;
 }
 .footer-image{
@@ -36,6 +36,7 @@ a {
 .heading {
     color: #fff; 
     padding: 30px 0px 20px;
+    line-height: unset;
 }
 
 .description {
@@ -55,11 +56,12 @@ a {
     position: relative;
     z-index: 0;
     transition: 0.3s ease-in-out;
+    font-size: 16px;
 }
 
 .header-btn-style::before {
     content: " ";
-    background: url('../images/arrow-left.png');
+    background: url('../../images/arrow-left.png');
     position: absolute;
     background-size: contain;
     background-origin: border-box;
