@@ -203,6 +203,9 @@
     background-color: #D7E1F8;
     transition: 0.3s ease-in-out;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 .image-animate{
     transition: 0.3s ease-in-out; 
