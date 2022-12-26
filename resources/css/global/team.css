@@ -136,6 +136,9 @@
     width: 100%;
 }
 
+.testimonial-section .slider_sub_container .team-container .team-details h2{
+    font-size: 2em;
+}
 .testimonial-section .slider_sub_container .team-footer{
     display: flex;
     flex-direction: row;
