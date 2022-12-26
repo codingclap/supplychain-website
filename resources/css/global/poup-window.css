@@ -9,12 +9,12 @@
   z-index: 99;
   /* Sit on top */
   left: 0;
-  top: 0;
+  top: 90px;
   width: 100vw;
   /* Full width */
   height: 100vh;
   /* Full height */
-  overflow: auto;
+  overflow: scroll;
   /* Enable scroll if needed */
   background-color: rgba(2, 71, 120, 0.87);
   /* Black w/ opacity */
@@ -31,7 +31,7 @@
 .modal .modal-content .poup-header {
   text-align: center;
   color: white;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .modal .modal-content .popup-form form {
