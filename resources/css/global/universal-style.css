@@ -792,6 +792,11 @@ section>div {
         left: 42%;
         width: 57px;
     }
+
+    .btn {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
 }
 
 
