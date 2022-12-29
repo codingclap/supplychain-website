@@ -205,7 +205,15 @@
     left: 0;
     background-color: #FDCE01;
 }
-
+.carrier-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: min(90%, 1380px);
+    text-align: center;
+    margin:0 auto;
+}
 .carrier-main .heading-container {
     background-color: var(--light);
     width: 100%;
@@ -239,7 +247,7 @@
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    width: min(95%, 300px);
+    width: min(95%, 422px);
     gap: 18px;
 }
 
