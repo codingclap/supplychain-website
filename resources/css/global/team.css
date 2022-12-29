@@ -167,7 +167,7 @@
     margin-top: 20px;
     row-gap: 1em;
     column-gap: 10em;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .testimonial-section .slider_sub_container .team-footer .team-phone,
