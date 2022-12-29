@@ -358,8 +358,8 @@
 
 @media (max-width: 550px) {
     #testimonial-slider .testimonial_text p {
-        font-size: 0.9em;
-        line-height: 20px;
+        font-size: 1em;
+        line-height: 21px;
     }
 
     .testimonial-section .slider_sub_container .team-footer {
