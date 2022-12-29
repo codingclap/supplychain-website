@@ -167,6 +167,7 @@
     margin-top: 20px;
     row-gap: 1em;
     column-gap: 10em;
+    flex-wrap: wrap;
 }
 
 .testimonial-section .slider_sub_container .team-footer .team-phone,
@@ -292,7 +293,7 @@
 @media(max-width:768px) {
     #testimonial-slider .slider_sub_container {
         padding: 25px 0px 0px 0px;
-        
+        justify-content: space-evenly;
     }
 
     #testimonial-slider .testimonial_text p {
@@ -302,11 +303,11 @@
     }
 
     .testimonial-section .slider_sub_container .team-footer .team-email img {
-        width: 22px;
+        width: 25px;
     }
 
     .testimonial-section .slider_sub_container .team-footer .team-phone img {
-        width: 22px;
+        width: 25px;
     }
 
     .testimonial-section .slider_sub_container .team-footer {
@@ -385,7 +386,7 @@
 
     .testimonial-section .slider_sub_container .team-footer .team-phone,
     .team-email {
-        font-size: 13px;
+        font-size: 14px;
     }
     .testimonial-section .slider_sub_container .team-container .team-details h2 {
         font-size: 1.1em;
